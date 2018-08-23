@@ -1,7 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import PortfolioCardLarge from '../components/PortfolioCardLarge'
+import PortfolioCardLargeRCSW from '../components/PortfolioCardLargeRCSW'
+import PortfolioCardLargeStatusTable from '../components/PortfolioCardLargeStatusTable'
+import PortfolioCardLargeSmarthome from '../components/PortfolioCardLargeSmarthome'
+import InternalLink from '../components/InternalLink'
 
 const H2 = styled.h2`
 	margin: 8.75rem 0 0;
@@ -19,6 +22,9 @@ const H2 = styled.h2`
 export default () => (
   <div>
     <H2>Hi there! I’m Daniel, an <emph>interaction designer</emph> passionate about making technology beautiful and empowering.</H2>
-    <PortfolioCardLarge/>
+    <PortfolioCardLargeRCSW/>
+    <PortfolioCardLargeStatusTable/>
+    <PortfolioCardLargeSmarthome/>
+    <InternalLink/>
   </div>
 )

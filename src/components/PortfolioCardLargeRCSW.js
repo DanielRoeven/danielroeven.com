@@ -3,12 +3,12 @@ import styled from 'styled-components'
 
 import rcsw from './img/rcsw-mobile-3x.jpg'
 
-const PortfolioCardLarge = styled.div`
-	height: 47rem;
+const PortfolioCardLargeRCSW = styled.div`
+	height: 40rem;
 	width: 80rem;
 	background-size: cover;
 	background-image: url(${rcsw});
-	margin: 10.3rem 0;
+	margin: 10.3rem 0 14rem;
 	border-radius: 2px;
 	position: relative;
 `
@@ -46,6 +46,7 @@ const SkillsCard = styled.div`
 	position: absolute;
 	bottom: -3rem;
 	right: -1rem;
+	border-radius: 2px;
 
 	ol {
 		list-style: none;
@@ -71,7 +72,7 @@ const SkillsCard = styled.div`
 `
 
 export default () => (
-  <PortfolioCardLarge>
+  <PortfolioCardLargeRCSW>
   	<TitleCard>
   		<h3>Portal for RCSW</h3>
   		<p>Creating a web portal that's clear and beautiful for Radboud Centre for Social Sciences.</p>
@@ -83,5 +84,5 @@ export default () => (
   			<li>Front-End Development</li>
   		</ol>
   	</SkillsCard>
-  </PortfolioCardLarge>
+  </PortfolioCardLargeRCSW>
 )
