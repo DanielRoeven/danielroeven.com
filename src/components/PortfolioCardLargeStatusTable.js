@@ -66,7 +66,7 @@ const SkillsCard = styled.div`
 export default () => (
   <PortfolioCardLargeStatusTable>
   	<TitleCard>
-  		<h3>Portal for RCSW</h3>
+  		<h3>Tangible Office Planner</h3>
   	</TitleCard>
   	<SkillsCard>
   		<ol>

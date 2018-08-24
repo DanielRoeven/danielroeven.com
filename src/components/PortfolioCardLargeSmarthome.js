@@ -67,7 +67,7 @@ const SkillsCard = styled.div`
 export default () => (
   <PortfolioCardLargeSmarthome>
   	<TitleCard>
-  		<h3>Portal for RCSW</h3>
+  		<h3>Smarthome Redesign</h3>
   	</TitleCard>
   	<SkillsCard>
   		<ol>
