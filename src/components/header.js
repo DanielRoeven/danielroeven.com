@@ -10,6 +10,8 @@ const Header = styled.div`
   justify-content: center;
   backdrop-filter: blur(8px);
   width: 100vw;
+  position: fixed;
+  z-index: 9999;
 `
 
 const Container = styled.div`

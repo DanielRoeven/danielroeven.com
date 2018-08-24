@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Primitives / Icons / Copyright</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Primitives-/-Icons-/-Copyright" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M12,22 C6.4771525,22 2,17.5228475 2,12 C2,6.4771525 6.4771525,2 12,2 C17.5228475,2 22,6.4771525 22,12 C22,17.5228475 17.5228475,22 12,22 Z M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3 C7.02943725,3 3,7.02943725 3,12 C3,16.9705627 7.02943725,21 12,21 Z M14.204,14.632 L14.204,15.748 C14.204,15.748 13.676,16.156 12.416,16.156 C10.052,16.156 8.48,14.476 8.48,11.944 C8.48,9.412 10.052,7.732 12.416,7.732 C13.676,7.732 14.204,8.14 14.204,8.14 L14.204,9.256 C14.204,9.256 13.592,8.824 12.596,8.824 C10.82,8.824 9.764,9.988 9.764,11.944 C9.764,13.9 10.82,15.064 12.596,15.064 C13.592,15.064 14.204,14.632 14.204,14.632 Z" id="Combined-Shape" fill="#8CA1B4" fill-rule="nonzero"></path>
+    </g>
+</svg>

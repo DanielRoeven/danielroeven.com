@@ -8,7 +8,7 @@ const PortfolioCardLargeRCSW = styled.div`
 	width: 80rem;
 	background-size: cover;
 	background-image: url(${rcsw});
-	margin: 10.3rem 0 14rem;
+	margin: 0 0 17rem;
 	border-radius: 2px;
 	position: relative;
 `

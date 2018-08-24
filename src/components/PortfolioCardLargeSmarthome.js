@@ -9,7 +9,7 @@ const PortfolioCardLargeSmarthome = styled.div`
 	background-size: cover;
 	background-image: url(${smarthome});
 	background-position: center center;
-	margin: 10.3rem 0;
+	margin: 0 0 12rem;
 	border-radius: 2px;
 	position: relative;
 `
