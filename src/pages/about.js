@@ -41,6 +41,8 @@ const Resume = styled.div`
   width: 80rem;
   display: flex;
   flex-flow: row wrap;
+  align-content: flex-start;
+  align-items: flex-start;
 `
 
 const H3 = styled.h3`
@@ -56,7 +58,7 @@ const EducationCard = styled.div`
   background: rgba(250,251,252, 0.8);
   box-shadow: 0 0 8px 0 rgba(26,67,106,0.25), 0 32px 32px -32px rgba(26,67,106,0.25);
   width: 40.5rem;
-  margin: 0 0 0 -1rem;
+  margin: 0 1rem 0 -1rem;
   padding: 1rem;
   border-radius: 2px;
 `
@@ -65,7 +67,7 @@ const WorkCard = styled.div`
   background: rgba(250,251,252, 0.8);
   box-shadow: 0 0 8px 0 rgba(26,67,106,0.25), 0 32px 32px -32px rgba(26,67,106,0.25);
   width: 40.5rem;
-  margin: 0 -1rem 0 0;
+  margin-right: -1rem;
   padding: 1rem;
   border-radius: 2px;
 `
@@ -118,12 +120,24 @@ export default () => (
             place="Eindhoven, the Netherlands"/>
         </EducationCard>
         <WorkCard>
+          <H4>Work Experience</H4>
           <WorkItem
             position="UX Design Trainee at Fonk Amsterdam"
             time="Jun 2018 - Aug 2018"
-            Description="Full-time summer traineeship at a digital product agency in Amsterdam. I conducted user research, and designed and prototyped interfaces. I helped a start-up define their MVP, independently completed and presented a project for an existing client, and designed microinteractions for an upcoming AR app."
-          />
-        </WorkCard>
+            description="Full-time summer traineeship at a digital product agency in Amsterdam. I conducted user research, and designed and prototyped interfaces. I helped a start-up define their MVP, independently completed and presented a project for an existing client, and designed microinteractions for an upcoming AR app. I also gave a Framer workshop to the UX design team."/>
+          <WorkItem
+            position="Interaction Designer at Radboud Centre for Social Sciences"
+            time="Feb 2017 — Jun 2017"
+            description="In this four month project I designed and developed a web portal. I performed user research, interaction and visual design, ran usability tests, and developed the front-end in React, together with two other developers."/>
+          <WorkItem
+            position="Freelance Interaction Designer and Front-End Developer"
+            time="Oct 2016—Jan 2017"
+            description="Designed and developed a web app in Javascript on freelance basis."/>
+          <WorkItem
+            position="Teaching Assistant in Usability Courses"
+            time="2015—2017"
+            description="I taught usability in a bachelors course at the Radboud University. Due to impressive performance in the first year, I was given responsibility for all lectures, workshops, assignments, and grading and feedback in subsequent years. Received a certificate in teaching methods after a training programme in teaching."/>
+          </WorkCard>
       </Resume>
     </ResumeBackground>
   </PageWrapper>

@@ -4,8 +4,6 @@ import styled from 'styled-components'
 const WorkItem = styled.div`
 	display: flex;
 	flex-flow: row wrap;
-	height: 8rem;
-	overflow: hidden;
 `
 
 const Title = styled.h4`
@@ -34,19 +32,14 @@ const Time = styled.span`
 const Description = styled.span`
 	font-size: 1.104166667rem;
 	color: hsla(209, 61%, 26%, 1);
-	padding: .6rem 0 0 0;
-	margin: 0 0 -.6rem 0;
+	padding: .6rem 0 .35rem 0;
 	line-height: 2rem;
 	width: 100%;
-
-	&:last-child {
-		padding: .6rem 0 1rem 0;
-	}
 `
 
 export default (props) => (
   <WorkItem>
-  	<Title>{props.employer}</Title>
+  	<Title>{props.position}</Title>
   	<Time>{props.time}</Time>
   	<Description>{props.description}</Description>
   </WorkItem>
