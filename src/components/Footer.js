@@ -12,6 +12,7 @@ const Footer = styled.footer`
   align-items: center;
   justify-content: flex-start;
   height: 6rem;
+  margin-top: -6rem;
   padding: 2.1rem 0 0;
   background-image: radial-gradient(ellipse at bottom, hsla(209, 61%, 26% ,.25) 0%, hsla(209, 61%, 26% , .05) 45%, transparent 66%);
   background-size: 150% 40%;

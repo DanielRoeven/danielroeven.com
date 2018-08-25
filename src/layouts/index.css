@@ -11,9 +11,5 @@ html {
 
 body {
   background-color: hsla(210, 25%, 98%, 1);
-  //background-image: url("./img/layout.png");
-  background-size: 80rem;
-  background-repeat: repeat-y;
-  background-position: center top;
   overscroll-behavior: none;
 }

@@ -7,9 +7,13 @@ import Column from '../components/Column'
 import BioText from '../components/BioText'
 import EducationItem from '../components/EducationItem'
 import WorkItem from '../components/WorkItem'
+import SkillsCollection from '../components/SkillsCollection'
+import SkillsGroup from '../components/SkillsGroup'
+import TriviaButton from '../components/TriviaButton'
 import Footer from '../components/Footer'
 
 import Headshot from '../components/img/headshot.jpg'
+import pdfIcon from '../components/img/icons/pdf.svg'
 
 const Bio = styled.div`
   display: flex;
@@ -23,18 +27,18 @@ const Avatar = styled.img`
   border: 1rem solid hsla(210, 25%, 98%, 1);
   align-self: center;
   border-radius: 7rem;
-  z-index: 1;
 `
 
 const ResumeBackground = styled.div`
   margin-top: -7rem;
   padding-top: 7rem;
-  height: 82rem;
+  height: 81rem;
   width: 100vw;
   align-self: center;
-  background: radial-gradient(circle at top, hsla(191, 83%, 91%, .5), hsla(190, 83%, 82%, .5));
+  background: radial-gradient(circle at top, hsla(191, 83%, 91%, 1), hsla(190, 83%, 82%, 1));
   display: flex;
   justify-content: center;
+  z-index: -1;
 `
 
 const Resume = styled.div`
@@ -46,7 +50,7 @@ const Resume = styled.div`
 `
 
 const H3 = styled.h3`
-  padding: 2.55rem 0 1.55rem;
+  padding: 2.55rem 0 1.45rem;
   line-height: 3rem;
   font-weight: bold;
   font-size: 2.5rem;
@@ -54,8 +58,27 @@ const H3 = styled.h3`
   width: 100%;
 `
 
+const ResumePDFLink = styled.a`
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 3rem;
+  padding: 2.55rem .25rem 1.45rem;
+  color: hsla(209, 21%, 63%, 1);
+  background-image: linear-gradient(transparent 4.75rem, hsla(209, 61%, 26%, 1) 4.75rem, hsla(209, 61%, 26%, 1) 5.25rem, transparent 5.25rem);
+  width: 100%;
+
+  img {
+    width: 3.25rem;
+    height: 3rem;
+    position: relative;
+    top: .6rem;
+    padding: 0 0 0 .25rem;
+    display: inline-block;
+  }
+`
+
 const EducationCard = styled.div`
-  background: rgba(250,251,252, 0.8);
+  background: rgba(250,251,252, 1);
   box-shadow: 0 0 8px 0 rgba(26,67,106,0.25), 0 32px 32px -32px rgba(26,67,106,0.25);
   width: 40.5rem;
   margin: 0 1rem 0 -1rem;
@@ -64,10 +87,19 @@ const EducationCard = styled.div`
 `
 
 const WorkCard = styled.div`
-  background: rgba(250,251,252, 0.8);
+  background: rgba(250,251,252, 1);
   box-shadow: 0 0 8px 0 rgba(26,67,106,0.25), 0 32px 32px -32px rgba(26,67,106,0.25);
   width: 40.5rem;
-  margin-right: -1rem;
+  margin: 0 -1rem 1rem 0;
+  padding: 1rem;
+  border-radius: 2px;
+`
+
+const SkillsCard = styled.div`
+  background: rgba(250,251,252, 1);
+  box-shadow: 0 0 8px 0 rgba(26,67,106,0.25), 0 32px 32px -32px rgba(26,67,106,0.25);
+  width: 82rem;
+  margin: 0 -1rem 0 -1rem;
   padding: 1rem;
   border-radius: 2px;
 `
@@ -76,8 +108,51 @@ const H4 = styled.h4`
   font-size: 1.65625rem;
   font-weight: bold;
   color: hsla(209, 61%, 26%, 1);
-  padding: 0.25rem 0 .65rem 0;
+  padding: 0.35rem 0 .65rem 0;
   line-height: 2rem;
+`
+
+const TriviaBackground = styled.div`
+  margin-top: -7rem;
+  padding-top: 24rem;
+  height: 51rem;
+  width: 100vw;
+  align-self: center;
+  background: radial-gradient(circle at bottom, hsla(209, 61%, 26%, 1), hsla(210, 58%, 09%, 1));
+  display: flex;
+  justify-content: center;
+  z-index: -2;
+`
+
+const H5 = styled.h5`
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: hsla(210, 25%, 98%, 1);
+  padding: 1.6rem 1rem 0;
+  line-height: 3rem;
+  width: 41.5rem;
+  height: 6rem;
+  background-image: linear-gradient(transparent 61%, hsla(209, 21%, 63%, 1) 61%, hsla(209, 21%, 63%, 1) 74%, transparent 74%);
+`
+
+const Trivia = styled.div`
+  width: 80rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
+const TriviaItem = styled.div`
+  width: 49.5rem;
+  display: flex;
+`
+
+const TriviaText = styled.p`
+  font-size: 1.65625rem;
+  color: hsla(210, 25%, 98%, 1);
+  padding: 0.85rem 0 .65rem 0;
+  line-height: 3rem;
+  width: 45.5rem;
 `
 
 export default () => (
@@ -100,7 +175,7 @@ export default () => (
     <Avatar src={Headshot}/>
     <ResumeBackground>
       <Resume>
-        <H3>Résumé</H3>
+        <H3>Résumé <ResumePDFLink>as PDF<img src={pdfIcon}/></ResumePDFLink></H3>
         <EducationCard>
           <H4>Education</H4>
           <EducationItem
@@ -138,7 +213,26 @@ export default () => (
             time="2015—2017"
             description="I taught usability in a bachelors course at the Radboud University. Due to impressive performance in the first year, I was given responsibility for all lectures, workshops, assignments, and grading and feedback in subsequent years. Received a certificate in teaching methods after a training programme in teaching."/>
           </WorkCard>
+          <SkillsCard>
+            <H4>Skills</H4>
+            <SkillsCollection>
+              <SkillsGroup category="Design" skills={["Interaction", "User Interface (UI)", "User Experience (UX)", "Product", "AR / VR"]}/>
+              <SkillsGroup category="Development" skills={["HTML", "CSS", "Javascript", "React", "Swift", "iOS"]}/>
+              <SkillsGroup category="Tools" skills={["Sketch", "Framer", "Photoshop", "InDesign", "After Effects", "Cinema4D", "Unreal Engine", "XCode"]}/>
+              <SkillsGroup category="Methods" skills={["User-Centered Design", "Observations, Interviews, and Questionnaires", "Data Analysis", "Ideation Workshops", "Sketching", "Prototyping", "Usability and UX Evaluation"]}/>
+            </SkillsCollection>
+          </SkillsCard>
       </Resume>
     </ResumeBackground>
+    <TriviaBackground>
+      <Trivia>
+        <H5>Fun Fact</H5>
+        <TriviaItem>
+          <TriviaButton type="previous"/>
+          <TriviaText>My favorite typefaces are Kepler by Robert Slimbach of Adobe and Rucksack by Jeffrey Schreiber of RegularBoldItalic.</TriviaText>
+          <TriviaButton type="next"/>
+        </TriviaItem>
+      </Trivia>
+    </TriviaBackground>
   </PageWrapper>
 )

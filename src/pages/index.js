@@ -7,7 +7,6 @@ import PortfolioCardLargeRCSW from '../components/PortfolioCardLargeRCSW'
 import PortfolioCardLargeStatusTable from '../components/PortfolioCardLargeStatusTable'
 import PortfolioCardLargeSmarthome from '../components/PortfolioCardLargeSmarthome'
 import InternalLink from '../components/InternalLink'
-import Footer from '../components/Footer'
 
 export default () => (
   <PageWrapper>
@@ -15,11 +14,10 @@ export default () => (
     <PortfolioCardLargeRCSW/>
     <PortfolioCardLargeStatusTable/>
     <PortfolioCardLargeSmarthome/>
-    <div style={{marginBottom: '10rem'}}>
+    <div style={{marginBottom: '13rem'}}>
       <InternalLink type="portfolio">portfolio</InternalLink>
       <InternalLink type="bio">bio</InternalLink>
       <InternalLink type="contact">hi</InternalLink>
     </div>
-    <Footer/>
   </PageWrapper>
 )

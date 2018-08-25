@@ -27,7 +27,7 @@ const Time = styled.span`
 	line-height: 2rem;
 	width: 11.5rem;
 	text-align: right;
-	letter-spacing: 0.05rem;
+	letter-spacing: 0.025rem;
 	margin: 0 0 -.7rem 0;
 `
 

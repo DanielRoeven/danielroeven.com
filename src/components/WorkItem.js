@@ -25,7 +25,7 @@ const Time = styled.span`
 	line-height: 2rem;
 	width: 11.5rem;
 	text-align: right;
-	letter-spacing: 0.05rem;
+	letter-spacing: 0.025rem;
 	margin: 0 0 -.7rem 0;
 `
 
@@ -35,6 +35,10 @@ const Description = styled.span`
 	padding: .6rem 0 .35rem 0;
 	line-height: 2rem;
 	width: 100%;
+
+	&:last-child {
+		padding: .6rem 0 .4rem 0;
+	};
 `
 
 export default (props) => (
