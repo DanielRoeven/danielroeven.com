@@ -1,13 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import rcsw from './img/rcsw-mobile-3x.jpg'
+import rcsw from '../../pages/img/rcsw-mobile-3x.jpg'
 
-const PortfolioCardLargeRCSW = styled.div`
+const PortfolioCardLarge = styled.div`
 	height: 40rem;
 	width: 80rem;
 	background-size: cover;
-	background-image: url(${rcsw});
+	background-position: center center;
+	background-image: url(${props => props.image});
+	background-color: hsla(209, 61%, 26%, 1);
 	margin: 0 0 17rem;
 	border-radius: 2px;
 	position: relative;
@@ -15,7 +17,7 @@ const PortfolioCardLargeRCSW = styled.div`
 `
 
 const TitleCard = styled.div`
-	background-color: hsla(190, 84%, 64%, 0.9);
+	background-color: ${props => props.color}
 	width: 28rem;
 	position: relative;
 	top: -1rem;
@@ -43,7 +45,7 @@ const TitleCard = styled.div`
 `
 
 const SkillsCard = styled.div`
-	background-color: hsla(209, 61%, 26%, .9);
+	background-color: ${props => props.color};
 	height: 9rem;
 	position: absolute;
 	bottom: -3rem;
@@ -74,18 +76,46 @@ const SkillsCard = styled.div`
 	z-index: -1;
 `
 
-export default () => (
-  <PortfolioCardLargeRCSW>
-  	<TitleCard>
-  		<h3>Portal for RCSW</h3>
-  		<p>Creating a web portal that's clear and beautiful for Radboud Centre for Social Sciences.</p>
+const makeSkillsListFor = function(skills){
+	const skillItems = skills.map((skill) =>
+		<li key={skill}>{skill}</li>
+	)
+
+	return (
+		<ol>{skillItems}</ol>
+	)
+}
+
+const getColorValueFor= function(color) {
+	switch(color) {
+		case 'light-blue':
+			return 'hsla(190, 84%, 64%, .8);'
+			break
+		case 'blue':
+			return 'hsla(209, 65%, 52%, 0.9);'
+			break
+		case 'dark-blue':
+			return 'hsla(209, 61%, 26%, .8);'
+			break
+		case 'yellow':
+			return 'hsla(47, 98%, 68%, 0.9);'
+			break
+		case 'brown':
+			return 'hsla(29, 63%, 30%, 0.9);'
+			break
+		default:
+			throw 'Invalid color provided'
+	}
+}
+
+export default (props) => (
+  <PortfolioCardLarge image={props.image}>
+  	<TitleCard color={getColorValueFor(props.primaryColor)}>
+  		<h3>{props.title}</h3>
+  		<p>{props.description}</p>
   	</TitleCard>
-  	<SkillsCard>
-  		<ol>
-  			<li>Interaction Design</li>
-  			<li>Visual Design</li>
-  			<li>Front-End Development</li>
-  		</ol>
+  	<SkillsCard color={getColorValueFor(props.secondaryColor)}>
+  		{makeSkillsListFor(props.skills)}
   	</SkillsCard>
-  </PortfolioCardLargeRCSW>
+  </PortfolioCardLarge>
 )

@@ -36,7 +36,6 @@ const InternalLink = styled.p`
 `
 
 const linkForType = function(type){
-	console.log(type)
 	switch(type) {
 		case 'portfolio':
 			return(<a>portfolio<img src={portfolioIcon}/></a>)
@@ -53,7 +52,6 @@ const linkForType = function(type){
 }
 
 const textForType = function(type){
-	console.log(type)
 	switch(type) {
 		case 'portfolio':
 			return('See my full')
