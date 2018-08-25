@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
+import LayoutOverlay from '../components/LayoutOverlay'
+import Footer from '../components/Footer'
 import './index.css'
 
 const Layout = ({ children, data }) => (
@@ -15,9 +17,10 @@ const Layout = ({ children, data }) => (
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
-    <div style={{width: '80rem', margin: '0 auto'}}>
+    <LayoutOverlay>
       {children()}
-    </div>
+    </LayoutOverlay>
+    <Footer/>
   </div>
 )
 

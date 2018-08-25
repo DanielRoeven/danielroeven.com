@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Hero = styled.div`
-	margin: 0 0 13rem;
+	margin: 6rem 0 13rem;
 
 	h2 {
 		padding: .7rem 0 .3rem;

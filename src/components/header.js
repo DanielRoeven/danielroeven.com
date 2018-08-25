@@ -32,11 +32,16 @@ const Nav = styled.nav`
   ol {
     display: flex;
     list-style: none;
+    margin: .9rem 0 0 1rem;
   }
 
   li {
-    margin: .9rem 0 0 1rem;
+    padding: 0 .5rem;
     height: 3rem;
+
+    &:last-child {
+      margin: 0 -.5rem 0 0;
+    };
   }
 
   a {
@@ -44,6 +49,7 @@ const Nav = styled.nav`
     font-weight: bold;
     font-size: 1.65625rem;
     line-height: 3rem;
+    text-transform: lowercase;
   }
 `
 

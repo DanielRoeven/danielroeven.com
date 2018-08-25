@@ -11,6 +11,7 @@ const PortfolioCardLargeStatusTable = styled.div`
 	margin: 0 0 17rem;
 	border-radius: 2px;
 	position: relative;
+	box-shadow: 0 .0625rem .375rem 0 rgba(26,67,106,0.25), 0 .75rem .75rem -.75rem rgba(26,67,106,0.25);
 `
 
 const TitleCard = styled.div`
@@ -22,6 +23,7 @@ const TitleCard = styled.div`
 	padding: 1rem;
 	border-radius: 2px;
 	backdrop-filter: blur(8px);
+	box-shadow: 0 .125rem .5rem 0 rgba(26,67,106,0.25), 0 1rem 1rem -1rem rgba(26,67,106,0.25);
 
 	h3 {
 		font-size: 2.5rem;
@@ -39,6 +41,7 @@ const SkillsCard = styled.div`
 	bottom: -1rem;
 	right: -1rem;
 	border-radius: 2px;
+	box-shadow: 0 .125rem .25rem 0 rgba(26,67,106,0.25), 0 .5rem .5rem -.5rem rgba(26,67,106,0.25);
 
 	ol {
 		list-style: none;
@@ -66,7 +69,7 @@ const SkillsCard = styled.div`
 export default () => (
   <PortfolioCardLargeStatusTable>
   	<TitleCard>
-  		<h3>Portal for RCSW</h3>
+  		<h3>Tangible Office Planner</h3>
   	</TitleCard>
   	<SkillsCard>
   		<ol>
