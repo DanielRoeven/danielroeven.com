@@ -2,22 +2,53 @@ import React from 'react'
 import styled from 'styled-components'
 
 import PageWrapper from '../components/PageWrapper'
-import Hero from '../components/Hero'
-import PortfolioCardLargeRCSW from '../components/PortfolioCardLargeRCSW'
-import PortfolioCardLargeStatusTable from '../components/PortfolioCardLargeStatusTable'
-import PortfolioCardLargeSmarthome from '../components/PortfolioCardLargeSmarthome'
+
+import Hero from '../components/logic/Hero'
+import Emph from '../components/style/Em'
+
+import PortfolioCardLarge from '../components/logic/PortfolioCardLarge.js'
+import RcswImage from './img/rcsw-mobile-3x.jpg'
+import TangibleImage from './img/src-screengrab-3x.jpg'
+import SmarthomeImage from './img/smarthome-1-3x.png'
+
+import CTAWrapper from '../components/style/CTAWrapper'
+import CTAItem from '../components/logic/CTAItem'
+
 import InternalLink from '../components/InternalLink'
 
 export default () => (
   <PageWrapper>
-  	<Hero/>
-    <PortfolioCardLargeRCSW/>
-    <PortfolioCardLargeStatusTable/>
-    <PortfolioCardLargeSmarthome/>
-    <div style={{marginBottom: '13rem'}}>
-      <InternalLink type="portfolio">portfolio</InternalLink>
-      <InternalLink type="bio">bio</InternalLink>
-      <InternalLink type="contact">hi</InternalLink>
-    </div>
+  	<Hero first="Hi there! I’m Daniel, an"
+          em="interaction designer"
+          last="passionate about making technology beautiful and empowering."/>
+    <PortfolioCardLarge title="Portal for RCSW"
+                        description="Creating a web portal that's clear and beautiful for Radboud Center for Social Sciences."
+                        image={RcswImage}
+                        skills={['Interaction Design', 'Visual Design', 'Front-End Development']}
+                        primaryColor="light-blue"
+                        secondaryColor="dark-blue"/>
+    <PortfolioCardLarge title="Tangible Office Planner"
+                        description="An exploration in tangible interaction: a tabletop interface to share and view office calendars, while giving the users embodied sense of privacy."
+                        image={TangibleImage}
+                        skills={['Interaction Design', 'Prototyping']}
+                        primaryColor="yellow"
+                        secondaryColor="brown"/>
+    <PortfolioCardLarge title="Smart Home Redesign"
+                            description="Reimagining the smart home: stimulating the user to reflect through beautiful interactions."
+                            image={SmarthomeImage}
+                            skills={['UX Design', 'Interaction Design', 'Prototyping']}
+                            primaryColor="blue"
+                            secondaryColor="blue"/>
+    <CTAWrapper>
+      <CTAItem  text="See my full"
+                link="portfolio"
+                type="portfolio"/>
+      <CTAItem  text="Check my"
+                link="bio"
+                type="bio"/>
+      <CTAItem  text="Or say"
+                link="hi!"
+                type="contact"/>
+    </CTAWrapper>
   </PageWrapper>
 )
