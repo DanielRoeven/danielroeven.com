@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import LayoutImage from './img/layout.png'
 
-const showOverlay = false
+const showOverlay = true
 
 const LayoutOverlay = styled.div`
 	background-image: url(${showOverlay ? LayoutImage : 0});

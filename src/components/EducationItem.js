@@ -20,7 +20,7 @@ const Program = styled.h4`
 
 const Time = styled.span`
 	font-size: 0.855943153rem;
-	font-weight: bold;
+	font-weight: normal;
 	color: hsla(209, 61%, 26%, 1);
 	text-transform: uppercase;
 	padding: 1.7rem 0 0 0;

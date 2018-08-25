@@ -22,11 +22,11 @@ const Bio = styled.div`
 `
 
 const Avatar = styled.img`
-  width: 14rem;
-  height: 14rem;
+  width: 16rem;
+  height: 16rem;
   border: 1rem solid hsla(210, 25%, 98%, 1);
   align-self: center;
-  border-radius: 7rem;
+  border-radius: 8rem;
 `
 
 const ResumeBackground = styled.div`
@@ -50,7 +50,7 @@ const Resume = styled.div`
 `
 
 const H3 = styled.h3`
-  padding: 2.55rem 0 1.45rem;
+  padding: 3rem 0 1.45rem;
   line-height: 3rem;
   font-weight: bold;
   font-size: 2.5rem;
@@ -114,8 +114,7 @@ const H4 = styled.h4`
 
 const TriviaBackground = styled.div`
   margin-top: -7rem;
-  padding-top: 24rem;
-  height: 51rem;
+  height: 52rem;
   width: 100vw;
   align-self: center;
   background: radial-gradient(circle at bottom, hsla(209, 61%, 26%, 1), hsla(210, 58%, 09%, 1));
@@ -136,6 +135,7 @@ const H5 = styled.h5`
 `
 
 const Trivia = styled.div`
+  padding-top: 25rem;
   width: 80rem;
   display: flex;
   flex-direction: column;
@@ -144,6 +144,7 @@ const Trivia = styled.div`
 
 const TriviaItem = styled.div`
   width: 49.5rem;
+  padding-top: 1rem;
   display: flex;
 `
 
