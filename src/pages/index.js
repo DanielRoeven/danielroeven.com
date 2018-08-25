@@ -3,24 +3,28 @@ import styled from 'styled-components'
 
 import PageWrapper from '../components/PageWrapper'
 
-import Hero from '../components/logic/Hero'
-import Emph from '../components/style/Em'
+const HeroWrapper = styled.div`
+  margin: 6rem 0 13rem;
+`
+
+import H2 from '../components/style/H2'
 
 import PortfolioCardLarge from '../components/logic/PortfolioCardLarge.js'
 import RcswImage from './img/rcsw-mobile-3x.jpg'
 import TangibleImage from './img/src-screengrab-3x.jpg'
 import SmarthomeImage from './img/smarthome-1-3x.png'
 
-import CTAWrapper from '../components/style/CTAWrapper'
-import CTAItem from '../components/logic/CTAItem'
+const CTAWrapper = styled.div`
+  margin-bottom: 13rem;
+`
 
-import InternalLink from '../components/InternalLink'
+import CTAItem from '../components/logic/CTAItem'
 
 export default () => (
   <PageWrapper>
-  	<Hero first="Hi there! I’m Daniel, an"
-          em="interaction designer"
-          last="passionate about making technology beautiful and empowering."/>
+    <HeroWrapper>
+      <H2 hero>Hi there! I’m Daniel, an <em>interaction designer</em> passionate about making technology beautiful and empowering.</H2>
+    </HeroWrapper>
     <PortfolioCardLarge title="Portal for RCSW"
                         description="Creating a web portal that's clear and beautiful for Radboud Center for Social Sciences."
                         image={RcswImage}
