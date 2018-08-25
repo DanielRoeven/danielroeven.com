@@ -64,7 +64,7 @@ const ResumePDFLink = styled.a`
   line-height: 3rem;
   padding: 2.55rem .25rem 1.45rem;
   color: hsla(209, 21%, 63%, 1);
-  background-image: linear-gradient(transparent 4.75rem, hsla(209, 61%, 26%, 1) 4.75rem, hsla(209, 61%, 26%, 1) 5.25rem, transparent 5.25rem);
+  background-image: linear-gradient(transparent 4.75rem, hsla(190, 84%, 64%, 1) 4.75rem, hsla(190, 84%, 64%, 1) 5.25rem, transparent 5.25rem);
   width: 100%;
 
   img {
