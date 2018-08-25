@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import InternalLink from '../InternalLink'
-
 import PortfolioIcon from '../img/icons/portfolio.svg'
 import BioIcon from '../img/icons/bio.svg'
 import ContactIcon from '../img/icons/contact.svg'

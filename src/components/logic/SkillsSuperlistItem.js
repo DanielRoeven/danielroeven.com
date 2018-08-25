@@ -1,19 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const SkillsGroup = styled.li`
+const SkillsSuperlistItem = styled.li`
 	width: 19.25rem;
 `
 
-const Title = styled.h4`
-	font-size: 1.104166667rem;
-	font-weight: bold;
-	color: hsla(209, 61%, 26%, 1);
-	padding: 1.6rem 0 0 0;
-	line-height: 2rem;
-	width: 26rem;
-	margin: 0 1rem -.6rem 0;
-`
+import H5 from '../style/H5.js'
 
 const Skill = styled.li`
 	font-size: 1.104166667rem;
@@ -38,8 +30,8 @@ function makeSkillsListFor(skills) {
 }
 
 export default (props) => (
-  <SkillsGroup>
-  	<Title>{props.category}</Title>
+  <SkillsSuperlistItem>
+  	<H5>{props.category}</H5>
   	{makeSkillsListFor(props.skills)}
-  </SkillsGroup>
+  </SkillsSuperlistItem>
 )
