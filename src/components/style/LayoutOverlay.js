@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import LayoutImage from './img/layout.png'
+import LayoutImage from '../img/layout.png'
 
 const showOverlay = false
 

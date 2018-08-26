@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import PageWrapper from '../components/PageWrapper'
+import PageWrapper from '../components/style/PageWrapper'
 import H2 from '../components/style/H2'
 
 const Bio = styled.div`
@@ -128,7 +128,7 @@ const TriviaText = styled.p`
   width: 39.5rem;
 `
 
-import Footer from '../components/Footer'
+import Footer from '../components/style/Footer'
 
 export default () => (
   <PageWrapper>

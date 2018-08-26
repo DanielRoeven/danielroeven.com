@@ -1,12 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import PageWrapper from '../components/PageWrapper'
+import PageWrapper from '../components/style/PageWrapper'
 
 const HeroWrapper = styled.div`
   margin: 6rem 0 13rem;
 `
-
 import H2 from '../components/style/H2'
 
 import PortfolioCardLarge from '../components/logic/PortfolioCardLarge.js'
@@ -17,7 +16,6 @@ import SmarthomeImage from './img/smarthome-1-3x.png'
 const CTAWrapper = styled.div`
   margin-bottom: 13rem;
 `
-
 import CTAItem from '../components/logic/CTAItem'
 
 export default () => (

@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 
-import copyrightIcon from './img/icons/copyright.svg'
+import copyrightIcon from '../img/icons/copyright.svg'
 
 const Footer = styled.footer`
   width: 100vw;

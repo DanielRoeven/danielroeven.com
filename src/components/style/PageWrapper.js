@@ -7,8 +7,4 @@ const PageWrapper = styled.div`
   flex-direction: column;
 `
 
-export default (props) => (
-  <PageWrapper>
-  	{props.children}
-  </PageWrapper>
-)
+export default PageWrapper
