@@ -16,7 +16,7 @@ import SmarthomeImage from './img/smarthome-1-3x.png'
 const CTAWrapper = styled.div`
   margin-bottom: 13rem;
 `
-import CTAItem from '../components/logic/CTAItem'
+import LinkSentence from '../components/logic/LinkSentence'
 
 export default () => (
   <PageWrapper>
@@ -42,15 +42,18 @@ export default () => (
                             primaryColor="blue"
                             secondaryColor="blue"/>
     <CTAWrapper>
-      <CTAItem  text="See my full"
-                link="portfolio"
-                type="portfolio"/>
-      <CTAItem  text="Check my"
-                link="bio"
-                type="bio"/>
-      <CTAItem  text="Or say"
-                link="hi!"
-                type="contact"/>
+      <LinkSentence type="internal"
+                    text="See my full"
+                    link="portfolio"
+                    to="portfolio"/>
+      <LinkSentence type="internal"
+                    text="Check my"
+                    link="bio"
+                    to="about"/>
+      <LinkSentence type="internal"
+                    text="Or say"
+                    link="hi!"
+                    to="contact"/>
     </CTAWrapper>
   </PageWrapper>
 )

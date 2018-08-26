@@ -8,32 +8,32 @@ import H2 from '../components/style/H2'
 const CTAWrapper = styled.div`
   margin: 2rem 0 7rem 0;
 `
-import CTAItem from '../components/logic/CTAItem'
+import LinkSentence from '../components/logic/LinkSentence'
 
 export default () => (
   <PageWrapper>
     <H2>Get in touch</H2>
     <CTAWrapper>
-      <CTAItem  contactlink
-                text="Send me an"
-                link="email"
-                type="email"/>
-      <CTAItem  contactlink
-                text="Reach out on"
-                link="twitter"
-                type="twitter"/>
-      <CTAItem  contactlink
-                text="Find me on"
-                link="linked"
-                type="linkedin"/>
-      <CTAItem  contactlink
-                text="See what I'm building on"
-                link="github"
-                type="github"/>
-      <CTAItem  contactlink
-                text="Check me out on"
-                link="instagram"
-                type="instagram"/>
+      <LinkSentence type="external"
+                    text="Send me an"
+                    link="email"
+                    to="mailto:daniel@roeven.com"/>
+      <LinkSentence type="external"
+                    text="Reach out on"
+                    link="twitter"
+                    to="https://twitter.com/danielroeven"/>
+      <LinkSentence type="external"
+                    text="Find me on"
+                    link="linked"
+                    to="https://www.linkedin.com/in/daniel-roeven/"/>
+      <LinkSentence type="external"
+                    text="See what I'm building on"
+                    link="github"
+                    to="https://github.com/DanielRoeven/"/>
+      <LinkSentence type="external"
+                    text="Check me out on"
+                    link="instagram"
+                    to="https://www.instagram.com/danielroeven/"/>
     </CTAWrapper>
   </PageWrapper>
 )
