@@ -2,13 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 import prims from '../../Primitives'
 
-const PortfolioCardLarge = styled.div`
+const ContentCardSmall = styled.div`
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 
-	height: 40rem;
-	margin: 0 0 17rem;
-	width: 80rem;
+	height: 25rem;
+	margin: 0 0 5rem;
+	width: 39.5rem;
 
 	background-image: url(${props => props.image});
 	background-position: center center;
@@ -19,11 +19,11 @@ const PortfolioCardLarge = styled.div`
 `
 
 const TitleCard = styled.div`
-	align-self: flex-start;
+	align-self: flex-end;
 
 	padding: 1rem;
-	margin: -1rem 0  0 -1rem;
-	width: 28rem;
+	margin: 0 0 -1rem 0;
+	width: 37.5rem;
 
 	background-color: ${props => props.color}
 
@@ -38,6 +38,7 @@ const TitleCard = styled.div`
 
 		font-size: ${prims.fontsize.l};
 		line-height: 3rem;
+		text-align: center;
 		text-shadow: ${prims.shadows.text} ${prims.colors.blue.black.transparent_l};
 	}
 
@@ -52,52 +53,15 @@ const TitleCard = styled.div`
 	}
 `
 
-const SkillsCard = styled.div`
-	align-self: flex-end;
-	z-index: -1;
+// const makeSkillsListFor = function(skills){
+// 	const skillItems = skills.map((skill) =>
+// 		<li key={skill}>{skill}</li>
+// 	)
 
-	height: 9rem;
-	margin: 0 -1rem -3rem 0;
-
-	background-color: ${props => props.color};
-
-	border-radius: 2px;
-	box-shadow: ${prims.glow.xs} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.xs} ${prims.colors.blue.dark.transparent_l};
-
-	ol {
-		display: flex;
-
-		padding: 6.6rem 1rem 0;
-
-		list-style: none;
-	}
-
-	li {
-		margin-right: 1rem;
-
-		color: ${prims.colors.blue.white.opaque};
-
-		font-size: ${prims.fontsize.m_uppercase};
-		font-weight: bold;
-		letter-spacing: .05rem;
-		text-shadow: ${prims.shadows.text} ${prims.colors.blue.black.transparent_l};
-		text-transform: uppercase;
-
-		&:last-child {
-			margin: 0;
-		};
-	}
-`
-
-const makeSkillsListFor = function(skills){
-	const skillItems = skills.map((skill) =>
-		<li key={skill}>{skill}</li>
-	)
-
-	return (
-		<ol>{skillItems}</ol>
-	)
-}
+// 	return (
+// 		<ol>{skillItems}</ol>
+// 	)
+// }
 
 const getColorValueFor= function(color) {
 	switch(color) {
@@ -122,13 +86,10 @@ const getColorValueFor= function(color) {
 }
 
 export default (props) => (
-  <PortfolioCardLarge image={props.image}>
+  <ContentCardSmall image={props.image}>
   	<TitleCard color={getColorValueFor(props.primaryColor)}>
   		<h3>{props.title}</h3>
-  		<p>{props.description}</p>
+  		{/*<p>{props.description}</p>*/}
   	</TitleCard>
-  	<SkillsCard color={getColorValueFor(props.secondaryColor)}>
-  		{makeSkillsListFor(props.skills)}
-  	</SkillsCard>
-  </PortfolioCardLarge>
+  </ContentCardSmall>
 )
