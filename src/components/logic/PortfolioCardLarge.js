@@ -53,21 +53,27 @@ const TitleCard = styled.div`
 `
 
 const SkillsCard = styled.div`
-	align-self: flex-end;
+	display: flex;
+	align-items: flex-end;;
+	
 	z-index: -1;
 
-	height: 9rem;
-	margin: 0 -1rem -3rem 0;
+	height: 7rem;
+	margin: 34rem -1rem -3rem 0;
 
 	background-color: ${props => props.color};
 
 	border-radius: 2px;
 	box-shadow: ${prims.glow.xs} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.xs} ${prims.colors.blue.dark.transparent_l};
 
+    transition-property: height;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+
 	ol {
 		display: flex;
 
-		padding: 6.6rem 1rem 0;
+		padding: 0 1rem .75rem 0;
 
 		list-style: none;
 	}
