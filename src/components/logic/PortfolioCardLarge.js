@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import prims from '../../Primitives'
 
-const PortfolioCardLarge = styled.div`
+const PortfolioCardLargeTemplate = styled.div`
 	display: flex;
 	justify-content: space-between;
 
@@ -52,48 +52,7 @@ const TitleCard = styled.div`
 	}
 `
 
-const SkillsCard = styled.div`
-	display: flex;
-	align-items: flex-end;;
-	
-	z-index: -1;
-
-	height: 7rem;
-	margin: 34rem -1rem -3rem 0;
-
-	background-color: ${props => props.color};
-
-	border-radius: 2px;
-	box-shadow: ${prims.glow.xs} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.xs} ${prims.colors.blue.dark.transparent_l};
-
-    transition-property: height;
-    transition-duration: .5s;
-    transition-timing-function: ease;
-
-	ol {
-		display: flex;
-
-		padding: 0 1rem .75rem 0;
-
-		list-style: none;
-	}
-
-	li {
-		margin-right: 1rem;
-
-		color: ${prims.colors.blue.white.opaque};
-
-		font-size: ${prims.fontsize.m_uppercase};
-		font-weight: bold;
-		letter-spacing: .05rem;
-		text-shadow: ${prims.shadows.text} ${prims.colors.blue.black.transparent_l};
-		text-transform: uppercase;
-
-		&:last-child {
-			margin: 0;
-		};
-	}
-`
+import SkillsCard from './SkillsCard'
 
 const makeSkillsListFor = function(skills){
 	const skillItems = skills.map((skill) =>
@@ -127,14 +86,29 @@ const getColorValueFor= function(color) {
 	}
 }
 
-export default (props) => (
-  <PortfolioCardLarge image={props.image}>
-  	<TitleCard color={getColorValueFor(props.primaryColor)}>
-  		<h3>{props.title}</h3>
-  		<p>{props.description}</p>
-  	</TitleCard>
-  	<SkillsCard color={getColorValueFor(props.secondaryColor)}>
-  		{makeSkillsListFor(props.skills)}
-  	</SkillsCard>
-  </PortfolioCardLarge>
-)
+class PortfolioCardLarge extends React.Component {
+	constructor() {
+		super()
+		this.state={
+			hover: false
+		}
+	}
+
+	render() {
+		return (
+			<PortfolioCardLargeTemplate image={this.props.image}
+										onMouseEnter={() => this.setState({hover: true})}
+										onMouseLeave={() => this.setState({hover: false})}>
+				<TitleCard color={getColorValueFor(this.props.primaryColor)}>
+					<h3>{this.props.title}</h3>
+					<p>{this.props.description}</p>
+				</TitleCard>
+				<SkillsCard hover={this.state.hover} color={getColorValueFor(this.props.secondaryColor)}>
+					{makeSkillsListFor(this.props.skills)}
+				</SkillsCard>
+			</PortfolioCardLargeTemplate>
+		)
+	}
+}
+
+export default PortfolioCardLarge
