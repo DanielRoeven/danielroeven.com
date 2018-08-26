@@ -18,40 +18,7 @@ const PortfolioCardLargeTemplate = styled.div`
 	box-shadow: ${prims.glow.s} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.s} ${prims.colors.blue.dark.transparent_l};
 `
 
-const TitleCard = styled.div`
-	align-self: flex-start;
-
-	padding: 1rem;
-	margin: -1rem 0  0 -1rem;
-	width: 28rem;
-
-	background-color: ${props => props.color}
-
-	backdrop-filter: blur(.5rem);
-	border-radius: 2px;
-	box-shadow: ${prims.glow.m} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.m} ${prims.colors.blue.dark.transparent_l};
-
-	h3 {
-		margin: .5rem 0 0;
-
-		color: ${prims.colors.blue.white.opaque};
-
-		font-size: ${prims.fontsize.l};
-		line-height: 3rem;
-		text-shadow: ${prims.shadows.text} ${prims.colors.blue.black.transparent_l};
-	}
-
-	p {
-		margin: .4rem 0 .1rem;
-
-		color: ${prims.colors.blue.white.opaque};
-
-		font-size: ${prims.fontsize.m};
-		line-height: 3rem;
-		text-shadow: ${prims.shadows.text} ${prims.colors.blue.black.transparent_l};
-	}
-`
-
+import TitleCard from './TitleCard'
 import SkillsCard from './SkillsCard'
 
 const makeSkillsListFor = function(skills){
@@ -76,7 +43,7 @@ const getColorValueFor= function(color) {
 			return 'hsla(209, 61%, 26%, .8);'
 			break
 		case 'yellow':
-			return 'hsla(47, 98%, 68%, 0.9);'
+			return 'hsla(47, 98%, 50%, 0.9);'
 			break
 		case 'brown':
 			return 'hsla(29, 63%, 30%, 0.9);'
@@ -99,7 +66,7 @@ class PortfolioCardLarge extends React.Component {
 			<PortfolioCardLargeTemplate image={this.props.image}
 										onMouseEnter={() => this.setState({hover: true})}
 										onMouseLeave={() => this.setState({hover: false})}>
-				<TitleCard color={getColorValueFor(this.props.primaryColor)}>
+				<TitleCard hover={this.state.hover}color={getColorValueFor(this.props.primaryColor)}>
 					<h3>{this.props.title}</h3>
 					<p>{this.props.description}</p>
 				</TitleCard>

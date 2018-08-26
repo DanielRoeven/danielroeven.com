@@ -19,7 +19,7 @@ export default {
 			},
 			black: {
 				opaque: 'hsla(210, 58%, 09%, 1)',
-				transparent_l: 'hsla(210, 58%, 09%, .25)',
+				transparent_l: 'hsla(210, 58%, 09%, .5)',
 			},
 			gray: 'hsla(209, 21%, 63%, 1)',
 		},
