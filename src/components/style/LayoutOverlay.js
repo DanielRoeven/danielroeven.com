@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import LayoutImage from '../img/layout.png'
 
-const showOverlay = true
+const showOverlay = false
 
 const LayoutOverlay = styled.div`
 	margin: 0 auto;

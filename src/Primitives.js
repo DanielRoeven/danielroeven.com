@@ -23,6 +23,17 @@ export default {
 			},
 			gray: 'hsla(209, 21%, 63%, 1)',
 		},
+		orange: {
+			yellow: {
+				opaque: 'hsl(47, 98%, 68%)',
+			},
+			medium: {
+				opaque: 'hsla(29, 97%, 61%, 1)',
+			},
+			brown: {
+				opaque: 'hsla(29, 63%, 30%, 1)',
+			},
+		},
 	},
 	fontsize: {
 		xl: '3.4375rem',

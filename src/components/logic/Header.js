@@ -31,6 +31,31 @@ const H1 = styled.h1`
 
   font-size: ${prims.fontsize.m};
   line-height: 3rem;
+
+  a {
+    display: block;
+
+    height: 3rem;
+    padding: 0 .3rem;
+    margin: 0 -.3rem;
+
+    color: ${prims.colors.blue.dark.opaque};
+
+    background-image: linear-gradient(transparent 1.9rem, ${prims.colors.blue.lighter} 1.9rem, ${prims.colors.blue.lighter} 2.4rem, transparent 2.4rem);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+
+    text-decoration: none;
+
+    transition-property: background-size;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+
+    &:hover {
+      background-size: 100% 100%;
+    };
+  }
 `
 
 const Nav = styled.nav`
@@ -42,41 +67,63 @@ const Nav = styled.nav`
   }
 
   li {
-    height: 3rem;
-    padding: 0 .5rem;
+    padding: 0 .2rem;
 
     &:last-child {
       margin: 0 -.5rem 0 0;
-    };
+    };    
   }
 
   a {
+    display: block;
+
+    height: 3rem;
+    padding: 0 .3rem;
+
     color: ${prims.colors.blue.dark.opaque};
+
+    background-image: linear-gradient(transparent 1.9rem, ${prims.colors.blue.lighter} 1.9rem, ${prims.colors.blue.lighter} 2.4rem, transparent 2.4rem);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
 
     font-size: ${prims.fontsize.m};
     font-weight: bold;
     line-height: 3rem;
+    text-decoration: none;
     text-transform: lowercase;
+
+    transition-property: background-size;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+
+    &:hover {
+      background-size: 100% 100%;
+    };
   }
 `
+
+const linkActiveStyle = {
+  backgroundSize: '100% 100%'
+}
 
 export default () => (
   <Header>
     <Container>
-      <H1>Daniel Roeven</H1>
+      <H1><Link to="/">Daniel Roeven</Link></H1>
       <Nav>
         <ol>
           <li>
-            <a>About</a>
+            <Link to="about" activeStyle={linkActiveStyle}>About</Link>
           </li>
           <li>
-            <a>Portfolio</a>
+            <Link to="portfolio" activeStyle={linkActiveStyle}>Portfolio</Link>
           </li>
           <li>
-            <a>Case Studies</a>
+            <Link to="case-studies" activeStyle={linkActiveStyle}>Case Studies</Link>
           </li>
           <li>
-            <a>Contact</a>
+            <Link to="contact" activeStyle={linkActiveStyle}>Contact</Link>
           </li>
         </ol>
       </Nav>
