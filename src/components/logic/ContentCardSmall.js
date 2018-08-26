@@ -6,7 +6,7 @@ const ContentCardSmall = styled.div`
 	display: flex;
 	justify-content: center;
 
-	height: 25rem;
+	height: 22rem;
 	margin: 0 0 5rem;
 	width: 39.5rem;
 
@@ -22,7 +22,7 @@ const TitleCard = styled.div`
 	align-self: flex-end;
 
 	padding: 1rem;
-	margin: 0 0 -1rem 0;
+	margin: 0 0 -2rem 0;
 	width: 37.5rem;
 
 	background-color: ${props => props.color}
@@ -32,7 +32,7 @@ const TitleCard = styled.div`
 	box-shadow: ${prims.glow.m} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.m} ${prims.colors.blue.dark.transparent_l};
 
 	h3 {
-		margin: .5rem 0 0;
+		margin: .55rem 0 .3rem;
 
 		color: ${prims.colors.blue.white.opaque};
 
@@ -43,13 +43,27 @@ const TitleCard = styled.div`
 	}
 
 	p {
-		margin: .4rem 0 .1rem;
+		margin: .15rem 0;
 
 		color: ${prims.colors.blue.white.opaque};
 
 		font-size: ${prims.fontsize.m};
 		line-height: 3rem;
 		text-shadow: ${prims.shadows.text} ${prims.colors.blue.black.transparent_l};
+		text-align: center;
+	}
+
+	a {
+		display: block;
+
+		color: ${prims.colors.blue.white.opaque};
+
+		font-size: ${prims.fontsize.m_uppercase};
+		font-weight: bold;
+		line-height: 3rem;
+		text-align: center;
+		text-shadow: ${prims.shadows.text} ${prims.colors.blue.black.transparent_l};
+		text-transform: uppercase;
 	}
 `
 
@@ -89,7 +103,8 @@ export default (props) => (
   <ContentCardSmall image={props.image}>
   	<TitleCard color={getColorValueFor(props.primaryColor)}>
   		<h3>{props.title}</h3>
-  		{/*<p>{props.description}</p>*/}
+  		<p>{props.description}</p>
+  		<a>Read Case Study</a>
   	</TitleCard>
   </ContentCardSmall>
 )
