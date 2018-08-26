@@ -3,12 +3,9 @@ import styled from 'styled-components'
 import prims from '../../Primitives'
 
 const SkillsCard = styled.div`
-	display: flex;
-	align-items: flex-end;;
-	
 	z-index: -1;
 
-	height: ${props => props.hover ? '9rem' : '7rem'};
+	height: 9rem;
 	margin: 34rem -1rem -3rem 0;
 
 	background-color: ${props => props.color};
@@ -16,14 +13,16 @@ const SkillsCard = styled.div`
 	border-radius: 2px;
 	box-shadow: ${prims.glow.xs} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.xs} ${prims.colors.blue.dark.transparent_l};
 
-    transition-property: height;
+	transform: translateY(${props => props.hover ? '0' : '-2rem'});
+
+    transition-property: transform;
     transition-duration: .5s;
     transition-timing-function: ease;
 
 	ol {
 		display: flex;
 
-		padding: 0 1rem .75rem;
+		padding: 6.6rem 1rem .75rem;
 
 		list-style: none;
 	}
