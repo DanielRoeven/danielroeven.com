@@ -17,7 +17,7 @@ const PortfolioCardLarge = styled.div`
 	background-size: cover;
 
 	border-radius: 2px;
-	box-shadow: ${prims.shadows.xs} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.s} ${prims.colors.blue.dark.transparent_l};
+	box-shadow: ${prims.glow.s} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.s} ${prims.colors.blue.dark.transparent_l};
 `
 
 const TitleCard = styled.div`
@@ -31,7 +31,7 @@ const TitleCard = styled.div`
 
 	backdrop-filter: blur(.5rem);
 	border-radius: 2px;
-	box-shadow: ${prims.shadows.s} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.m} ${prims.colors.blue.dark.transparent_l};
+	box-shadow: ${prims.glow.m} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.m} ${prims.colors.blue.dark.transparent_l};
 
 	h3 {
 		margin: .5rem 0 0;
@@ -40,17 +40,17 @@ const TitleCard = styled.div`
 
 		font-size: ${prims.fontsize.l};
 		line-height: 3rem;
-		text-shadow: ${prims.shadows.text} ${prims.colors.blue.black};
+		text-shadow: ${prims.shadows.text} ${prims.colors.blue.black.transparent_l};
 	}
 
 	p {
 		margin: .4rem 0 .1rem;
 
-		color: hsla(210, 25%, 98%, 1);
+		color: ${prims.colors.blue.white.opaque};
 
 		font-size: ${prims.fontsize.m};
 		line-height: 3rem;
-		text-shadow: ${prims.shadows.text} ${prims.colors.blue.black};
+		text-shadow: ${prims.shadows.text} ${prims.colors.blue.black.transparent_l};
 	}
 `
 
@@ -64,7 +64,7 @@ const SkillsCard = styled.div`
 	background-color: ${props => props.color};
 
 	border-radius: 2px;
-	box-shadow: ${prims.shadows.xxs} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.xs} ${prims.colors.blue.dark.transparent_l};
+	box-shadow: ${prims.glow.xs} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.xs} ${prims.colors.blue.dark.transparent_l};
 
 	ol {
 		display: flex;
@@ -82,7 +82,7 @@ const SkillsCard = styled.div`
 		font-size: ${prims.fontsize.m_uppercase};
 		font-weight: bold;
 		letter-spacing: .05rem;
-		text-shadow: ${prims.shadows.text} ${prims.colors.blue.black};
+		text-shadow: ${prims.shadows.text} ${prims.colors.blue.black.transparent_l};
 		text-transform: uppercase;
 
 		&:last-child {

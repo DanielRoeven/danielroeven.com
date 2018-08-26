@@ -5,6 +5,8 @@ export default {
 				opaque: 'hsla(210, 25%, 98%, 1)',
 				transparent_s: 'hsla(210, 25%, 98%, 0.9)',
 			},
+			lightest: 'hsla(191, 83%, 91%, 1)',
+			lighter: 'hsla(190, 83%, 82%, 1)',
 			light: 'hsla(190, 84%, 64%, 1)',
 			medium: {
 				opaque: 'hsla(209, 65%, 52%, 1)',
@@ -15,7 +17,10 @@ export default {
 				transparent_xl: 'hsla(209, 61%, 26%, .1)',
 				transparent_xxl: 'hsla(209, 61%, 26%, .025)',
 			},
-			black: 'hsla(210, 58%, 09%, .25)',
+			black: {
+				opaque: 'hsla(210, 58%, 09%, 1)',
+				transparent_l: 'hsla(210, 58%, 09%, .25)',
+			},
 			gray: 'hsla(209, 21%, 63%, 1)',
 		},
 	},
@@ -36,4 +41,9 @@ export default {
 		xxxs: '0 .25rem .25rem -.25rem',
 		text: '0 0 2px',
 	},
+	glow: {
+		m: '0 .125rem .5rem 0',
+		s: '0 .09375rem .375rem 0',
+		xs: '0 .0625rem .25rem 0',
+	}
 }

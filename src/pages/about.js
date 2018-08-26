@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import prims from '../Primitives'
 
 import PageWrapper from '../components/style/PageWrapper'
 import H2 from '../components/style/H2'
@@ -14,118 +15,132 @@ const HalfColumn = styled.div`
 `
 import PMedium from '../components/style/PMedium'
 const Avatar = styled.img`
-  width: 16rem;
-  height: 16rem;
-  border: 1rem solid hsla(210, 25%, 98%, 1);
   align-self: center;
+  height: 16rem;
+  width: 16rem;
+  
+  border: 1rem solid ${prims.colors.blue.white.transparent};
   border-radius: 8rem;
 `
 import Headshot from '../components/img/headshot.jpg'
 
 const ResumeBackground = styled.div`
-  margin-top: -7rem;
-  padding-top: 7rem;
-  height: 81rem;
-  width: 100vw;
   align-self: center;
-  background: radial-gradient(circle at top, hsla(191, 83%, 91%, 1), hsla(190, 83%, 82%, 1));
   display: flex;
+  height: 81rem;
   justify-content: center;
+  margin: -7rem 0 0 0;
+  padding: 7rem 0 0 0;
+  width: 100vw;
   z-index: -1;
+
+  background: radial-gradient(circle at top, ${prims.colors.blue.lightest}, ${prims.colors.blue.lighter});
 `
 const Resume = styled.div`
-  width: 80rem;
-  display: flex;
-  flex-flow: row wrap;
   align-content: flex-start;
   align-items: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+  width: 80rem;
 `
 import H3 from '../components/style/H3'
 import pdfIcon from '../components/img/icons/pdf.svg'
 const EducationCard = styled.div`
-  background: rgba(250,251,252, 1);
-  box-shadow: 0 0 8px 0 rgba(26,67,106,0.25), 0 32px 32px -32px rgba(26,67,106,0.25);
-  width: 40.5rem;
   margin: 0 1rem 0 -1rem;
   padding: 1rem;
+  width: 40.5rem;
+
+  background: ${prims.colors.blue.white.opaque};
+  
   border-radius: 2px;
+  box-shadow: ${prims.glow.m} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.l} ${prims.colors.blue.dark.transparent_l};
 `
 import H4 from '../components/style/H4'
 import HistoryItem from '../components/logic/HistoryItem'
 const WorkCard = styled.div`
-  background: rgba(250,251,252, 1);
-  box-shadow: 0 0 8px 0 rgba(26,67,106,0.25), 0 32px 32px -32px rgba(26,67,106,0.25);
-  width: 40.5rem;
   margin: 0 -1rem 1rem 0;
   padding: 1rem;
+  width: 40.5rem;
+
+  background: ${prims.colors.blue.white.opaque};
+
   border-radius: 2px;
+  box-shadow: ${prims.glow.m} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.l} ${prims.colors.blue.dark.transparent_l};
 `
 const SkillsCard = styled.div`
-  background: rgba(250,251,252, 1);
-  box-shadow: 0 0 8px 0 rgba(26,67,106,0.25), 0 32px 32px -32px rgba(26,67,106,0.25);
-  width: 82rem;
   margin: 0 -1rem 0 -1rem;
   padding: 1rem;
+  width: 82rem;
+
+  background: ${prims.colors.blue.white.opaque};
+  
   border-radius: 2px;
+  box-shadow: ${prims.glow.m} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.l} ${prims.colors.blue.dark.transparent_l};
 `
 const SkillsSuperlist = styled.ol`
-  list-style-type: none;
   display: flex;
   justify-content: space-between;
+  
+  list-style-type: none;
 `
 import SkillsSuperlistItem from '../components/logic/SkillsSuperlistItem'
 
 const TriviaBackground = styled.div`
-  margin-top: -7rem;
-  height: 52rem;
-  width: 100vw;
   align-self: center;
-  background: radial-gradient(circle at bottom, hsla(209, 61%, 26%, 1), hsla(210, 58%, 09%, 1));
   display: flex;
+  height: 52rem;
   justify-content: center;
+  margin: -7rem 0 0 0;
+  width: 100vw;
   z-index: -2;
+
+  background: radial-gradient(circle at bottom, ${prims.colors.blue.dark.opaque}, ${prims.colors.blue.black.opaque});
 `
 const TriviaTitle = styled.h5`
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: hsla(210, 25%, 98%, 1);
-  padding: 1.6rem 1rem 0;
-  line-height: 3rem;
-  width: 41.5rem;
   height: 6rem;
-  background-image: linear-gradient(transparent 61%, hsla(209, 21%, 63%, 1) 61%, hsla(209, 21%, 63%, 1) 74%, transparent 74%);
+  padding: 1.6rem 1rem 0;
+  width: 41.5rem;
+
+  color: ${prims.colors.blue.white.opaque};
+  background-image: linear-gradient(transparent 61%, ${prims.colors.blue.gray} 61%, ${prims.colors.blue.gray} 74%, transparent 74%);
+
+  font-size: ${prims.fontsize.l};
+  font-weight: bold;
+  line-height: 3rem;
 `
 const Trivia = styled.div`
-  padding-top: 25rem;
-  width: 80rem;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding-top: 25rem;
+  width: 80rem;
 `
 const TriviaItem = styled.div`
-  width: 49.5rem;
-  padding-top: 1rem;
   display: flex;
+  padding-top: 1rem;
+  width: 49.5rem;
 `
 import CaretIcon from '../components/img/icons/caret.svg'
 const TriviaButton = styled.button`
-  width: 4rem;
   height: 4rem;
-  margin-top: 3rem;
-  margin-right: ${props => props.previous ? '1rem;' : null};
-  margin-left: ${props => props.next ? '1rem;' : null};
+  width: 4rem;
+  margin: 3rem ${props => props.previous ? '1rem;' : null} 0 ${props => props.next ? '1rem;' : null};
+
   background-color: transparent;
-  border: none;
   background-image: url(${CaretIcon});
   background-size: 4rem 4rem;
+
+  border: none;
   transform: ${props => props.next ? null : 'scaleX(-1);'};
 `
 const TriviaText = styled.p`
-  font-size: 1.65625rem;
-  color: hsla(210, 25%, 98%, 1);
   padding: 0.85rem 0 .65rem 0;
-  line-height: 3rem;
   width: 39.5rem;
+
+  color: ${prims.colors.blue.white.opaque};
+  
+  font-size: ${prims.fontsize.m};
+  line-height: 3rem;
 `
 
 import Footer from '../components/style/Footer'
