@@ -17,23 +17,23 @@ export default () => (
       <LinkSentence type="external"
                     text="Send me an"
                     link="email"
-                    to="/"/>
+                    to="mailto:daniel@roeven.com"/>
       <LinkSentence type="external"
                     text="Reach out on"
                     link="twitter"
-                    to="/"/>
+                    to="https://twitter.com/danielroeven"/>
       <LinkSentence type="external"
                     text="Find me on"
                     link="linked"
-                    to="/"/>
+                    to="https://www.linkedin.com/in/daniel-roeven/"/>
       <LinkSentence type="external"
                     text="See what I'm building on"
                     link="github"
-                    to="/"/>
+                    to="https://github.com/DanielRoeven/"/>
       <LinkSentence type="external"
                     text="Check me out on"
                     link="instagram"
-                    to="/"/>
+                    to="https://www.instagram.com/danielroeven/"/>
     </CTAWrapper>
   </PageWrapper>
 )

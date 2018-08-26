@@ -100,7 +100,7 @@ const makeLinkFor = function(type, link, to) {
 	}
 	else if (type == 'external') {
 		return (
-			<a>{link}<img src={icon}/></a>
+			<a href={to} target="_blank">{link}<img src={icon}/></a>
 		)		
 	}
 	else {
