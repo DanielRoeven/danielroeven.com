@@ -19,7 +19,7 @@ const Avatar = styled.img`
   height: 16rem;
   width: 16rem;
   
-  border: 1rem solid ${prims.colors.blue.white.transparent};
+  border: 1rem solid ${prims.colors.blue.white.opaque};
   border-radius: 8rem;
 `
 import Headshot from '../components/img/headshot.jpg'

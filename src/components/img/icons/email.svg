@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Primitives / Icons / Email</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M22.7,1.2 C22.4802195,0.980219523 22.1468862,0.94688619 21.7,1.1 L1.7,8.1 C1.3,8.2 1,8.5 1,9 C1,9.4 1.2,9.8 1.6,10 L10.2,13.8 L14,22.4 C14.2,22.8 14.5,23 14.9,23 C15.3,23 15.7,22.7 15.8,22.3 L22.8,2.3 C22.9531138,1.78644714 22.9197805,1.41978048 22.7,1.2 Z M18.2,4.4 L10.8,11.8 L4.7,9.1 L18.2,4.4 Z M14.9,19.3 L12.2,13.2 L19.6,5.8 L14.9,19.3 Z" id="path-1"></path>
+    </defs>
+    <g id="Primitives-/-Icons-/-Email" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Shape" fill="#1A436A" fill-rule="nonzero" xlink:href="#path-1"></use>
+    </g>
+</svg>

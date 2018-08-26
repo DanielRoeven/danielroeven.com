@@ -5,11 +5,16 @@ import prims from '../../Primitives'
 import PortfolioIcon from '../img/icons/portfolio.svg'
 import BioIcon from '../img/icons/bio.svg'
 import ContactIcon from '../img/icons/contact.svg'
+import EmailIcon from'../img/icons/email.svg'
+import TwitterIcon from'../img/icons/twitter.svg'
+import LinkedInIcon from'../img/icons/linkedin.svg'
+import GitHubIcon from'../img/icons/github.svg'
+import InstagramIcon from'../img/icons/instagram.svg'
 
 const CTAItem = styled.p`
 	display: flex;
 	height: 6rem;
-	justify-content: center;
+	justify-content: ${props => props.contactlink ? 'flex-start;' : 'center;'};
 	margin: 0 0 0;
 	padding: .7rem 0 0;
 
@@ -51,13 +56,28 @@ const getIconForType = function(type) {
 		case 'contact':
 			return ContactIcon
 			break
+		case 'email':
+			return EmailIcon
+			break
+		case 'twitter':
+			return TwitterIcon
+			break
+		case 'linkedin':
+			return LinkedInIcon
+			break
+		case 'github':
+			return GitHubIcon
+			break
+		case 'instagram':
+			return InstagramIcon
+			break
 		default:
 			throw 'Invalid icon type for CTAItem'
 	}
 }
 
 export default (props) => (
-  <CTAItem>
+  <CTAItem contactlink={props.contactlink}>
   	{props.text} <a>{props.link}<img src={getIconForType(props.type)}/></a>
   </CTAItem>
 )
