@@ -1,79 +1,94 @@
 import React from 'react'
 import styled from 'styled-components'
+import prims from '../../Primitives'
 
 import rcsw from '../../pages/img/rcsw-mobile-3x.jpg'
 
 const PortfolioCardLarge = styled.div`
+	display: flex;
+	justify-content: space-between;
+
 	height: 40rem;
-	width: 80rem;
-	background-size: cover;
-	background-position: center center;
-	background-image: url(${props => props.image});
-	background-color: hsla(209, 61%, 26%, 1);
 	margin: 0 0 17rem;
+	width: 80rem;
+
+	background-image: url(${props => props.image});
+	background-position: center center;
+	background-size: cover;
+
 	border-radius: 2px;
-	position: relative;
-	box-shadow: 0 .0625rem .375rem 0 rgba(26,67,106,0.25), 0 .75rem .75rem -.75rem rgba(26,67,106,0.25);
+	box-shadow: ${prims.shadows.xs} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.s} ${prims.colors.blue.dark.transparent_l};
 `
 
 const TitleCard = styled.div`
-	background-color: ${props => props.color}
-	width: 28rem;
-	position: relative;
-	top: -1rem;
-	left: -1rem;
+	align-self: flex-start;
+
 	padding: 1rem;
+	margin: -1rem 0  0 -1rem;
+	width: 28rem;
+
+	background-color: ${props => props.color}
+
+	backdrop-filter: blur(.5rem);
 	border-radius: 2px;
-	backdrop-filter: blur(8px);
-	box-shadow: 0 .125rem .5rem 0 rgba(26,67,106,0.25), 0 1rem 1rem -1rem rgba(26,67,106,0.25);
+	box-shadow: ${prims.shadows.s} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.m} ${prims.colors.blue.dark.transparent_l};
 
 	h3 {
-		font-size: 2.5rem;
-		line-height: 3rem;
 		margin: .5rem 0 0;
-		color: hsla(210, 25%, 98%, 1);
-		text-shadow: 0 0 2px hsla(210, 58%, 09%, .25);
+
+		color: ${prims.colors.blue.white.opaque};
+
+		font-size: ${prims.fontsize.l};
+		line-height: 3rem;
+		text-shadow: ${prims.shadows.text} ${prims.colors.blue.black};
 	}
 
 	p {
-		font-size: 1.65625rem;
-		line-height: 3rem;
 		margin: .4rem 0 .1rem;
+
 		color: hsla(210, 25%, 98%, 1);
-		text-shadow: 0 0 2px hsla(210, 58%, 09%, .25);
+
+		font-size: ${prims.fontsize.m};
+		line-height: 3rem;
+		text-shadow: ${prims.shadows.text} ${prims.colors.blue.black};
 	}
 `
 
 const SkillsCard = styled.div`
-	background-color: ${props => props.color};
+	align-self: flex-end;
+	z-index: -1;
+
 	height: 9rem;
-	position: absolute;
-	bottom: -3rem;
-	right: -1rem;
+	margin: 0 -1rem -3rem 0;
+
+	background-color: ${props => props.color};
+
 	border-radius: 2px;
-	box-shadow: 0 .125rem .25rem 0 rgba(26,67,106,0.25), 0 .5rem .5rem -.5rem rgba(26,67,106,0.25);
+	box-shadow: ${prims.shadows.xxs} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.xs} ${prims.colors.blue.dark.transparent_l};
 
 	ol {
-		list-style: none;
 		display: flex;
+
 		padding: 6.6rem 1rem 0;
+
+		list-style: none;
 	}
 
 	li {
-		font-size: 1.375rem;
-		font-weight: bold;
 		margin-right: 1rem;
-		text-transform: uppercase;
+
+		color: ${prims.colors.blue.white.opaque};
+
+		font-size: ${prims.fontsize.m_uppercase};
+		font-weight: bold;
 		letter-spacing: .05rem;
-		color: hsla(210, 25%, 98%, 1);
-		text-shadow: 0 0 2px hsla(210, 58%, 09%, .25);
+		text-shadow: ${prims.shadows.text} ${prims.colors.blue.black};
+		text-transform: uppercase;
 
 		&:last-child {
 			margin: 0;
 		};
 	}
-
-	z-index: -1;
 `
 
 const makeSkillsListFor = function(skills){

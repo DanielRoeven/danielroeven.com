@@ -1,10 +1,13 @@
 import styled from 'styled-components'
+import prims from '../../Primitives'
 
 const H4 = styled.h4`
-  font-size: 1.65625rem;
-  font-weight: bold;
-  color: hsla(209, 61%, 26%, 1);
   padding: 0.35rem 0 .65rem 0;
+
+  color: ${prims.colors.blue.dark.opaque};
+
+  font-size: ${prims.fontsize.m};
+  font-weight: bold;
   line-height: 2rem;
 `
 
