@@ -5,7 +5,6 @@ const HistoryItem = styled.div`
 	display: flex;
 	flex-flow: row wrap;
 `
-
 import H5 from '../style/H5'
 import TagSmall from '../style/TagSmall'
 import PSMall from '../style/PSmall'

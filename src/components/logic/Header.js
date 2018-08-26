@@ -1,43 +1,49 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
+import prims from '../../Primitives'
 
 const Header = styled.div`
-  background: rgba(250,251,252, 0.8);
-  box-shadow: 0 0 8px 0 rgba(26,67,106,0.25), 0 32px 32px -32px rgba(26,67,106,0.25);
-  height: 5rem;
-  display: flex;
-  justify-content: center;
-  backdrop-filter: blur(8px);
-  width: 100vw;
   position: fixed;
   z-index: 9999;
+
+  display: flex;
+  height: 5rem;
+  justify-content: center;
+  width: 100vw;
+  
+  background: ${prims.colors.blue.white.transparent_s};
+  box-shadow: ${prims.shadows.xs} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.l} ${prims.colors.blue.dark.transparent_l};
+  backdrop-filter: blur(8px);
 `
 
 const Container = styled.div`
-  width: 80rem;
   display: flex;
   justify-content: space-between;
+  width: 80rem;
 `
 
 const H1 = styled.h1`
-  color: hsla(209, 61%, 26%, 1);
-  margin: .9rem 0 0;
-  font-size: 1.65625rem;
-  line-height: 3rem;
   height: 3rem;
+  margin: .9rem 0 0;
+  
+  color: ${prims.colors.blue.dark.opaque};
+
+  font-size: ${prims.fontsize.m};
+  line-height: 3rem;
 `
 
 const Nav = styled.nav`
   ol {
     display: flex;
-    list-style: none;
     margin: .9rem 0 0 1rem;
+
+    list-style: none;
   }
 
   li {
-    padding: 0 .5rem;
     height: 3rem;
+    padding: 0 .5rem;
 
     &:last-child {
       margin: 0 -.5rem 0 0;
@@ -45,9 +51,10 @@ const Nav = styled.nav`
   }
 
   a {
-    color: hsla(209, 61%, 26%, 1);
+    color: ${prims.colors.blue.dark.opaque};
+
+    font-size: ${prims.fontsize.m};
     font-weight: bold;
-    font-size: 1.65625rem;
     line-height: 3rem;
     text-transform: lowercase;
   }

@@ -1,38 +1,43 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import styled from 'styled-components'
+import prims from '../../Primitives'
 
-import copyrightIcon from './img/icons/copyright.svg'
+import copyrightIcon from '../img/icons/copyright.svg'
 
 const Footer = styled.footer`
-  width: 100vw;
+  align-items: center;
   align-self: center;
   display: flex;
   flex-flow: column;
-  align-items: center;
   justify-content: flex-start;
+  
   height: 6rem;
   margin-top: -6rem;
   padding: 2.1rem 0 0;
-  background-image: radial-gradient(ellipse at bottom, hsla(209, 61%, 26% ,.25) 0%, hsla(209, 61%, 26% , .05) 45%, transparent 66%);
-  background-size: 150% 40%;
+  width: 100vw;
+  
+  background-image: radial-gradient(ellipse at bottom, ${prims.colors.blue.dark.transparent_xl} 0%, ${prims.colors.blue.dark.transparent_xxl} 45%, transparent 66%);
   background-position: center bottom;
   background-repeat: no-repeat;
-`
+  background-size: 150% 40%;
+  `
 
 const FooterText = styled.h6 `
-  font-size: 1.104375rem;
+  color: ${prims.colors.blue.gray};
+  
+  font-size: ${prims.fontsize.s};
   font-weight: normal;
-  color: hsla(209, 21%, 63%, 1);
   line-height: 3rem;
 
   img {
-    width: 2.5rem;
-    height: 1.5rem;
-    padding: 0 .5rem 0;
-    display: inline-block;
     position: relative;
     top: .35rem;
+    
+    display: inline-block;
+
+    height: 1.5rem;
+    padding: 0 .5rem 0;
+    width: 2.5rem;
   }
 `
 
