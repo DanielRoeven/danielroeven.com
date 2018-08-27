@@ -71,7 +71,7 @@ class PortfolioCardLarge extends React.Component {
 
 	render() {
 		return (
-			<ATVImg style={{width: '80rem', height: '40rem'}}
+			<ATVImg style={{width: '80rem', height: '40rem', margin: '0 0 17rem 0'}}
 					onMouseEnter={() => this.setState({hover: true})}
 					onMouseLeave={() => this.setState({hover: false})}>
 				<TitleCard hover={this.state.hover} color={getColorValueFor(this.props.primaryColor)}>
