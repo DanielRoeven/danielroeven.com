@@ -3,10 +3,12 @@ import styled from 'styled-components'
 import prims from '../../Primitives'
 
 const SkillsCard = styled.div`
-	z-index: -1;
+	position: absolute;
+	bottom: -3rem;
+	right: -1rem;
+	z-index: 0;
 
 	height: 9rem;
-	margin: 34rem -1rem -3rem 0;
 
 	background-color: ${props => props.color};
 

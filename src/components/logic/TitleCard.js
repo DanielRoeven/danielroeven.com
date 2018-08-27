@@ -3,10 +3,12 @@ import styled from 'styled-components'
 import prims from '../../Primitives'
 
 const TitleCard = styled.div`
-	align-self: flex-start;
+	position: absolute;
+	left: -1rem;
+	top: -1rem;
+	z-index: 2;
 
 	padding: 1rem;
-	margin: -1rem 0  0 -1rem;
 	width: 28rem;
 
 	background-color: ${props => props.color}
@@ -29,15 +31,10 @@ const TitleCard = styled.div`
 		margin: .4rem 0 .1rem;
 
 		color: ${prims.colors.blue.white.opaque};
-		opacity: ${props => props.hover ? '1' : '0'};
 
 		font-size: ${prims.fontsize.m};
 		line-height: 3rem;
 		text-shadow: ${prims.shadows.text} ${prims.colors.blue.black.transparent_l};
-	    
-	    transition-property: opacity;
-	    transition-duration: .5s;
-	    transition-timing-function: ease;
 	}
 `
 

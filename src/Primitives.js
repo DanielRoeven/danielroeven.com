@@ -19,13 +19,13 @@ export default {
 			},
 			black: {
 				opaque: 'hsla(210, 58%, 09%, 1)',
-				transparent_l: 'hsla(210, 58%, 09%, .5)',
+				transparent_l: 'hsla(210, 58%, 09%, .33)',
 			},
 			gray: 'hsla(209, 21%, 63%, 1)',
 		},
 		orange: {
 			yellow: {
-				opaque: 'hsl(47, 98%, 68%)',
+				opaque: 'hsla(47, 98%, 68%, 1)',
 			},
 			medium: {
 				opaque: 'hsla(29, 97%, 61%, 1)',
