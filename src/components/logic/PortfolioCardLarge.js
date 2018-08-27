@@ -3,29 +3,13 @@ import styled from 'styled-components'
 import prims from '../../Primitives'
 import ATVImg from './ATVImg'
 
-const PortfolioCardLargeTemplate = styled.div`
-	position: relative;
-
-	height: 40rem;
-	margin: 0 0 17rem;
-	width: 80rem;
-
-	background-color: green;
-`
-
 import TitleCard from './TitleCard'
 const PortfolioImage = styled.img`
-	position: absolute;
-	z-index: 1;
-
 	height: 40rem;
 	width: 80rem;
 
+	border-radius: .25rem;
 	object-fit: cover;
-	object-position: center center;
-
-	border-radius: 2px;
-	box-shadow: ${prims.glow.s} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.s} ${prims.colors.blue.dark.transparent_l};
 `
 import SkillsCard from './SkillsCard'
 
@@ -61,30 +45,24 @@ const getColorValueFor= function(color) {
 	}
 }
 
-class PortfolioCardLarge extends React.Component {
-	constructor() {
-		super()
-		this.state={
-			hover: false
-		}
-	}
+const ATVLayer = styled.div`
+`
 
-	render() {
-		return (
-			<ATVImg style={{width: '80rem', height: '40rem', margin: '0 0 17rem 0'}}
-					onMouseEnter={() => this.setState({hover: true})}
-					onMouseLeave={() => this.setState({hover: false})}>
-				<TitleCard hover={this.state.hover} color={getColorValueFor(this.props.primaryColor)}>
-					<h3>{this.props.title}</h3>
-					<p>{this.props.description}</p>
-				</TitleCard>
-				<PortfolioImage src={this.props.image}></PortfolioImage>
-				<SkillsCard hover={this.state.hover} color={getColorValueFor(this.props.secondaryColor)}>
-					{makeSkillsListFor(this.props.skills)}
-				</SkillsCard>
-			</ATVImg>
-		)
-	}
-}
-
-export default PortfolioCardLarge
+export default (props) => (
+	<ATVImg style={{width: '80rem', height: '40rem', margin: '0 0 17rem 0'}}>
+		<ATVLayer>
+			<SkillsCard color={getColorValueFor(props.secondaryColor)}>
+				{makeSkillsListFor(props.skills)}
+			</SkillsCard>
+		</ATVLayer>
+		<ATVLayer style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+			<PortfolioImage src={props.image}></PortfolioImage>
+		</ATVLayer>
+		<ATVLayer>
+			<TitleCard color={getColorValueFor(props.primaryColor)}>
+				<h3>{props.title}</h3>
+				<p>{props.description}</p>
+			</TitleCard>
+		</ATVLayer>
+	</ATVImg>
+)

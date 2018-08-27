@@ -1,8 +1,8 @@
 export default {
   root: {
-    borderRadius: 5,
+    borderRadius: '.25rem',
     transformStyle: 'preserve-3d',
-    WebkitTapHighlightColor: 'rgba(#000, 0)'
+    WebkitTapHighlightColor: 'rgba(#000, 0)',
   },
 
   container: {
@@ -14,25 +14,24 @@ export default {
   },
 
   shadowOnHover: {
-    boxShadow:
-      '0 45px 100px rgba(14, 21, 47, 0.4), 0 16px 40px rgba(14, 21, 47, 0.4)'
+    boxShadow: '0 .125rem .75rem 0 hsla(209, 61%, 26%, .25), 0 4rem 4rem -3.5rem hsla(209, 61%, 26%, .5)'
   },
 
   layers: {
     position: 'relative',
     width: '100%',
     height: '100%',
-    borderRadius: 5,
-    overflow: 'hidden',
+    borderRadius: '.25rem',
+    overflow: 'visible',
     transformStyle: 'preserve-3d'
   },
 
   renderedLayer: {
     position: 'absolute',
-    width: '104%',
-    height: '104%',
-    top: '-2%',
-    left: '-2%',
+    width: '82rem',
+    height: '42rem',
+    top: '-1rem',
+    left: '-1rem',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     backgroundColor: 'transparent',
@@ -42,22 +41,24 @@ export default {
 
   shadow: {
     position: 'absolute',
-    top: '5%',
-    left: '5%',
-    width: '90%',
-    height: '90%',
+    top: '3%',
+    left: '6%',
+    height: '94%',
+    width: '88%',
+    borderRadius: '.25rem',
     transition: 'all 0.2s ease-out',
-    boxShadow: '0 8px 60px rgba(14, 21, 47, 0.6)'
+    borderRadius: '2px',
+    boxShadow: '0 .09375rem .375rem 0 hsla(209, 61%, 26%, .25), 0 1rem .75rem -.75rem hsla(209, 61%, 26%, .25)',
   },
 
   shine: {
     position: 'absolute',
     top: 0,
-    left: 0,
     right: 0,
     bottom: 0,
-    borderRadius: 5,
+    left: 0,
+    borderRadius: '.25rem',
     background:
-      'linear-gradient(135deg, rgba(255, 255, 255, .25) 0%, rgba(255, 255, 255, 0) 60%)'
+      'linear-gradient(135deg, rgba(255, 255, 255, .125) 0%, rgba(255, 255, 255, 0) 60%)'
   }
 }

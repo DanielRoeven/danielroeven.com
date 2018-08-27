@@ -4,16 +4,13 @@ import prims from '../../Primitives'
 
 const TitleCard = styled.div`
 	position: absolute;
-	left: -1rem;
-	top: -1rem;
-	z-index: 2;
-
-	padding: 1rem;
+	left: 0rem;
+	top: 0rem;
 	width: 28rem;
+	padding: 1rem;
 
-	background-color: ${props => props.color}
+	background-color: ${props => props.color};
 
-	backdrop-filter: blur(.5rem);
 	border-radius: 2px;
 	box-shadow: ${prims.glow.m} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.m} ${prims.colors.blue.dark.transparent_l};
 

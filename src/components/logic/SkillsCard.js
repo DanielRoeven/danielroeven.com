@@ -2,21 +2,21 @@ import React from 'react'
 import styled from 'styled-components'
 import prims from '../../Primitives'
 
+//transform: translateY(${props => props.hover ? '0' : '-2rem'});
+
 const SkillsCard = styled.div`
 	position: absolute;
-	bottom: -3rem;
-	right: -1rem;
-	z-index: 0;
+	right: 0;
+	bottom: 0;
+	padding: 1rem;
+	display: inline-block;
 
-	height: 9rem;
-
-	background-color: ${props => props.color};
+	background-color: ${props => props.isOnHover ? 'yellow' : 'black'};
 
 	border-radius: 2px;
 	box-shadow: ${prims.glow.xs} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.xs} ${prims.colors.blue.dark.transparent_l};
 
-	transform: translateY(${props => props.hover ? '0' : '-2rem'});
-
+	transform: translateY(${props => props.isOnHover ? '2rem' : '0'});
     transition-property: transform;
     transition-duration: .5s;
     transition-timing-function: ease;
