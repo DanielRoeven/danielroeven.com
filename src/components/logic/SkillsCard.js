@@ -10,21 +10,22 @@ const SkillsCard = styled.div`
 	bottom: 0;
 	padding: 1rem;
 	display: inline-block;
+	height: 9rem;
 
-	background-color: ${props => props.isOnHover ? 'yellow' : 'black'};
+	background-color: ${props => props.color};
 
 	border-radius: 2px;
 	box-shadow: ${prims.glow.xs} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.xs} ${prims.colors.blue.dark.transparent_l};
-
-	transform: translateY(${props => props.isOnHover ? '2rem' : '0'});
-    transition-property: transform;
-    transition-duration: .5s;
-    transition-timing-function: ease;
+	
+	transform: translateY(2rem);
+    //transition-property: transform;
+    //transition-duration: .5s;
+    //transition-timing-function: ease;
 
 	ol {
 		display: flex;
 
-		padding: 6.6rem 1rem .75rem;
+		padding: 5.6rem 0rem .75rem;
 
 		list-style: none;
 	}

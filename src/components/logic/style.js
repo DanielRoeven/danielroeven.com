@@ -14,7 +14,7 @@ export default {
   },
 
   shadowOnHover: {
-    boxShadow: '0 .125rem .75rem 0 hsla(209, 61%, 26%, .25), 0 4rem 4rem -3.5rem hsla(209, 61%, 26%, .5)'
+    boxShadow: '0 .5rem 2rem 0 hsla(209, 61%, 26%, .5), 0 3rem 6rem -2rem hsla(209, 61%, 26%, .75)'
   },
 
   layers: {
@@ -42,13 +42,13 @@ export default {
   shadow: {
     position: 'absolute',
     top: '3%',
-    left: '6%',
+    left: '3%',
     height: '94%',
-    width: '88%',
+    width: '94%',
     borderRadius: '.25rem',
     transition: 'all 0.2s ease-out',
     borderRadius: '2px',
-    boxShadow: '0 .09375rem .375rem 0 hsla(209, 61%, 26%, .25), 0 1rem .75rem -.75rem hsla(209, 61%, 26%, .25)',
+    boxShadow: '0 0 0 0 hsla(209, 61%, 26%, .25), 0 0 0 0 hsla(209, 61%, 26%, .1)',
   },
 
   shine: {

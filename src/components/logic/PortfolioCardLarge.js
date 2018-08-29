@@ -4,13 +4,7 @@ import prims from '../../Primitives'
 import ATVImg from './ATVImg'
 
 import TitleCard from './TitleCard'
-const PortfolioImage = styled.img`
-	height: 40rem;
-	width: 80rem;
-
-	border-radius: .25rem;
-	object-fit: cover;
-`
+import ImageCard from './ImageCard'
 import SkillsCard from './SkillsCard'
 
 const makeSkillsListFor = function(skills){
@@ -41,28 +35,25 @@ const getColorValueFor= function(color) {
 			return 'hsla(29, 97%, 61%, .9);'
 			break
 		default:
-			throw 'Invalid color provided'
+			throw 'Invalid color provided for PortfolioCardLarge'
 	}
 }
 
-const ATVLayer = styled.div`
-`
-
 export default (props) => (
 	<ATVImg style={{width: '80rem', height: '40rem', margin: '0 0 17rem 0'}}>
-		<ATVLayer>
+		<div>
 			<SkillsCard color={getColorValueFor(props.secondaryColor)}>
 				{makeSkillsListFor(props.skills)}
 			</SkillsCard>
-		</ATVLayer>
-		<ATVLayer style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-			<PortfolioImage src={props.image}></PortfolioImage>
-		</ATVLayer>
-		<ATVLayer>
+		</div>
+		<div>
+			<ImageCard src={props.image}/>
+		</div>
+		<div>
 			<TitleCard color={getColorValueFor(props.primaryColor)}>
 				<h3>{props.title}</h3>
 				<p>{props.description}</p>
 			</TitleCard>
-		</ATVLayer>
+		</div>
 	</ATVImg>
 )
