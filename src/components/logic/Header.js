@@ -10,7 +10,7 @@ const Header = styled.div`
   display: flex;
   height: 5rem;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   
   background: ${prims.colors.blue.white.transparent_s};
   box-shadow: ${prims.shadows.xs} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.l} ${prims.colors.blue.dark.transparent_l};

@@ -13,7 +13,7 @@ const TitleCard = styled.div`
 
 	background-color: ${props => props.color};
 
-	border-radius: 2px;
+	border-radius: .25rem;
 	box-shadow: ${prims.glow.m} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.m} ${prims.colors.blue.dark.transparent_l};
 	transform: ${props => props.small ? 'translate(0, 2rem)' : 'translate(-1rem, -1rem)'};
 
