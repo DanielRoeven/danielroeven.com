@@ -5,6 +5,7 @@ import prims from '../../Primitives'
 import ATVImg from './ATVImg'
 import ImageCard from './ImageCard'
 import TitleCard from './TitleCard'
+import ATVLayer from '../style/ATVLayer'
 
 // const TitleCard = styled.div`
 // 	align-self: flex-end;
@@ -76,15 +77,15 @@ const getColorValueFor= function(color) {
 
 export default (props) => (
   <ATVImg style={{width: '39.5rem', height: '22rem', margin: '0 0 5rem'}}>
-  	<div>
+  	<ATVLayer>
   		<ImageCard small src={props.image}/>
-  	</div>
-  	<div style={{width: '100%', height: '100%'}}>
+  	</ATVLayer>
+  	<ATVLayer>
   		<TitleCard small color={getColorValueFor(props.primaryColor)}>
   			<h3>{props.title}</h3>
   			<p>{props.description}</p>
   			<a>Read Case Study</a>
   		</TitleCard>
-  	</div>
+  	</ATVLayer>
   </ATVImg>
 )

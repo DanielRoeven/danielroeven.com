@@ -6,7 +6,7 @@ const TitleCard = styled.div`
 	position: absolute;
 	left: 0rem;
 	top: ${props => props.small ? 'auto' : '0rem'};
-	bottom: ${props => props.small ? '-2rem' : 'auto'};
+	bottom: ${props => props.small ? '0' : 'auto'};
 	margin: ${props => props.small ? '0 1rem 0' : 'auto'};
 	width: ${props => props.small ? '37.5rem' : '28rem'};
 	padding: 1rem;
@@ -15,6 +15,7 @@ const TitleCard = styled.div`
 
 	border-radius: 2px;
 	box-shadow: ${prims.glow.m} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.m} ${prims.colors.blue.dark.transparent_l};
+	transform: ${props => props.small ? 'translate(0, 2rem)' : 'translate(-1rem, -1rem)'};
 
 	h3 {
 		margin: .5rem 0 0;

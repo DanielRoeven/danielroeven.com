@@ -6,6 +6,7 @@ import ATVImg from './ATVImg'
 import TitleCard from './TitleCard'
 import ImageCard from './ImageCard'
 import SkillsCard from './SkillsCard'
+import ATVLayer from '../style/ATVLayer'
 
 const makeSkillsListFor = function(skills){
 	const skillItems = skills.map((skill) =>
@@ -41,19 +42,19 @@ const getColorValueFor= function(color) {
 
 export default (props) => (
 	<ATVImg style={{width: '80rem', height: '40rem', margin: '0 0 17rem 0'}}>
-		<div>
+		<ATVLayer>
 			<SkillsCard color={getColorValueFor(props.secondaryColor)}>
 				{makeSkillsListFor(props.skills)}
 			</SkillsCard>
-		</div>
-		<div>
+		</ATVLayer>
+		<ATVLayer style={{width: '100%', height: '100%'}}>
 			<ImageCard src={props.image}/>
-		</div>
-		<div>
+		</ATVLayer>
+		<ATVLayer style={{width: '100%', height: '100%'}}>
 			<TitleCard color={getColorValueFor(props.primaryColor)}>
 				<h3>{props.title}</h3>
 				<p>{props.description}</p>
 			</TitleCard>
-		</div>
+		</ATVLayer>
 	</ATVImg>
 )

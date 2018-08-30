@@ -17,7 +17,7 @@ const SkillsCard = styled.div`
 	border-radius: 2px;
 	box-shadow: ${prims.glow.xs} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.xs} ${prims.colors.blue.dark.transparent_l};
 	
-	transform: translateY(2rem);
+	transform: translate(1rem, 3rem);
     //transition-property: transform;
     //transition-duration: .5s;
     //transition-timing-function: ease;

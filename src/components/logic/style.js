@@ -28,8 +28,8 @@ export default {
 
   renderedLayer: {
     position: 'absolute',
-    width: '100%rem',
-    height: '100%rem',
+    width: '100%',
+    height: '100%',
     top: '0rem',
     left: '0rem',
     backgroundRepeat: 'no-repeat',

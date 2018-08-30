@@ -4,8 +4,8 @@ import prims from '../../Primitives'
 
 const ImageCard = styled.img`
 	${props => props.small ? console.log('small') : console.log('large')};
-	height: ${props => props.small ? '22rem' : '40 rem'};
-	margin: ${props => props.small ? '0' : '1rem'};
+	height: ${props => props.small ? '22rem' : '40rem'};
+	margin: 0;
 	width: ${props => props.small ? '39.5rem' : '80rem'};
 
 	border-radius: .25rem;
