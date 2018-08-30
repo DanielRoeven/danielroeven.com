@@ -56,7 +56,7 @@ export default createClass({
     const dy = pageY - offsets.top - bodyScrollTop - rootElemHeight / 2 // center Y of container
     const dx = pageX - offsets.left - bodyScrollLeft - rootElemWidth / 2 // center X of container
     const yRotate = (offsetX - dx) * (0.07 * wMultiple) // rotation for container Y // WAS 0.07
-    const xRotate = (dy - offsetY) * (0.07 * wMultiple) // rotation for container X // WAS 0.01
+    const xRotate = (dy - offsetY) * (0.04 * wMultiple) // rotation for container X // WAS 0.01
 
     const arad = Math.atan2(dy, dx) // angle between cursor and center of container in RAD
 

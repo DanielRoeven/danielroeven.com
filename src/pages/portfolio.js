@@ -25,21 +25,15 @@ export default () => (
       <ContentCardSmall title="Portal for RCSW"
                         description="Creating a web portal that's clear and beautiful for Radboud Center for Social Sciences."
                         image={RcswImage}
-                        skills={['Interaction Design', 'Visual Design', 'Front-End Development']}
-                        primaryColor="light-blue"
-                        secondaryColor="dark-blue"/>
+                        primaryColor="light-blue"/>
       <ContentCardSmall title="Tangible Office Planner"
                         description="An exploration in tangible interaction: a tabletop interface to share and view office calendars, while giving the users embodied sense of privacy."
                         image={TangibleImage}
-                        skills={['Interaction Design', 'Prototyping']}
-                        primaryColor="yellow"
-                        secondaryColor="brown"/>
+                        primaryColor="yellow"/>
       <ContentCardSmall title="Smart Home Redesign"
                         description="Reimagining the smart home: stimulating the user to reflect through beautiful interactions."
                         image={SmarthomeImage}
-                        skills={['UX Design', 'Interaction Design', 'Prototyping']}
-                        primaryColor="blue"
-                        secondaryColor="blue"/>
+                        primaryColor="blue"/>
     </ContentCardsWrapper>
     <H2>Other</H2>
     <ContentCardsWrapper>
