@@ -4,10 +4,9 @@ import prims from '../../Primitives'
 
 const TitleCard = styled.div`
 	position: absolute;
-	left: ${props => props.small ? 'auto' : '-1rem'};
+	left: ${props => props.small ? '1rem' : '-1rem'};
 	top: ${props => props.small ? 'auto' : '-1rem'};
-	bottom: ${props => props.small ? '0' : 'auto'};
-	margin: ${props => props.small ? '0 1rem 0' : 'auto'};
+	bottom: ${props => props.small ? '-2rem' : 'auto'};
 	width: ${props => props.small ? '37.5rem' : '28rem'};
 	padding: 1rem;
 

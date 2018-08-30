@@ -64,9 +64,7 @@ export default createClass({
 
     this.setState({
       container: {
-        transform:
-          `rotateX(${xRotate}deg) rotateY(${yRotate}deg)` +
-            (this.state.isOnHover ? ' scale3d(1.07,1.07,1.07)' : '')
+        transform: `rotateX(${xRotate}deg) rotateY(${yRotate}deg)` + (this.state.isOnHover ? ' scale3d(1.05,1.05,1.05)' : '')
       },
       shine: {
         background: `linear-gradient(${angle}deg, rgba(255, 255, 255, ${(pageY -
