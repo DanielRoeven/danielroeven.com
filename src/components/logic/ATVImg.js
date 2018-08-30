@@ -1,8 +1,7 @@
 import createClass from 'create-react-class'
 import PropTypes from 'prop-types'
 import React from 'react'
-
-import style from './style.js'
+import prims from '../../Primitives'
 
 export default createClass({
   propTypes: {
@@ -56,7 +55,7 @@ export default createClass({
     const dy = pageY - offsets.top - bodyScrollTop - rootElemHeight / 2 // center Y of container
     const dx = pageX - offsets.left - bodyScrollLeft - rootElemWidth / 2 // center X of container
     const yRotate = (offsetX - dx) * (0.07 * wMultiple) // rotation for container Y // WAS 0.07
-    const xRotate = (dy - offsetY) * (0.04 * wMultiple) // rotation for container X // WAS 0.01
+    const xRotate = (dy - offsetY) * (0.035 * wMultiple) // rotation for container X // WAS 0.01
 
     const arad = Math.atan2(dy, dx) // angle between cursor and center of container in RAD
 
@@ -124,8 +123,8 @@ export default createClass({
     return (
       <div
         style={{
-          ...style.shadow,
-          ...(this.state.isOnHover ? style.shadowOnHover : {})
+          ...prims.atvimg.shadow,
+          ...(this.state.isOnHover ? prims.atvimg.shadowOnHover : {})
         }}
       />
     )
@@ -135,14 +134,14 @@ export default createClass({
     const allLayers = this.allLayers()
 
     return (
-      <div style={style.layers}>
+      <div style={prims.atvimg.layers}>
         {allLayers && allLayers.map((layer, idx) => {
           return React.Children.map(layer,
              child => React.cloneElement(child, {
                style: {
-                 ...style.root,
+                 ...prims.atvimg.root,
                  ...(this.props.style ? this.props.style : {}),
-                 ...style.renderedLayer,
+                 ...prims.atvimg.renderedLayer,
                  ...(this.state.layers[idx] ? this.state.layers[idx] : {}),
                  ...child.props.style
                },
@@ -155,14 +154,14 @@ export default createClass({
   },
 
   renderShine () {
-    return <div style={{...style.shine, ...this.state.shine}} />
+    return <div style={{...prims.atvimg.shine, ...this.state.shine}} />
   },
 
   render () {
     return (
       <div
         style={{
-          ...style.root,
+          ...prims.atvimg.root,
           transform: `perspective(${this.state.rootElemWidth * 3}px)`,
           ...(this.props.style ? this.props.style : {})
         }}
@@ -173,7 +172,7 @@ export default createClass({
         onTouchStart={!this.props.isStatic ? this.handleEnter : this.handleStaticEvent }
         onTouchEnd={!this.props.isStatic ? this.handleLeave : this.handleStaticEvent }
         ref={node => (this.root = node)}>
-        <div style={{...style.container, ...this.state.container}}>
+        <div style={{...prims.atvimg.container, ...this.state.container}}>
           {this.renderShadow()}
           {this.renderLayers()}
           {this.renderShine()}

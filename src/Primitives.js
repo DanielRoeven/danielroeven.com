@@ -56,5 +56,69 @@ export default {
 		m: '0 .125rem .5rem 0',
 		s: '0 .09375rem .375rem 0',
 		xs: '0 .0625rem .25rem 0',
+	},
+	atvimg: {
+		root: {
+			borderRadius: '.25rem',
+			transformStyle: 'preserve-3d',
+			WebkitTapHighlightColor: 'rgba(#000, 0)',
+		},
+
+		container: {
+			position: 'relative',
+			width: '100%',
+			height: '100%',
+			borderRadius: 5,
+			transition: 'transform 0.2s ease-out',
+			willChange: 'transform',
+		},
+
+		shadowOnHover: {
+			transform: 'scale(.95)',
+		},
+
+		layers: {
+			position: 'relative',
+			width: '100%',
+			height: '100%',
+			borderRadius: '.25rem',
+			overflow: 'visible',
+			transformStyle: 'preserve-3d'
+		},
+
+		renderedLayer: {
+			position: 'absolute',
+			width: '100%',
+			height: '100%',
+			top: '0rem',
+			left: '0rem',
+			backgroundRepeat: 'no-repeat',
+			backgroundPosition: 'center',
+			backgroundColor: 'transparent',
+			backgroundSize: 'cover',
+			transition: 'transform 0.2s ease-out',
+			willChange: 'transform',
+		},
+
+		shadow: {
+			position: 'absolute',
+			width: '100%',
+			height: '100%',
+			borderRadius: '.25rem',
+			transform: 'scale(.5)',
+			transition: 'transform 0.2s ease-out',
+			willChange: 'transform',
+			boxShadow: '0 1rem 3rem 0 hsla(209, 61%, 26%, .25), 0 4rem 6rem -1rem hsla(209, 61%, 26%, .5)',
+		},
+
+		shine: {
+			position: 'absolute',
+			top: 0,
+			right: 0,
+			bottom: 0,
+			left: 0,
+			borderRadius: '.25rem',
+			background: 'linear-gradient(135deg, rgba(255, 255, 255, .125) 0%, rgba(255, 255, 255, 0) 60%)'
+		}
 	}
 }

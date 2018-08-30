@@ -4,18 +4,16 @@ import prims from '../../Primitives'
 
 const TitleCard = styled.div`
 	position: absolute;
-	left: 0rem;
-	top: ${props => props.small ? 'auto' : '0rem'};
+	left: ${props => props.small ? 'auto' : '-1rem'};
+	top: ${props => props.small ? 'auto' : '-1rem'};
 	bottom: ${props => props.small ? '0' : 'auto'};
 	margin: ${props => props.small ? '0 1rem 0' : 'auto'};
 	width: ${props => props.small ? '37.5rem' : '28rem'};
 	padding: 1rem;
 
 	background-color: ${props => props.color};
-
-	border-radius: .25rem;
 	box-shadow: ${prims.glow.m} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.m} ${prims.colors.blue.dark.transparent_l};
-	transform: ${props => props.small ? 'translate(0, 2rem)' : 'translate(-1rem, -1rem)'};
+	border-radius: .25rem;
 
 	h3 {
 		margin: .5rem 0 0;

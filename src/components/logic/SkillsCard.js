@@ -6,8 +6,8 @@ import prims from '../../Primitives'
 
 const SkillsCard = styled.div`
 	position: absolute;
-	right: 0;
-	bottom: 0;
+	right: -1rem;
+	bottom: -3rem;
 	padding: 1rem;
 	display: inline-block;
 	height: 9rem;
@@ -16,11 +16,6 @@ const SkillsCard = styled.div`
 
 	border-radius: 2px;
 	box-shadow: ${prims.glow.xs} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.xs} ${prims.colors.blue.dark.transparent_l};
-	
-	transform: translate(1rem, 3rem);
-    //transition-property: transform;
-    //transition-duration: .5s;
-    //transition-timing-function: ease;
 
 	ol {
 		display: flex;

@@ -5,7 +5,7 @@ import prims from '../../Primitives'
 
 const Header = styled.div`
   position: fixed;
-  z-index: 9999;
+  z-index: 1;
 
   display: flex;
   height: 5rem;

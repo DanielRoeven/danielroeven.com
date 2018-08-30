@@ -13,4 +13,5 @@ const ImageCard = styled.img`
 	object-fit: cover;
 `
 
+
 export default ImageCard
