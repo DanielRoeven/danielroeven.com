@@ -25,36 +25,36 @@ export default () => (
       <ContentCardSmall title="Portal for RCSW"
                         description="Creating a web portal that's clear and beautiful for Radboud Center for Social Sciences."
                         image={RcswImage}
-                        primaryColor="light-blue"/>
+                        primaryColor="light-blue"
+                        estimatedHeight="15rem"/>
       <ContentCardSmall title="Tangible Office Planner"
                         description="An exploration in tangible interaction: a tabletop interface to share and view office calendars, while giving the users embodied sense of privacy."
                         image={TangibleImage}
-                        primaryColor="yellow"/>
+                        primaryColor="yellow"
+                        estimatedHeight="21rem"/>
       <ContentCardSmall title="Smart Home Redesign"
                         description="Reimagining the smart home: stimulating the user to reflect through beautiful interactions."
                         image={SmarthomeImage}
-                        primaryColor="blue"/>
+                        primaryColor="blue"
+                        estimatedHeight="15rem"/>
     </ContentCardsWrapper>
     <H2>Other</H2>
     <ContentCardsWrapper>
       <ContentCardSmall title="Portal for RCSW"
                         description="Creating a web portal that's clear and beautiful for Radboud Center for Social Sciences."
                         image={RcswImage}
-                        skills={['Interaction Design', 'Visual Design', 'Front-End Development']}
                         primaryColor="light-blue"
-                        secondaryColor="dark-blue"/>
+                        estimatedHeight="15rem"/>
       <ContentCardSmall title="Tangible Office Planner"
                         description="An exploration in tangible interaction: a tabletop interface to share and view office calendars, while giving the users embodied sense of privacy."
                         image={TangibleImage}
-                        skills={['Interaction Design', 'Prototyping']}
                         primaryColor="yellow"
-                        secondaryColor="brown"/>
+                        estimatedHeight="21rem"/>
       <ContentCardSmall title="Smart Home Redesign"
                         description="Reimagining the smart home: stimulating the user to reflect through beautiful interactions."
                         image={SmarthomeImage}
-                        skills={['UX Design', 'Interaction Design', 'Prototyping']}
                         primaryColor="blue"
-                        secondaryColor="blue"/>
+                        estimatedHeight="15rem"/>
     </ContentCardsWrapper>
   </PageWrapper>
 )

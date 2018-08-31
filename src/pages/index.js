@@ -36,11 +36,11 @@ export default () => (
                         primaryColor="yellow"
                         secondaryColor="orange"/>
     <PortfolioCardLarge title="Smart Home Redesign"
-                            description="Reimagining the smart home: stimulating the user to reflect through beautiful interactions."
-                            image={SmarthomeImage}
-                            skills={['UX Design', 'Interaction Design', 'Prototyping']}
-                            primaryColor="blue"
-                            secondaryColor="blue"/>
+                        description="Reimagining the smart home: stimulating the user to reflect through beautiful interactions."
+                        image={SmarthomeImage}
+                        skills={['UX Design', 'Interaction Design', 'Prototyping']}
+                        primaryColor="blue"
+                        secondaryColor="blue"/>
     <CTAWrapper>
       <LinkSentence type="internal"
                     text="See my full"

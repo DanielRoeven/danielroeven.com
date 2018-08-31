@@ -33,7 +33,7 @@ const SkillsCard = styled.div`
 		font-size: ${prims.fontsize.m_uppercase};
 		font-weight: bold;
 		letter-spacing: .05rem;
-		text-shadow: ${prims.shadows.text} ${prims.colors.blue.black.transparent_l};
+		text-shadow: ${prims.shadows.text_s} ${prims.colors.blue.black.transparent_m};
 		text-transform: uppercase;
 
 		&:last-child {

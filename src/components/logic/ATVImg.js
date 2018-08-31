@@ -7,7 +7,10 @@ export default createClass({
   propTypes: {
     isStatic: PropTypes.bool,
     style: PropTypes.object,
-    children: PropTypes.node
+    children: PropTypes.node,
+    parentEnter: PropTypes.func,
+    parentLeave: PropTypes.func,
+    small: PropTypes.bool
   },
 
   getInitialState () {
@@ -55,7 +58,7 @@ export default createClass({
     const dy = pageY - offsets.top - bodyScrollTop - rootElemHeight / 2 // center Y of container
     const dx = pageX - offsets.left - bodyScrollLeft - rootElemWidth / 2 // center X of container
     const yRotate = (offsetX - dx) * (0.07 * wMultiple) // rotation for container Y // WAS 0.07
-    const xRotate = (dy - offsetY) * (0.035 * wMultiple) // rotation for container X // WAS 0.01
+    const xRotate = (dy - offsetY) * (0.05 * wMultiple) // rotation for container X // WAS 0.01
 
     const arad = Math.atan2(dy, dx) // angle between cursor and center of container in RAD
 
@@ -92,6 +95,9 @@ export default createClass({
 
   handleEnter () {
     this.setState({isOnHover: true})
+    if (this.props.small) {
+      this.props.parentEnter()
+    }
   },
 
   handleLeave () {
@@ -101,6 +107,9 @@ export default createClass({
       shine: {},
       layers: []
     })
+    if (this.props.small) {
+      this.props.parentLeave()
+    }
   },
 
   handleStaticEvent () {
@@ -143,7 +152,8 @@ export default createClass({
                  ...(this.state.layers[idx] ? this.state.layers[idx] : {}),
                  ...child.props.style
                },
-               key: idx
+               key: idx,
+               isOnHover: this.state.isOnHover
             })
           )
         })}

@@ -19,13 +19,14 @@ export default {
 			},
 			black: {
 				opaque: 'hsla(210, 58%, 09%, 1)',
-				transparent_l: 'hsla(210, 58%, 09%, .33)',
+				transparent_m: 'hsla(210, 58%, 09%, .5)',
+				transparent_l: 'hsla(210, 58%, 09%, .25)',
 			},
 			gray: 'hsla(209, 21%, 63%, 1)',
 		},
 		orange: {
 			yellow: {
-				opaque: 'hsla(47, 98%, 68%, 1)',
+				opaque: 'hsla(47, 98%, 60%, 1)',
 			},
 			medium: {
 				opaque: 'hsla(29, 97%, 61%, 1)',
@@ -50,7 +51,8 @@ export default {
 		xs: '0 .5rem .5rem -.5rem',
 		xxs: '0 .375rem .375rem -.375rem',
 		xxxs: '0 .25rem .25rem -.25rem',
-		text: '0 0 2px',
+		text_s: '0 0 2px',
+		text_m: '0 0 4px',
 	},
 	glow: {
 		m: '0 .125rem .5rem 0',
@@ -105,10 +107,10 @@ export default {
 			width: '100%',
 			height: '100%',
 			borderRadius: '.25rem',
-			transform: 'scale(.5)',
+			transform: 'scale(.75)',
 			transition: 'transform 0.2s ease-out',
 			willChange: 'transform',
-			boxShadow: '0 1rem 3rem 0 hsla(209, 61%, 26%, .25), 0 4rem 6rem -1rem hsla(209, 61%, 26%, .5)',
+			boxShadow: '0 1rem 3rem 0 hsla(209, 61%, 26%, .25), 0 4rem 4rem -1rem hsla(209, 61%, 26%, .5)',
 		},
 
 		shine: {

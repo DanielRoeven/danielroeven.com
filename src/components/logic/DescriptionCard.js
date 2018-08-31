@@ -3,15 +3,19 @@ import styled from 'styled-components'
 import prims from '../../Primitives'
 
 const TitleCard = styled.div`
-	left: -1rem;
+	bottom: -2rem;
+	left: 1rem;
+	max-height: ${props => props.isOnHover ? props.estimatedHeight : '6rem'};
+	overflow: hidden;
 	padding: 1rem;
 	position: absolute;
-	top: -1rem;
-	width: 28rem;
+	width: 37.5rem;
 
 	background-color: ${props => props.color};
 	box-shadow: ${prims.glow.m} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.m} ${prims.colors.blue.dark.transparent_l};
 	border-radius: .25rem;
+
+	transition: max-height 0.2s ease-out;
 
 	h3 {
 		margin: .5rem 0 0;
@@ -27,6 +31,7 @@ const TitleCard = styled.div`
 		margin: .4rem 0 .1rem;
 
 		color: ${prims.colors.blue.white.opaque};
+		opacity: ${props => props.isOnHover ? 1 : 0};
 
 		font-size: ${prims.fontsize.m};
 		line-height: 3rem;

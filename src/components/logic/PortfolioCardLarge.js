@@ -6,7 +6,7 @@ import ATVImg from './ATVImg'
 import TitleCard from './TitleCard'
 import ImageCard from './ImageCard'
 import SkillsCard from './SkillsCard'
-import ATVLayer from '../style/ATVLayer'
+import ATVLayer from './ATVLayer'
 
 const makeSkillsListFor = function(skills){
 	const skillItems = skills.map((skill) =>
@@ -30,7 +30,7 @@ const getColorValueFor= function(color) {
 			return 'hsla(209, 61%, 26%, .8);'
 			break
 		case 'yellow':
-			return 'hsla(47, 98%, 51%, .9);'
+			return 'hsla(47, 98%, 60%, .9);'
 			break
 		case 'orange':
 			return 'hsla(29, 97%, 61%, .9);'
