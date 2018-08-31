@@ -1,0 +1,52 @@
+import React from 'react'
+import styled from 'styled-components'
+import prims from '../../Primitives'
+
+const TitleCard = styled.div`
+	left: -1rem;
+	padding: 1rem;
+	position: absolute;
+	top: -1rem;
+	width: 28rem;
+
+	background-color: ${props => props.color};
+	box-shadow: ${prims.glow.m} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.m} ${prims.colors.blue.dark.transparent_l};
+	border-radius: .25rem;
+
+	h3 {
+		margin: .5rem 0 0;
+
+		color: ${prims.colors.blue.white.opaque};
+
+		font-size: ${prims.fontsize.l};
+		line-height: 3rem;
+		text-shadow: ${prims.shadows.text_s} ${prims.colors.blue.black.transparent_m};
+	}
+
+	p {
+		margin: .4rem 0 .1rem;
+
+		color: ${prims.colors.blue.white.opaque};
+
+		font-size: ${prims.fontsize.m};
+		line-height: 3rem;
+		text-shadow: ${prims.shadows.text_m} ${prims.colors.blue.black.transparent_m};
+
+		transition: opacity 0.2s ease-in-out;
+	}
+
+	a {
+		display: block;
+
+		color: ${prims.colors.blue.white.opaque};
+
+		font-size: ${prims.fontsize.m_uppercase};
+		font-weight: bold;
+		line-height: 3rem;
+		text-align: center;
+		text-shadow: ${prims.shadows.text_m} ${prims.colors.blue.black.transparent_m};
+		text-transform: uppercase;
+	}
+`
+
+export default TitleCard

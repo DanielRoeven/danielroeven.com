@@ -6,11 +6,13 @@ import prims from '../../Primitives'
 const Header = styled.div`
   position: fixed;
   z-index: 9999;
+  transform-style: preserve-3d;
+  transform: translateZ(9999rem);
 
   display: flex;
   height: 5rem;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   
   background: ${prims.colors.blue.white.transparent_s};
   box-shadow: ${prims.shadows.xs} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.l} ${prims.colors.blue.dark.transparent_l};

@@ -9,9 +9,9 @@ const HeroWrapper = styled.div`
 import H2 from '../components/style/H2'
 
 import PortfolioCardLarge from '../components/logic/PortfolioCardLarge.js'
-import RcswImage from './img/rcsw-mobile-3x.jpg'
-import TangibleImage from './img/src-screengrab-3x.jpg'
-import SmarthomeImage from './img/smarthome-1-3x.png'
+import RcswImage from './img/rcsw-mobile-2x.jpg'
+import TangibleImage from './img/src-screengrab-2x.jpg'
+import SmarthomeImage from './img/smarthome-1-2x.png'
 
 const CTAWrapper = styled.div`
   margin-bottom: 13rem;
@@ -34,13 +34,13 @@ export default () => (
                         image={TangibleImage}
                         skills={['Interaction Design', 'Prototyping']}
                         primaryColor="yellow"
-                        secondaryColor="brown"/>
+                        secondaryColor="orange"/>
     <PortfolioCardLarge title="Smart Home Redesign"
-                            description="Reimagining the smart home: stimulating the user to reflect through beautiful interactions."
-                            image={SmarthomeImage}
-                            skills={['UX Design', 'Interaction Design', 'Prototyping']}
-                            primaryColor="blue"
-                            secondaryColor="blue"/>
+                        description="Reimagining the smart home: stimulating the user to reflect through beautiful interactions."
+                        image={SmarthomeImage}
+                        skills={['UX Design', 'Interaction Design', 'Prototyping']}
+                        primaryColor="blue"
+                        secondaryColor="blue"/>
     <CTAWrapper>
       <LinkSentence type="internal"
                     text="See my full"
