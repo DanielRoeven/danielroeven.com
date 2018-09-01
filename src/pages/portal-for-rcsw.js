@@ -18,10 +18,10 @@ const ProjectWrapper = styled.div`
   align-content: flex-start;
   align-items: flex-start;
   width: 53rem;
-  margin: 0 13.5rem 9rem;
+  margin: 0 13.5rem 6rem;
 `
 const ProjectImage = styled.img`
-  height: 42rem;
+  height: 45rem;
   margin: 3rem -13.5rem;
   width: 80rem;
   object-fit: cover;
@@ -36,6 +36,11 @@ const WholeColumn = styled.div`
 const HalfColumn = styled.div`
   width: 26rem;
 `
+const ProjectVideo = styled.iframe`
+  height: 48rem;
+  width: 80rem;
+  margin: 3rem -13.5rem;
+`
 
 export default () => (
   <PageWrapper>
@@ -49,11 +54,7 @@ export default () => (
       </WholeColumn>
       <ProjectImage src={RcswImage2}/>
       <HalfColumn>
-        <H3 article><em>02</em> Organisation</H3>
-        <OrgImage src={RCSWLogo}/>
-      </HalfColumn>
-      <HalfColumn>
-        <H3 article><em>03</em>Skills</H3>
+        <H3 article><em>02</em>Skills</H3>
         <OlMedium>
           <li>Interaction Design</li>
           <li>User Interface (UI)</li>
@@ -61,6 +62,10 @@ export default () => (
           <li>Visual Design</li>
           <li>Front-end Development (React)</li>
         </OlMedium>
+      </HalfColumn>
+      <HalfColumn>
+        <H3 article><em>03</em> Organisation</H3>
+        <OrgImage src={RCSWLogo}/>
       </HalfColumn>
       <WholeColumn>
         <H3 article><em>04</em> Role</H3>
@@ -81,7 +86,7 @@ export default () => (
           The interface was validated through “thinking out loud” evaluations. This showed that users of the new interface easily understood and manipulated the information flows.
         </PMedium>
       </WholeColumn>
-      <iframe src="https://player.vimeo.com/video/256219151?color=3587D4&title=0&byline=0&portrait=0" frameBorder="0"></iframe>
+      <ProjectVideo src="https://player.vimeo.com/video/256219151?autoplay=1&loop=1&color=ABEAF7&title=0&byline=0&portrait=0" frameBorder="0"/>
     </ProjectWrapper>
   </PageWrapper>
 )
