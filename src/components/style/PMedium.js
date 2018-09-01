@@ -13,7 +13,8 @@ const PMedium = styled.p`
 		display: inline-block;
 		margin: 0 -.25rem;
 		padding: 0 .25rem;
-		
+
+		color: ${prims.colors.blue.medium.opaque};
 		background-image:	linear-gradient(transparent 1.95rem, ${prims.colors.orange.medium.opaque} 1.95rem, ${prims.colors.orange.medium.opaque} 2.35rem, transparent 2.35rem),
 							linear-gradient(transparent 1.95rem, ${prims.colors.blue.lighter} 1.95rem, ${prims.colors.blue.lighter} 2.35rem, transparent 2.35rem);
 	    background-position: left center, left center;

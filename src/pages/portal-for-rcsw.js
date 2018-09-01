@@ -27,8 +27,11 @@ const ProjectImage = styled.img`
   object-fit: cover;
 `
 const OrgImage = styled.img`
-  margin: 2.6rem 0 0;
-  width: 22.5rem;
+  margin: 2rem 0 0.8rem 0;
+  width: 26rem;
+  height: 6rem;
+  object-fit: contain;
+  object-position: left;
 `
 const WholeColumn = styled.div`
   width: 100%;
@@ -36,10 +39,19 @@ const WholeColumn = styled.div`
 const HalfColumn = styled.div`
   width: 26rem;
 `
+const LogoLink = styled.a`
+  filter: grayscale(1);
+  transition: filter 0.2s ease-in-out;
+
+  &:hover {
+    filter: grayscale(0);
+  }
+`
 const ProjectVideo = styled.iframe`
   height: 48rem;
   width: 80rem;
   margin: 3rem -13.5rem;
+  overflow: hidden;
 `
 
 export default () => (
@@ -65,17 +77,21 @@ export default () => (
       </HalfColumn>
       <HalfColumn>
         <H3 article><em>03</em> Organisation</H3>
-        <OrgImage src={RCSWLogo}/>
+        <LogoLink href="https://rcsw.nl" target="_blank">
+          <OrgImage src={RCSWLogo}/>
+        </LogoLink>
+        <H3 article><em>04</em> Timeframe</H3>
+        <PMedium>Four months parttime.</PMedium>
       </HalfColumn>
       <WholeColumn>
-        <H3 article><em>04</em> Role</H3>
+        <H3 article><em>05</em> Role</H3>
         <PMedium>
           I designed the interface and user experience and developed the front-end in React. I worked as the interaction designer alongside two developers in a team of three.
         </PMedium>
       </WholeColumn>
       <ProjectImage src={RcswImage1}/>
       <WholeColumn>
-        <H3 article><em>05</em>Process</H3>
+        <H3 article><em>06</em>Process</H3>
         <PMedium>
           Existing user research indicated that users felt overwhelmed by the amount of services and information in the previous system. Yet simultaneously, users wanted to know what’s happening in other parts of the organisation at a glance. This was further validated by us through interviews and questionnaires.
         </PMedium>
