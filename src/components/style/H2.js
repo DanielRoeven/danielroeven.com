@@ -2,8 +2,8 @@ import styled from 'styled-components'
 import prims from '../../Primitives'
 
 const H2 = styled.h2`
+	display: inline-block;
 	padding: .7rem 0 .3rem;
-
 	color: ${prims.colors.blue.dark.opaque};
 
 	font-size: ${prims.fontsize.xl};
