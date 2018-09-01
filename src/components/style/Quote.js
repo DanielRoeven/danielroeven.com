@@ -3,7 +3,8 @@ import prims from '../../Primitives'
 
 const Quote = styled.blockquote`
 	display: inline-block;
-	padding: .7rem 0 .3rem;
+	//padding: .7rem 0 .3rem;
+	margin: -.3rem 0 .3rem;
 	color: ${prims.colors.blue.medium.opaque};
 
 	font-size: ${prims.fontsize.xl};
