@@ -1,6 +1,7 @@
 import createClass from 'create-react-class'
 import PropTypes from 'prop-types'
 import React from 'react'
+import { push } from 'gatsby-link'
 import prims from '../../Primitives'
 
 export default createClass({
@@ -167,8 +168,8 @@ export default createClass({
 
   render () {
     return (
-      <div
-        style={{
+      <div onClick={()=>push(this.props.href)}
+          style={{
           ...prims.atvimg.root,
           transform: `perspective(${this.state.rootElemWidth * 3}px)`,
           ...(this.props.style ? this.props.style : {})

@@ -64,6 +64,7 @@ export default {
 			borderRadius: '.25rem',
 			transformStyle: 'preserve-3d',
 			WebkitTapHighlightColor: 'rgba(#000, 0)',
+			cursor: 'pointer',
 		},
 
 		container: {

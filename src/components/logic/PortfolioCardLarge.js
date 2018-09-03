@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { push } from 'gatsby-link'
 import prims from '../../Primitives'
 import ATVImg from './ATVImg'
 
@@ -41,7 +42,7 @@ const getColorValueFor= function(color) {
 }
 
 export default (props) => (
-	<ATVImg style={{width: '80rem', height: '40rem', margin: '0 0 17rem 0'}}>
+	<ATVImg style={{width: '80rem', height: '40rem', margin: '0 0 17rem 0'}} href={props.href}>
 		<ATVLayer>
 			<SkillsCard color={getColorValueFor(props.secondaryColor)}>
 				{makeSkillsListFor(props.skills)}
