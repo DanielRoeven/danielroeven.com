@@ -26,17 +26,20 @@ export default () => (
                         description="Creating a web portal that's clear and beautiful for Radboud Center for Social Sciences."
                         image={RcswImage}
                         primaryColor="light-blue"
-                        estimatedHeight="15rem"/>
+                        estimatedHeight="15rem"
+                        href="portal-for-rcsw"/>
       <ContentCardSmall title="Tangible Office Planner"
                         description="An exploration in tangible interaction: a tabletop interface to share and view office calendars, while giving the users embodied sense of privacy."
                         image={TangibleImage}
                         primaryColor="yellow"
-                        estimatedHeight="21rem"/>
+                        estimatedHeight="21rem"
+                        href="ar-show-design-app"/>
       <ContentCardSmall title="Smart Home Redesign"
                         description="Reimagining the smart home: stimulating the user to reflect through beautiful interactions."
                         image={SmarthomeImage}
                         primaryColor="blue"
-                        estimatedHeight="15rem"/>
+                        estimatedHeight="15rem"
+                        href="ar-show-design-app"/>
     </ContentCardsWrapper>
     <H2>Other</H2>
     <ContentCardsWrapper>
@@ -44,17 +47,20 @@ export default () => (
                         description="Creating a web portal that's clear and beautiful for Radboud Center for Social Sciences."
                         image={RcswImage}
                         primaryColor="light-blue"
-                        estimatedHeight="15rem"/>
+                        estimatedHeight="15rem"
+                        href="portal-for-rcsw"/>
       <ContentCardSmall title="Tangible Office Planner"
                         description="An exploration in tangible interaction: a tabletop interface to share and view office calendars, while giving the users embodied sense of privacy."
                         image={TangibleImage}
                         primaryColor="yellow"
-                        estimatedHeight="21rem"/>
+                        estimatedHeight="21rem"
+                        href="ar-show-design-app"/>
       <ContentCardSmall title="Smart Home Redesign"
                         description="Reimagining the smart home: stimulating the user to reflect through beautiful interactions."
                         image={SmarthomeImage}
                         primaryColor="blue"
-                        estimatedHeight="15rem"/>
+                        estimatedHeight="15rem"
+                        href="ar-show-design-app"/>
     </ContentCardsWrapper>
   </PageWrapper>
 )

@@ -43,6 +43,6 @@ const FooterText = styled.h6 `
 
 export default () => (
   <Footer>
-    <FooterText><img src={copyrightIcon}/>Daniel Roeven 2018</FooterText>
+    <FooterText>Side made by Daniel Roeven with GatsbyJS</FooterText>
   </Footer>
 );

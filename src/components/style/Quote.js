@@ -1,14 +1,17 @@
 import styled from 'styled-components'
 import prims from '../../Primitives'
 
-const H2 = styled.h2`
+const Quote = styled.blockquote`
 	display: inline-block;
-	padding: .7rem 0 .3rem;
-	color: ${prims.colors.blue.dark.opaque};
+	//padding: .7rem 0 .3rem;
+	margin: -.3rem 0 .3rem;
+	color: ${prims.colors.blue.medium.opaque};
 
 	font-size: ${prims.fontsize.xl};
-	font-weight: ${props => props.hero ? 'normal;' : 'bold;'};
+	font-weight: normal;
 	line-height: 6rem;
+
+	text-align: center;
 	
 	em {
 		color: ${prims.colors.blue.medium.opaque};
@@ -18,4 +21,4 @@ const H2 = styled.h2`
 	};
 `
 
-export default H2
+export default Quote
