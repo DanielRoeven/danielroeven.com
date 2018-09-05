@@ -43,6 +43,11 @@ const PMedium = styled.p`
 	ol {
 		list-style: none;
 	}
+
+	.gatsby-resp-image-wrapper {
+		margin: 0 -13.5rem !important;
+		width: 80rem;
+	}
 `
 
 export default PMedium

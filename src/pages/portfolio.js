@@ -14,9 +14,9 @@ display: flex;
     margin: 0 0 9rem 0;
   };
 `
-import RcswImage from './img/rcsw-mobile-3x.jpg'
-import TangibleImage from './img/src-screengrab-3x.jpg'
-import SmarthomeImage from './img/smarthome-1-3x.png'
+import RcswImage from '../img/rcsw/rcsw-mobile-3x.jpg'
+import TangibleImage from '../img/tangible/src-screengrab-3x.jpg'
+import SmarthomeImage from '../img/smarthome/smarthome-1-3x.png'
 
 export default () => (
   <PageWrapper>

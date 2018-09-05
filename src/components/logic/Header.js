@@ -116,16 +116,16 @@ export default () => (
       <Nav>
         <ol>
           <li>
-            <Link to="about" activeStyle={linkActiveStyle}>About</Link>
+            <Link to="/about" activeStyle={linkActiveStyle}>About</Link>
           </li>
           <li>
-            <Link to="portfolio" activeStyle={linkActiveStyle}>Portfolio</Link>
+            <Link to="/portfolio" activeStyle={linkActiveStyle}>Portfolio</Link>
           </li>
           <li>
-            <Link to="case-studies" activeStyle={linkActiveStyle}>Case Studies</Link>
+            <Link to="/case-studies" activeStyle={linkActiveStyle}>Case Studies</Link>
           </li>
           <li>
-            <Link to="contact" activeStyle={linkActiveStyle}>Contact</Link>
+            <Link to="/contact" activeStyle={linkActiveStyle}>Contact</Link>
           </li>
         </ol>
       </Nav>
