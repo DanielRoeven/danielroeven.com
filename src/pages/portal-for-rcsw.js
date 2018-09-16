@@ -4,13 +4,12 @@ import styled from 'styled-components'
 import PageWrapper from '../components/style/PageWrapper'
 
 import H2 from '../components/style/H2'
-import RcswImage1 from '../img/rcsw/rcsw-mobile-3x.jpg'
-import RcswImage2 from '../img/rcsw/rcsw-browser-3x.png'
+import RcswImage1 from '../img/rcsw/mobile.jpg'
+import RcswImage2 from '../img/rcsw/browser.png'
 import H3 from '../components/style/H3'
 import H4 from '../components/style/H4'
 import PMedium from '../components/style/PMedium'
 import OlMedium from '../components/style/OlMedium'
-import RCSWLogo from '../img/rcsw/rcsw-logo-3x.png'
 const ProjectWrapper = styled.div`
   display: flex;
   flex-flow: row wrap;
@@ -77,9 +76,6 @@ export default () => (
       </HalfColumn>
       <HalfColumn>
         <H3 article><em>03</em> Organisation</H3>
-        <LogoLink href="https://rcsw.nl" target="_blank">
-          <OrgImage src={RCSWLogo}/>
-        </LogoLink>
         <H3 article><em>04</em> Timeframe</H3>
         <PMedium>Four months parttime.</PMedium>
       </HalfColumn>

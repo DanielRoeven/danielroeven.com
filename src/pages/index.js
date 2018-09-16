@@ -9,8 +9,8 @@ const HeroWrapper = styled.div`
 import H2 from '../components/style/H2'
 
 import PortfolioCardLarge from '../components/logic/PortfolioCardLarge.js'
-import RcswImage from '../img/rcsw/rcsw-mobile-3x.jpg'
-import TangibleImage from '../img/tangible/src-screengrab-3x.jpg'
+import RcswImage from '../img/rcsw/mobile.jpg'
+import TangibleImage from '../img/tangible-office-planner/video-still.jpg'
 import SmarthomeImage from '../img/smarthome/smarthome-1-3x.png'
 
 const CTAWrapper = styled.div`
@@ -29,21 +29,21 @@ export default () => (
                         skills={['Interaction Design', 'Visual Design', 'Front-End Development']}
                         primaryColor="light-blue"
                         secondaryColor="dark-blue"
-                        href="portal-for-rcsw"/>
+                        href="portfolio/tangible-office-planner"/>
     <PortfolioCardLarge title="Tangible Office Planner"
                         description="An exploration in tangible interaction: a tabletop interface to share and view office calendars, while giving the users embodied sense of privacy."
                         image={TangibleImage}
                         skills={['Interaction Design', 'Prototyping']}
                         primaryColor="yellow"
                         secondaryColor="orange"
-                        href="ar-show-design-app"/>
+                        href="portfolio/tangible-office-planner"/>
     <PortfolioCardLarge title="Smart Home Redesign"
                         description="Reimagining the smart home: stimulating the user to reflect through beautiful interactions."
                         image={SmarthomeImage}
                         skills={['UX Design', 'Interaction Design', 'Prototyping']}
                         primaryColor="blue"
                         secondaryColor="blue"
-                        href="ar-show-design-app"/>
+                        href="portfolio/ar-show-design-app"/>
     <CTAWrapper>
       <LinkSentence type="internal"
                     text="See my full"

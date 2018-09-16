@@ -4,29 +4,25 @@ import rehypeReact from "rehype-react"
 
 import PageWrapper from '../components/style/PageWrapper'
 import H2 from '../components/style/H2'
-import H3 from '../components/style/H3'
+import H3Article from '../components/style/H3Article'
 import PMedium from '../components/style/PMedium'
 import UlMedium from '../components/style/UlMedium'
 import Quote from '../components/style/Quote'
+import LogoLink from '../components/logic/LogoLink'
 
 const ProjectWrapper = styled(PageWrapper)`
   width: 53rem;
   margin: 0 13.5rem 6rem;
 `
-const OrgImage = styled.img`
-  margin: 2rem 0 0.8rem 0;
-  width: 26rem;
-  height: 6rem;
-  object-fit: contain;
-  object-position: left;
+const ColumnWrapper = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: flex-start;
 `
-const LogoLink = styled.a`
-  filter: grayscale(1);
-  transition: filter 0.2s ease-in-out;
-
-  &:hover {
-    filter: grayscale(0);
-  }
+const HalfColumn = styled.div`
+  width: 26rem;
 `
 const ProjectVideo = styled.iframe`
   height: 48rem;
@@ -38,10 +34,14 @@ const ProjectVideo = styled.iframe`
 const renderAst = new rehypeReact({
     createElement: React.createElement,
     components: { "h2": H2,
-                  "h3": H3,
+                  "h3": H3Article,
                   "p": PMedium,
                   "ul": UlMedium,
                   "blockquote": Quote,
+                  "iframe": ProjectVideo,
+                  "column-wrapper": ColumnWrapper,
+                  "half-column": HalfColumn,
+                  "rcsw-logo-link": LogoLink,
                 },
   }).Compiler
 
