@@ -5,7 +5,7 @@ const PMedium = styled.p`
 	padding: 1.85rem 0 1.15rem 0;
 
 	color: ${prims.colors.blue.dark.opaque};
-	
+
 	font-size: ${prims.fontsize.m};
 	line-height: 3rem;
 
@@ -22,7 +22,7 @@ const PMedium = styled.p`
 	    background-size: 0% 100%, 100% 100%;
 
 	    text-decoration: none;
-		font-weight: bold;
+		font-family: 'Rucksack Bold';
 		
 	    transition-property: background-size;
 	    transition-duration: .5s;
@@ -37,7 +37,7 @@ const PMedium = styled.p`
 		color: ${prims.colors.blue.medium.opaque};;
 
 		font-style: normal;
-		font-weight: bold;
+		font-family: 'Rucksack Bold';
 	};
 
 	ol {
@@ -47,6 +47,7 @@ const PMedium = styled.p`
 	.gatsby-resp-image-wrapper {
 		margin: 0 -13.5rem !important;
 		width: 80rem;
+		padding-bottom: .75rem;
 	}
 `
 

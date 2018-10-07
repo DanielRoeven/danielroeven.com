@@ -9,7 +9,7 @@ const H5 = styled.h5`
 	color: ${prims.colors.blue.dark.opaque};
 	
 	font-size: ${prims.fontsize.s};
-	font-weight: bold;
+	font-family: 'Rucksack Bold';
 	line-height: 2rem;
 `
 

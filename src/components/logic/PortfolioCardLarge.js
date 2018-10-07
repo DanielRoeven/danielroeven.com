@@ -41,10 +41,37 @@ const getColorValueFor= function(color) {
 	}
 }
 
+const getColorFamilyFor= function(color) {
+	switch(color) {
+		case 'light-blue':
+			return 'blue'
+			break
+		case 'blue':
+			return 'blue'
+			break
+		case 'dark-blue':
+			return 'blue'
+			break
+		case 'yellow':
+			return 'orange'
+			break
+		case 'orange':
+			return 'orange'
+			break
+		case 'brown':
+			return 'brown'
+			break
+		default:
+			throw 'Invalid color provided'
+	}
+}
+
+
 export default (props) => (
 	<ATVImg style={{width: '80rem', height: '40rem', margin: '0 0 17rem 0'}} href={props.href}>
 		<ATVLayer>
-			<SkillsCard color={getColorValueFor(props.secondaryColor)}>
+			<SkillsCard color={getColorValueFor(props.secondaryColor)}
+						colorFamily={getColorFamilyFor(props.primaryColor)}>
 				{makeSkillsListFor(props.skills)}
 			</SkillsCard>
 		</ATVLayer>
@@ -52,7 +79,8 @@ export default (props) => (
 			<ImageCard src={props.image}/>
 		</ATVLayer>
 		<ATVLayer style={{width: '100%', height: '100%'}}>
-			<TitleCard color={getColorValueFor(props.primaryColor)}>
+			<TitleCard color={getColorValueFor(props.primaryColor)}
+						colorFamily={getColorFamilyFor(props.primaryColor)}>
 				<h3>{props.title}</h3>
 				<p>{props.description}</p>
 			</TitleCard>

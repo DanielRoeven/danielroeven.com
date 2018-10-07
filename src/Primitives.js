@@ -19,6 +19,7 @@ export default {
 			},
 			black: {
 				opaque: 'hsla(210, 58%, 09%, 1)',
+				transparent_s: 'hsla(210, 58%, 09%, .75)',
 				transparent_m: 'hsla(210, 58%, 09%, .5)',
 				transparent_l: 'hsla(210, 58%, 09%, .25)',
 			},
@@ -34,6 +35,9 @@ export default {
 			brown: {
 				opaque: 'hsla(29, 63%, 30%, 1)',
 			},
+			black: {
+				opaque: 'hsla(29, 81%, 20%, .8)'
+			}
 		},
 	},
 	fontsize: {

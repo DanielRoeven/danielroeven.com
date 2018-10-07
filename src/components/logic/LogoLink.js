@@ -15,8 +15,7 @@ const LogoLink = styled.a`
   }
 `
 const RCSWLogo = styled.img`
-  margin: 1rem 0 -1.8rem 0;
-  width: 26rem;
+  margin: .9rem 0 -1.9rem 0;
   height: 6rem;
   object-fit: contain;
   object-position: left;

@@ -102,12 +102,15 @@ const TriviaTitle = styled.h5`
   width: 41.5rem;
 
   color: ${prims.colors.blue.white.opaque};
-  background-image: linear-gradient(transparent 61%, ${prims.colors.blue.gray} 61%, ${prims.colors.blue.gray} 74%, transparent 74%);
+  
 
+  font-family: 'Rucksack Bold';
   font-size: ${prims.fontsize.l};
-  font-weight: bold;
   line-height: 3rem;
 `
+// Background for trivia title
+// background-image: linear-gradient(transparent 61%, ${prims.colors.blue.gray} 61%, ${prims.colors.blue.gray} 74%, transparent 74%);
+
 const Trivia = styled.div`
   align-items: center;
   display: flex;
@@ -118,21 +121,22 @@ const Trivia = styled.div`
 const TriviaItem = styled.div`
   display: flex;
   padding-top: 1rem;
-  width: 49.5rem;
+  width: 53.5rem;
 `
 import CaretIcon from '../components/img/icons/caret.svg'
 const TriviaButton = styled.button`
   height: 4rem;
-  width: 4rem;
+  width: 5rem;
   margin: 3rem ${props => props.previous ? '1rem;' : null} 0 ${props => props.next ? '1rem;' : null};
 
   background-color: transparent;
-  background-image: url(${CaretIcon});
   background-size: 4rem 4rem;
 
   border: none;
   transform: ${props => props.next ? null : 'scaleX(-1);'};
 `
+// TriviaButton background
+// background-image: url(${CaretIcon});
 const TriviaText = styled.p`
   padding: 0.85rem 0 .65rem 0;
   width: 39.5rem;

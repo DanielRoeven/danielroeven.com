@@ -10,6 +10,7 @@ title: "AR Show Design App"
 
 In this case study, I describe the design process of my final project for a course on UI design at the masters programme Interaction Design at Chalmers University of Technology. In this individual project, we were tasked to design the graphical interface for a complex authoring tool, in a limited timeframe (three weeks from brief to deliverable).
 
+
 ![AR Show Design App GUI Shown on iPad](../img/ar-show-design-app/ipad.png)
 
 ### *02* Process Overview

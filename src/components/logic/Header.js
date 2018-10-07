@@ -32,6 +32,7 @@ const H1 = styled.h1`
   color: ${prims.colors.blue.dark.opaque};
 
   font-size: ${prims.fontsize.m};
+  font-family: 'Rucksack Bold';
   line-height: 3rem;
 
   a {
@@ -90,7 +91,7 @@ const Nav = styled.nav`
     background-size: 0% 100%;
 
     font-size: ${prims.fontsize.m};
-    font-weight: bold;
+    font-family: 'Rucksack Bold';
     line-height: 3rem;
     text-decoration: none;
     text-transform: lowercase;
@@ -120,9 +121,6 @@ export default () => (
           </li>
           <li>
             <Link to="/portfolio" activeStyle={linkActiveStyle}>Portfolio</Link>
-          </li>
-          <li>
-            <Link to="/case-studies" activeStyle={linkActiveStyle}>Case Studies</Link>
           </li>
           <li>
             <Link to="/contact" activeStyle={linkActiveStyle}>Contact</Link>

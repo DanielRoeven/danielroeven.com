@@ -26,14 +26,14 @@ const SkillsCard = styled.div`
 	}
 
 	li {
-		margin-right: 1rem;
+		margin-right: 2rem;
 
 		color: ${prims.colors.blue.white.opaque};
 
 		font-size: ${prims.fontsize.m_uppercase};
-		font-weight: bold;
+		font-family: 'Rucksack Bold';
 		letter-spacing: .05rem;
-		text-shadow: ${prims.shadows.text_s} ${prims.colors.blue.black.transparent_m};
+		text-shadow: ${prims.shadows.text_s} ${props => (props.colorFamily == 'blue') ? prims.colors.blue.black.transparent_s : prims.colors.orange.black.opaque};
 		text-transform: uppercase;
 
 		&:last-child {
