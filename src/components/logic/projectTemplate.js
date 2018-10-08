@@ -2,13 +2,13 @@ import React from "react";
 import styled from 'styled-components'
 import rehypeReact from "rehype-react"
 
-import PageWrapper from '../components/style/PageWrapper'
-import H2 from '../components/style/H2'
-import H3Article from '../components/style/H3Article'
-import PMedium from '../components/style/PMedium'
-import UlMedium from '../components/style/UlMedium'
-import Quote from '../components/style/Quote'
-import LogoLink from '../components/logic/LogoLink'
+import PageWrapper from '../style/PageWrapper'
+import H2 from '../style/H2'
+import H3Article from '../style/H3Article'
+import PMedium from '../style/PMedium'
+import UlMedium from '../style/UlMedium'
+import Quote from '../style/Quote'
+import LogoLink from '../logic/LogoLink'
 
 const ProjectWrapper = styled(PageWrapper)`
   width: 53rem;
