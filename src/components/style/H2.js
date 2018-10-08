@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import prims from '../../Primitives'
+import prims from '../Primitives'
 
 const H2 = styled.h2`
 	display: inline-block;
@@ -7,14 +7,14 @@ const H2 = styled.h2`
 	color: ${prims.colors.blue.dark.opaque};
 
 	font-size: ${prims.fontsize.xl};
-	font-weight: ${props => props.hero ? 'normal;' : 'bold;'};
+	font-family: ${props => props.hero ? 'Rucksack;' : 'Rucksack Bold;'};
 	line-height: 6rem;
 	
 	em {
 		color: ${prims.colors.blue.medium.opaque};
 
 		font-style: normal;
-		font-weight: bold;
+		font-family: 'Rucksack Bold';
 	};
 `
 

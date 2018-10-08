@@ -1,7 +1,7 @@
 import createClass from 'create-react-class'
 import React from 'react'
 import styled from 'styled-components'
-import prims from '../../Primitives'
+import prims from '../Primitives'
 
 import ATVImg from './ATVImg'
 import ATVLayer from './ATVLayer'
@@ -33,6 +33,32 @@ const getColorValueFor= function(color) {
 	}
 }
 
+const getColorFamilyFor= function(color) {
+	switch(color) {
+		case 'light-blue':
+			return 'blue'
+			break
+		case 'blue':
+			return 'blue'
+			break
+		case 'dark-blue':
+			return 'blue'
+			break
+		case 'yellow':
+			return 'orange'
+			break
+		case 'orange':
+			return 'orange'
+			break
+		case 'brown':
+			return 'brown'
+			break
+		default:
+			throw 'Invalid color provided'
+	}
+}
+
+
 export default createClass({
 	getInitialState () {
     	return {
@@ -60,6 +86,7 @@ export default createClass({
 				</ATVLayer>
 				<ATVLayer>
 					<DescriptionCard color={getColorValueFor(this.props.primaryColor)}
+									colorFamily={getColorFamilyFor(this.props.primaryColor)}
 									isOnHover={this.state.isOnHover}
 									estimatedHeight={this.props.estimatedHeight}>
 						<h3>{this.props.title}</h3>

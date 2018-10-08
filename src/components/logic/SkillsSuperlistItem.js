@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import prims from '../../Primitives'
+import prims from '../Primitives'
 
 const SkillsSuperlistItem = styled.li`
 	width: 19.25rem;

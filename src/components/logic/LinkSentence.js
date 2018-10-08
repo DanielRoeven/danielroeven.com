@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
-import prims from '../../Primitives'
+import prims from '../Primitives'
 
 import PortfolioIcon from '../img/icons/portfolio.svg'
 import BioIcon from '../img/icons/bio.svg'
@@ -37,7 +37,7 @@ const LinkSentence = styled.p`
 	    background-repeat: no-repeat, no-repeat;
 	    background-size: 0% 100%, 100% 100%;
 
-		font-weight: bold;
+		font-family: 'Rucksack Bold';
 		text-decoration: none;
 
 	    transition-property: background-size;

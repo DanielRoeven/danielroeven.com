@@ -1,15 +1,14 @@
 import styled from 'styled-components'
-import prims from '../../Primitives'
+import prims from '../Primitives'
 
 const H3 = styled.h3`
-	padding: ${props => props.article ? '1.55rem 0 1.45rem 0' : '3rem 0 1.45rem'};
-	margin: ${props => props.article ? '0 0 -3rem 0' : '0 0 0 0'};
+	padding: 3rem 0 1.45rem;
 	width: 100%;
 
 	color: ${prims.colors.blue.dark.opaque};
 	
 	font-size: ${prims.fontsize.l};
-	font-weight: bold;
+	font-family: 'Rucksack Bold';
 	line-height: 3rem;
 
 	a {
