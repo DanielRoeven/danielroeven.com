@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { push } from 'gatsby-link'
-import prims from '../../Primitives'
+import prims from '../Primitives'
 import ATVImg from './ATVImg'
 
 import TitleCard from './TitleCard'

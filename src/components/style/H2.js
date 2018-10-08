@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import prims from '../../Primitives'
+import prims from '../Primitives'
 
 const H2 = styled.h2`
 	display: inline-block;

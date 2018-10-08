@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import prims from '../../Primitives'
+import prims from '../Primitives'
 
 const PSmall = styled.p`
 	padding: .55rem 0 0 0;

@@ -1,7 +1,7 @@
 import createClass from 'create-react-class'
 import React from 'react'
 import styled from 'styled-components'
-import prims from '../../Primitives'
+import prims from '../Primitives'
 
 import ATVImg from './ATVImg'
 import ATVLayer from './ATVLayer'

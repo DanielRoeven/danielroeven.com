@@ -7,11 +7,11 @@ module.exports = {
             {
               resolve: `gatsby-source-filesystem`,
               options: {
-                path: `${__dirname}/src/`,
-            		  name: 'markdown-files',
+                path: `${__dirname}/src/markdown-files/`,
+            		  name: "ar-show-design-app.md",
               }
             },
-            'gatsby-transformer-remark',
+            `gatsby-transformer-remark`,
             `gatsby-plugin-sharp`,
             {
               resolve: `gatsby-transformer-remark`,

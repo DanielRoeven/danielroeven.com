@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import prims from '../../Primitives'
+import prims from '../Primitives'
 
 const H5 = styled.h5`
 	padding: 1.55rem 0 0 0;

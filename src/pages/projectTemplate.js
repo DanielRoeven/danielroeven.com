@@ -32,23 +32,24 @@ const ProjectVideo = styled.iframe`
 `
 
 const renderAst = new rehypeReact({
-    createElement: React.createElement,
-    components: { "h2": H2,
-                  "h3": H3Article,
-                  "p": PMedium,
-                  "ul": UlMedium,
-                  "blockquote": Quote,
-                  "iframe": ProjectVideo,
-                  "column-wrapper": ColumnWrapper,
-                  "half-column": HalfColumn,
-                  "rcsw-logo-link": LogoLink,
-                },
+  createElement: React.createElement,
+  components: { "h2": H2,
+                "h3": H3Article,
+                "p": PMedium,
+                "ul": UlMedium,
+                "blockquote": Quote,
+                "iframe": ProjectVideo,
+                "column-wrapper": ColumnWrapper,
+                "half-column": HalfColumn,
+                "rcsw-logo-link": LogoLink,
+              },
   }).Compiler
 
-export default function Template({
-  data, // this prop will be injected by the GraphQL query below.
-}) {
+  export default function Template({
+    data, // this prop will be injected by the GraphQL query below.
+  }) {
   const { markdownRemark } = data; // data.markdownRemark holds our post data
+  console.log(data)
   const { htmlAst } = markdownRemark;
   return (
     <ProjectWrapper>

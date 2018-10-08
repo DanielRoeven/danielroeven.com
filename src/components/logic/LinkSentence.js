@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
-import prims from '../../Primitives'
+import prims from '../Primitives'
 
 import PortfolioIcon from '../img/icons/portfolio.svg'
 import BioIcon from '../img/icons/bio.svg'

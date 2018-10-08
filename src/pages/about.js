@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import prims from '../Primitives'
+import prims from '../components/Primitives'
 
 import PageWrapper from '../components/style/PageWrapper'
 import H2 from '../components/style/H2'

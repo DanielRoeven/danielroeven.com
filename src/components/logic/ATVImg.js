@@ -2,7 +2,7 @@ import createClass from 'create-react-class'
 import PropTypes from 'prop-types'
 import React from 'react'
 import { push } from 'gatsby-link'
-import prims from '../../Primitives'
+import prims from '../Primitives'
 
 export default createClass({
   propTypes: {

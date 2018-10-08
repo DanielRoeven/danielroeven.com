@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import prims from '../../Primitives'
+import prims from '../Primitives'
 
 const TagSmall = styled.span`
 	padding: 1.7rem 0 0 0;

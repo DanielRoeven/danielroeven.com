@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import prims from '../../Primitives'
+import prims from '../Primitives'
 
 const UlMedium = styled.ul`
 	padding: 1.85rem 0 1.15rem 0;
