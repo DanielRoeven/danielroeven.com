@@ -37,7 +37,7 @@ const LinkSentence = styled.p`
 	    background-repeat: no-repeat, no-repeat;
 	    background-size: 0% 100%, 100% 100%;
 
-		font-family: 'Rucksack Bold';
+		font-family: 'RucksackBold';
 		text-decoration: none;
 
 	    transition-property: background-size;

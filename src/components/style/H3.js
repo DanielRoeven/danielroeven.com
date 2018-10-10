@@ -8,7 +8,7 @@ const H3 = styled.h3`
 	color: ${prims.colors.blue.dark.opaque};
 	
 	font-size: ${prims.fontsize.l};
-	font-family: 'Rucksack Bold';
+	font-family: 'RucksackBold';
 	line-height: 3rem;
 
 	a {

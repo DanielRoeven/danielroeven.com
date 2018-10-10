@@ -22,7 +22,7 @@ const PMedium = styled.p`
 	    background-size: 0% 100%, 100% 100%;
 
 	    text-decoration: none;
-		font-family: 'Rucksack Bold';
+		font-family: 'RucksackBold';
 		
 	    transition-property: background-size;
 	    transition-duration: .5s;
@@ -37,7 +37,7 @@ const PMedium = styled.p`
 		color: ${prims.colors.blue.medium.opaque};;
 
 		font-style: normal;
-		font-family: 'Rucksack Bold';
+		font-family: 'RucksackBold';
 	};
 
 	ol {

@@ -32,7 +32,7 @@ const H1 = styled.h1`
   color: ${prims.colors.blue.dark.opaque};
 
   font-size: ${prims.fontsize.m};
-  font-family: 'Rucksack Bold';
+  font-family: 'RucksackBold';
   line-height: 3rem;
 
   a {
@@ -91,7 +91,7 @@ const Nav = styled.nav`
     background-size: 0% 100%;
 
     font-size: ${prims.fontsize.m};
-    font-family: 'Rucksack Bold';
+    font-family: 'RucksackBold';
     line-height: 3rem;
     text-decoration: none;
     text-transform: lowercase;

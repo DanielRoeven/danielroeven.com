@@ -31,7 +31,7 @@ const SkillsCard = styled.div`
 		color: ${prims.colors.blue.white.opaque};
 
 		font-size: ${prims.fontsize.m_uppercase};
-		font-family: 'Rucksack Bold';
+		font-family: 'RucksackBold';
 		letter-spacing: .05rem;
 		text-shadow: ${prims.shadows.text_s} ${props => (props.colorFamily == 'blue') ? prims.colors.blue.black.transparent_s : prims.colors.orange.black.opaque};
 		text-transform: uppercase;

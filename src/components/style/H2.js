@@ -7,14 +7,14 @@ const H2 = styled.h2`
 	color: ${prims.colors.blue.dark.opaque};
 
 	font-size: ${prims.fontsize.xl};
-	font-family: ${props => props.hero ? 'Rucksack;' : 'Rucksack Bold;'};
+	font-family: ${props => props.hero ? 'Rucksack;' : 'RucksackBold;'};
 	line-height: 6rem;
 	
 	em {
 		color: ${prims.colors.blue.medium.opaque};
 
 		font-style: normal;
-		font-family: 'Rucksack Bold';
+		font-family: 'RucksackBold';
 	};
 `
 

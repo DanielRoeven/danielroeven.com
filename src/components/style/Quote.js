@@ -18,7 +18,7 @@ const Quote = styled.blockquote`
 		color: ${prims.colors.blue.medium.opaque};
 
 		font-style: normal;
-		font-family: 'Rucksack Bold';
+		font-family: 'RucksackBold';
 	};
 `
 

@@ -7,7 +7,7 @@ const H4 = styled.h4`
 	color: ${prims.colors.blue.dark.opaque};
 
 	font-size: ${prims.fontsize.m};
-	font-family: 'Rucksack Bold';
+	font-family: 'RucksackBold';
 	line-height: 2rem;
 `
 

@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Rucksack Bold';
+    font-family: "RucksackBold";
     src: url('../fonts/rucksack-bold-webfont.eot');
     src: url('../fonts/rucksack-bold-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/rucksack-bold-webfont.woff') format('woff'),
@@ -10,7 +10,7 @@
 }
 
 @font-face {
-    font-family: 'Rucksack';
+    font-family: "Rucksack";
     src: url('../fonts/rucksack-book-webfont.eot');
     src: url('../fonts/rucksack-book-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/rucksack-book-webfont.woff') format('woff'),
@@ -29,7 +29,7 @@
 }
 
 html {
-  font-family: 'Rucksack';
+  font-family: "Rucksack";
   @media (max-width: 700px) {
   	font-size: 10px;
   }

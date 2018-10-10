@@ -25,7 +25,7 @@ const TitleCard = styled.div`
 		font-size: ${prims.fontsize.l};
 		line-height: 3rem;
 		text-shadow: ${prims.shadows.text_m} ${props => (props.colorFamily == 'blue') ? prims.colors.blue.black.transparent_s : prims.colors.orange.black.opaque};
-		font-family: 'Rucksack Bold';
+		font-family: 'RucksackBold';
 	}
 
 	p {
@@ -46,7 +46,7 @@ const TitleCard = styled.div`
 
 		color: ${prims.colors.blue.white.opaque};
 
-		font-family: 'Rucksack Bold';
+		font-family: 'RucksackBold';
 		font-size: ${prims.fontsize.m_uppercase};
 		line-height: 3rem;
 		text-align: center;
