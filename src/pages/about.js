@@ -21,6 +21,7 @@ const Avatar = styled.img`
   
   border: 1rem solid ${prims.colors.blue.white.opaque};
   border-radius: 8rem;
+  z-index: 1;
 `
 import Headshot from '../components/img/headshot.jpg'
 
@@ -32,7 +33,7 @@ const ResumeBackground = styled.div`
   margin: -7rem 0 0 0;
   padding: 7rem 0 0 0;
   width: 100vw;
-  z-index: -1;
+  //z-index: -1;
 
   background: radial-gradient(circle at top, ${prims.colors.blue.lightest}, ${prims.colors.blue.lighter});
 `
@@ -45,6 +46,7 @@ const Resume = styled.div`
 `
 import H3 from '../components/style/H3'
 import pdfIcon from '../components/img/icons/pdf.svg'
+import ResumeFile from '../ResumeDanielRoeven.pdf'
 const EducationCard = styled.div`
   margin: 0 1rem 0 -1rem;
   padding: 1rem;
@@ -104,7 +106,7 @@ const TriviaTitle = styled.h5`
   color: ${prims.colors.blue.white.opaque};
   
 
-  font-family: 'Rucksack Bold';
+  font-family: 'RucksackBold';
   font-size: ${prims.fontsize.l};
   line-height: 3rem;
 `
@@ -165,7 +167,7 @@ export default () => (
     <Avatar src={Headshot}/>
     <ResumeBackground>
       <Resume>
-        <H3>Résumé <a>as PDF<img src={pdfIcon}/></a></H3>
+        <H3>Résumé <a href={ResumeFile} target="_blank">as PDF<img src={pdfIcon}/></a></H3>
         <EducationCard>
           <H4>Education</H4>
           <HistoryItem
