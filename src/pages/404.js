@@ -1,10 +1,11 @@
-import React from 'react'
+import React from "react"
+import PageLayout from "../components/logic/PageLayout"
 
 const NotFoundPage = () => (
-  <div>
+  <PageLayout>
     <h1>NOT FOUND</h1>
     <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </div>
+  </PageLayout>
 )
 
 export default NotFoundPage

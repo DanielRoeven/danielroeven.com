@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import prims from '../Primitives'
 
@@ -24,7 +23,7 @@ const TitleCard = styled.div`
 
 		font-size: ${prims.fontsize.l};
 		line-height: 3rem;
-		text-shadow: ${prims.shadows.text_m} ${props => (props.colorFamily == 'blue') ? prims.colors.blue.black.transparent_s : prims.colors.orange.black.opaque};
+		text-shadow: ${prims.shadows.text_m} ${props => (props.colorFamily === 'blue') ? prims.colors.blue.black.transparent_s : prims.colors.orange.black.opaque};
 		font-family: 'RucksackBold';
 	}
 
@@ -36,12 +35,12 @@ const TitleCard = styled.div`
 
 		font-size: ${prims.fontsize.m};
 		line-height: 3rem;
-		text-shadow: ${prims.shadows.text_m} ${props => (props.colorFamily == 'blue') ? prims.colors.blue.black.transparent_s : prims.colors.orange.black.opaque};
+		text-shadow: ${prims.shadows.text_m} ${props => (props.colorFamily === 'blue') ? prims.colors.blue.black.transparent_s : prims.colors.orange.black.opaque};
 
 		transition: opacity 0.2s ease-in-out;
 	}
 
-	a {
+	span {
 		display: block;
 
 		color: ${prims.colors.blue.white.opaque};

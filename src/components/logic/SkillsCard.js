@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import prims from '../Primitives'
 
@@ -33,7 +32,7 @@ const SkillsCard = styled.div`
 		font-size: ${prims.fontsize.m_uppercase};
 		font-family: 'RucksackBold';
 		letter-spacing: .05rem;
-		text-shadow: ${prims.shadows.text_s} ${props => (props.colorFamily == 'blue') ? prims.colors.blue.black.transparent_s : prims.colors.orange.black.opaque};
+		text-shadow: ${prims.shadows.text_s} ${props => (props.colorFamily === 'blue') ? prims.colors.blue.black.transparent_s : prims.colors.orange.black.opaque};
 		text-transform: uppercase;
 
 		&:last-child {

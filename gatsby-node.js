@@ -1,9 +1,9 @@
 const path = require("path");
 
-exports.createPages = ({ boundActionCreators, graphql }) => {
-  const { createPage } = boundActionCreators;
+exports.createPages = ({ actions, graphql }) => {
+  const { createPage } = actions;
 
-  const projectTemplate = path.resolve(`./src/components/logic/projectTemplate.js`);
+  const projectTemplate = path.resolve(`./src/components/logic/ProjectTemplate.js`);
 
   return graphql(`
     {

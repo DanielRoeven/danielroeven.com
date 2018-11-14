@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import prims from '../Primitives'
 
 import PortfolioIcon from '../img/icons/portfolio.svg'
@@ -15,7 +15,7 @@ import InstagramIcon from'../img/icons/instagram.svg'
 const LinkSentence = styled.p`
 	display: flex;
 	height: 6rem;
-	justify-content: ${props => (props.type == 'external') ? 'flex-start;' : 'center;'};
+	justify-content: ${props => (props.type === 'external') ? 'flex-start;' : 'center;'};
 	margin: 0 0 0;
 	padding: .7rem 0 0;
 
@@ -64,47 +64,39 @@ const getIconFor = function(link) {
 	switch(link) {
 		case 'portfolio':
 			return PortfolioIcon
-			break
 		case 'bio':
 			return BioIcon
-			break
 		case 'hi!':
 			return ContactIcon
-			break
 		case 'email':
 			return EmailIcon
-			break
 		case 'twitter':
 			return TwitterIcon
-			break
 		case 'linked':
 			return LinkedInIcon
-			break
 		case 'github':
 			return GitHubIcon
-			break
 		case 'instagram':
 			return InstagramIcon
-			break
 		default:
-			throw 'No icon found for link in LinkSentence'
+			throw new Error('No icon found for link in LinkSentence')
 	}
 }
 
 const makeLinkFor = function(type, link, to) {
 	const icon = getIconFor(link)
-	if (type == 'internal') {
+	if (type === 'internal') {
 		return (
-			<Link to={to}>{link}<img src={icon}/></Link>
+			<Link to={to}>{link}<img src={icon} alt=""/></Link>
 		)		
 	}
-	else if (type == 'external') {
+	else if (type === 'external') {
 		return (
-			<a href={to} target="_blank">{link}<img src={icon}/></a>
+			<a href={to} target="_blank" rel="noopener noreferrer">{link}<img src={icon} alt=""/></a>
 		)		
 	}
 	else {
-		throw 'No link could be made for type in LinkSentence'
+		throw new Error('No link could be made for type in LinkSentence')
 	}
 }
 

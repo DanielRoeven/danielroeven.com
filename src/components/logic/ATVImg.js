@@ -1,7 +1,7 @@
 import createClass from 'create-react-class'
 import PropTypes from 'prop-types'
 import React from 'react'
-import { push } from 'gatsby-link'
+import { navigate } from 'gatsby'
 import prims from '../Primitives'
 
 export default createClass({
@@ -168,7 +168,7 @@ export default createClass({
 
   render () {
     return (
-      <div onClick={()=>push(this.props.href)}
+      <div onClick={()=>navigate(this.props.href)}
           style={{
           ...prims.atvimg.root,
           transform: `perspective(${this.state.rootElemWidth * 3}px)`,
