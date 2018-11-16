@@ -1,13 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
+import H5 from '../style/H5'
+import TagSmall from '../style/TagSmall'
+import PSMall from '../style/PSmall'
 
 const HistoryItem = styled.div`
 	display: flex;
 	flex-flow: row wrap;
 `
-import H5 from '../style/H5'
-import TagSmall from '../style/TagSmall'
-import PSMall from '../style/PSmall'
 
 export default (props) => (
   <HistoryItem>

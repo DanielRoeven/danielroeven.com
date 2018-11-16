@@ -16,13 +16,13 @@ I designed and prototyped a digital tabletop interface in a team of five people.
 
 [Tangible user interfaces](https://en.wikipedia.org/wiki/Tangible_user_interface) are a way to manipulate digital information through physical interactions. They make optimal use of our physical skills rather than relying solely on cognitive skills (as in GUIs). This enables numerous benefits: muscle memory, thinking-by-doing, and easy collaboration, to name a few.
 
-![Sketch of envisioned interactions](../img/tangible-office-planner/sketch-interaction-1.jpg)
+![Sketch of envisioned interactions](./img/tangible-office-planner/sketch-interaction-1.jpg)
 
 ### *03* Concept development
 
 To design and develop our concept, we conducted a study of existing digital office planning tools and calendars. We also extensively studied literature on the topic of tangible interaction. In early stages of the project, I honed our ideas by creating sketches of our envisioned system—this helped us solidify and reason about our concepts, as well as aligning the team's vision.
 
-![Sketch of envisioned product](../img/tangible-office-planner/sketch-full.jpg)
+![Sketch of envisioned product](./img/tangible-office-planner/sketch-full.jpg)
 
 ### *04* Prototyping
 
@@ -36,11 +36,11 @@ The microinteractions with the digital tabletop were prototyped and evaluated on
 
 To detect these interactions, copper tape was wired around the 3D-printed puck, connecting to foam stubs on the bottom of the pucks. When a user touches the puck, the copper wiring turns into capacitive touch points—allowing our Framer prototype to detect twisting. When pushing on the puck, a third contact point is created with the iPad—allowing the prototype to detect pressing.
 
-![Close-up of puck showing copper wiring](../img/tangible-office-planner/puck-construction.jpg)
+![Close-up of puck showing copper wiring](./img/tangible-office-planner/puck-construction.jpg)
 
 I was responsible for a large part of the Framer prototype that runs on an iPad embedded in the table. The iPad Framer prototype combined two input sources: the scanned RFID tags (via an Arduino hosted WiFi network), and the twistable and pressable pucks with capacitive touch points.
 
-![Screenshot of Framer running our prototype](../img/tangible-office-planner/framer.jpg)
+![Screenshot of Framer running our prototype](./img/tangible-office-planner/framer.jpg)
 
 ### *05* Results
 

@@ -11,7 +11,7 @@ title: "AR Show Design App"
 In this case study, I describe the design process of my final project for a course on UI design at the masters programme Interaction Design at Chalmers University of Technology. In this individual project, we were tasked to design the graphical interface for a complex authoring tool, in a limited timeframe (three weeks from brief to deliverable).
 
 
-![AR Show Design App GUI Shown on iPad](../img/ar-show-design-app/ipad.png)
+![AR Show Design App GUI Shown on iPad](./img/ar-show-design-app/ipad.png)
 
 ### *02* Process Overview
 
@@ -39,7 +39,7 @@ Due to the limited timeframe, extensive user research was not possible. As a com
 
 This gave me a basis from which to form user goals such as “supporting or counterpointing what the artist is doing”, “creating an experience for the audience”, “translating from vision to implementation”, and “performing a flawless show”. I also created storyboard scenario’s for the persona’s. This gave the design process an initial direction, and also allowed me to validate the final design to the usage scenario’s. After setting up these user goals, I conducted a competitive product analysis. This included comparing existing products for AR design, lighting design, timeline-based audio tools, and VJ software.
 
-![Excerpts of research documents.](../img/ar-show-design-app/research.png)
+![Excerpts of research documents.](./img/ar-show-design-app/research.png)
 
 ### *07* Product Model
 
@@ -53,7 +53,7 @@ At this point I started creating lots of sketches and testing lots of ideas, bec
 
 I created a 1:1 scale cardboard model of the iPad, which allowed me to sketch on A4 paper which I could then put in the iPad and test immediately. It also allowed me to run quick and dirty paper prototype tests, and quickly adjust the layout and interactions.
 
-![Interface sketches inside cardboard cutout of iPad.](../img/ar-show-design-app/cardboard-ipad.jpg)
+![Interface sketches inside cardboard cutout of iPad.](./img/ar-show-design-app/cardboard-ipad.jpg)
 
 ### *09* Wireframe to Hi-Fi Prototype
 
@@ -63,4 +63,4 @@ After lots of sketches on paper, I started wireframing in Sketch.app. During wir
 
 Because the high-fidelity prototype was built entirely with Sketch symbols, I could easily construct the interface for every step in the inital scenario’s. This allowed me validate the requirements and scenario’s, and get an overview of the whole interaction flow. I also made an annotated overview of the interface. The hi-fidelity scenario’s can be seen <a href="#">here</a> and the annotated interface overview is available <a href="#">here</a>.
 
-![Interface sketches inside cardboard cutout of iPad.](../img/ar-show-design-app/sketch.jpg)
+![Interface sketches inside cardboard cutout of iPad.](./img/ar-show-design-app/sketch.jpg)

@@ -13,11 +13,24 @@ const H3 = styled.h3`
 
 	a {
 		padding: 2.55rem .25rem 1.45rem;
-		width: 100%;
 
 		color: ${prims.colors.blue.gray};
-		
-		background-image: linear-gradient(transparent 4.75rem, ${prims.colors.blue.light} 4.75rem, ${prims.colors.blue.light} 5.25rem, transparent 5.25rem);
+
+		background-image:	linear-gradient(transparent 4.85rem, ${prims.colors.orange.medium.opaque} 4.85rem, ${prims.colors.orange.medium.opaque} 5.35rem, transparent 5.35rem),
+							linear-gradient(transparent 4.85rem, ${prims.colors.blue.light} 4.85rem, ${prims.colors.blue.light} 5.35rem, transparent 5.35rem);
+	    background-position: left center, left center;
+	    background-repeat: no-repeat, no-repeat;
+	    background-size: 0% 100%, 100% 100%;
+
+		text-decoration: none;
+
+		transition-property: background-size;
+	    transition-duration: .5s;
+	    transition-timing-function: ease;
+
+	    &:hover {
+	      background-size: 100% 100%, 100% 100%;
+    	};
 	}
 
 	em {

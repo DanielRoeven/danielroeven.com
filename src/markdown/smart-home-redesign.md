@@ -10,13 +10,13 @@ title: "Smart Home Redesign"
 
 In this project, I redesigned the smart home and an accompanying iOS app. I focused on creating a smart home that instead of simply automating, actually **enriches** living. I try to do this by making it pleasurable to use, by subconsciously capturing and replaying memories, and by stimulating the user to reflect.
 
-![AR Show Design App GUI Shown on iPad](../img/smarthome/smarthome-2.png)
+![AR Show Design App GUI Shown on iPad](./img/smarthome/smarthome-2.png)
 
 ### *02* Context
 
 The project was carried out individually for a course on designing user experiences at Chalmers University of Technology. The timeframe was three weeks, half-time. I designed four apps: two very different music players, a light control app, and a way to invite your friends to interact with your smart home. These apps are showcased with videos below.
 
-![AR Show Design App GUI Shown on iPad](../img/smarthome/icons.png)
+![AR Show Design App GUI Shown on iPad](./img/smarthome/icons.png)
 
 ### *03* App: Focus in Music
 

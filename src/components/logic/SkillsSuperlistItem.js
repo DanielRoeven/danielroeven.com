@@ -1,13 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 import prims from '../Primitives'
+import H5 from '../style/H5.js'
 
 const SkillsSuperlistItem = styled.li`
 	width: 19.25rem;
 `
-
-import H5 from '../style/H5.js'
-
 const Skill = styled.li`
 	padding: .6rem 0 0 0;
 	margin: 0 0 -.6rem 0;
@@ -22,7 +20,6 @@ const Skill = styled.li`
 		padding: .6rem 0 1rem 0;
 	}
 `
-
 const SkillsList = styled.ol`
 	list-style-type: none;
 `

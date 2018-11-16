@@ -1,7 +1,9 @@
-import React from "react";
+import React from 'react'
 import styled from 'styled-components'
-import rehypeReact from "rehype-react"
+import rehypeReact from 'rehype-react'
+import { graphql } from 'gatsby'
 
+import PageLayout from './PageLayout'
 import PageWrapper from '../style/PageWrapper'
 import H2 from '../style/H2'
 import H3Article from '../style/H3Article'
@@ -52,9 +54,11 @@ const renderAst = new rehypeReact({
   console.log(data)
   const { htmlAst } = markdownRemark;
   return (
-    <ProjectWrapper>
-      {renderAst(htmlAst)}
-    </ProjectWrapper>
+    <PageLayout>
+      <ProjectWrapper>
+        {renderAst(htmlAst)}
+      </ProjectWrapper>
+    </PageLayout>
   );
 }
 
