@@ -4,10 +4,10 @@ import PageLayout from '../components/logic/PageLayout'
 import PageWrapper from '../components/style/PageWrapper'
 import H2 from '../components/style/H2'
 import PortfolioCardLarge from '../components/logic/PortfolioCardLarge.js'
-import RcswImage from '../img/rcsw/mobile.jpg'
-import TangibleImage from '../img/tangible-office-planner/video-still.jpg'
-import SmarthomeImage from '../img/smarthome/smarthome-1-3x.png'
 import LinkSentence from '../components/logic/LinkSentence'
+import RcswImage from '../markdown/img/rcsw/mobile.jpg'
+import TangibleImage from '../markdown/img/tangible-office-planner/video-still.jpg'
+import SmarthomeImage from '../markdown/img/smarthome/smarthome-1-3x.png'
 
 const HeroWrapper = styled.div`
   margin: 6rem 0 13rem;

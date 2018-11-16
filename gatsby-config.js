@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Gatsby Default Starter'
   },
   plugins: ['gatsby-plugin-react-helmet',
             'gatsby-plugin-styled-components',
@@ -8,10 +8,9 @@ module.exports = {
               resolve: `gatsby-source-filesystem`,
               options: {
                 path: `${__dirname}/src/markdown/`,
-                name: "markdown",
+                name: "markdown"
               }
             },
-            `gatsby-transformer-remark`,
             `gatsby-plugin-sharp`,
             {
               resolve: `gatsby-transformer-remark`,
@@ -25,11 +24,11 @@ module.exports = {
                       // base for generating different widths of each image.
                       maxWidth: 1800,
                       linkImagesToOriginal: false,
-                      quality: 100,
-                    },
-                  },
-                ],
-              },
-            },
-          ],
+                      quality: 100
+                    }
+                  }
+                ]
+              }
+            }
+          ]
 };
