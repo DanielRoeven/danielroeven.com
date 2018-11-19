@@ -30,9 +30,10 @@
 
 html {
   font-family: "Rucksack";
-  @media (max-width: 700px) {
-  	font-size: 10px;
+  @media (max-width: 400px) {
+  	font-size: 6px;
   }
+  background: purple;
   font-size: 14px;
 }
 
