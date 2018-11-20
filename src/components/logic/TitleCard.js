@@ -12,6 +12,10 @@ const TitleCard = styled.div`
 	box-shadow: ${prims.glow.m} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.m} ${prims.colors.blue.dark.transparent_l};
 	border-radius: .25rem;
 
+	@media (max-width: 400px) {
+		width: 20rem !important;
+	}
+
 	h3 {
 		margin: .5rem 0 0;
 
@@ -33,6 +37,10 @@ const TitleCard = styled.div`
 		text-shadow: ${prims.shadows.text_m} ${props => (props.colorFamily === 'blue') ? prims.colors.blue.black.transparent_s : prims.colors.orange.black.opaque};
 
 		transition: opacity 0.2s ease-in-out;
+
+		@media (max-width: 400px) {
+			display: none;
+		}
 	}
 
 	a {

@@ -168,7 +168,8 @@ export default createClass({
 
   render () {
     return (
-      <div onClick={()=>navigate(this.props.href)}
+      <div className={this.props.className}
+          onClick={()=>navigate(this.props.href)}
           style={{
           ...prims.atvimg.root,
           transform: `perspective(${this.state.rootElemWidth * 3}px)`,

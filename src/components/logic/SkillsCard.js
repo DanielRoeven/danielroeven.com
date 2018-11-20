@@ -16,6 +16,10 @@ const SkillsCard = styled.div`
 	border-radius: 2px;
 	box-shadow: ${prims.glow.xs} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.xs} ${prims.colors.blue.dark.transparent_l};
 
+	@media (max-width: 400px) {
+		visibility: hidden;
+	}
+
 	ol {
 		display: flex;
 

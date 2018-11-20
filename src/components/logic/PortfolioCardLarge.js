@@ -33,7 +33,7 @@ const getColorValueFor= function(color) {
 	}
 }
 
-const getColorFamilyFor= function(color) {
+const getColorFamilyFor = function(color) {
 	switch(color) {
 		case 'light-blue':
 			return 'blue'
@@ -52,9 +52,9 @@ const getColorFamilyFor= function(color) {
 	}
 }
 
-
 export default (props) => (
-	<ATVImg style={{width: '80rem', height: '40rem', margin: '0 0 17rem 0'}} href={props.href}>
+	// Additional styles in globals.css
+	<ATVImg className="PortfolioCardLarge" style={{width: '80rem', height: '40rem', margin: '0 0 17rem 0'}} href={props.href}>
 		<ATVLayer>
 			<SkillsCard color={getColorValueFor(props.secondaryColor)}
 						colorFamily={getColorFamilyFor(props.primaryColor)}>
@@ -62,7 +62,7 @@ export default (props) => (
 			</SkillsCard>
 		</ATVLayer>
 		<ATVLayer style={{width: '100%', height: '100%'}}>
-			<ImageCard src={props.image}/>
+			<ImageCard className="ImageCard" src={props.image}/>
 		</ATVLayer>
 		<ATVLayer style={{width: '100%', height: '100%'}}>
 			<TitleCard color={getColorValueFor(props.primaryColor)}

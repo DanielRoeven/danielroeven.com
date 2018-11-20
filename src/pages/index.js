@@ -11,6 +11,10 @@ import SmarthomeImage from '../markdown/img/smarthome/smarthome-1-3x.png'
 
 const HeroWrapper = styled.div`
   margin: 6rem 0 13rem;
+
+  @media (max-width: 400px) {
+    margin: 0rem 0 10rem;
+  }
 `
 const CTAWrapper = styled.div`
   margin-bottom: 13rem;

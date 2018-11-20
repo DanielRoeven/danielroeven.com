@@ -41,6 +41,6 @@ const FooterText = styled.h6 `
 
 export default () => (
   <Footer>
-    <FooterText>Side made by Daniel Roeven with GatsbyJS</FooterText>
+    <FooterText>Site made by Daniel Roeven with GatsbyJS</FooterText>
   </Footer>
 );

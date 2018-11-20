@@ -13,6 +13,10 @@ const LayoutOverlay = styled.div`
 	background-position: center top;
 	background-repeat: repeat-y;
 	background-size: 80rem;
+
+	@media (max-width: 400px) {
+		width: 36rem;
+  	}
 `
 
 export default (props) => (

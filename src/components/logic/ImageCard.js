@@ -9,6 +9,11 @@ const ImageCard = styled.img`
 	border-radius: .25rem;
 	box-shadow: ${prims.glow.s} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.s} ${prims.colors.blue.dark.transparent_l};
 	object-fit: cover;
+
+	@media (max-width: 400px) {
+		width: 36rem !important;
+    	height: 22rem !important;
+	}
 `
 
 
