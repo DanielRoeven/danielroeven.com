@@ -23,6 +23,10 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   width: 80rem;
+  
+  @media (max-width: 1200px) {
+    width: calc(100vw - 4rem);
+  }
 `
 
 const H1 = styled.h1`

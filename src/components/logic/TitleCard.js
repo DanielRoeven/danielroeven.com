@@ -12,8 +12,8 @@ const TitleCard = styled.div`
 	box-shadow: ${prims.glow.m} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.m} ${prims.colors.blue.dark.transparent_l};
 	border-radius: .25rem;
 
-	@media (max-width: 400px) {
-		width: 20rem !important;
+	@media (max-width: 600px) {
+		width: auto !important;
 	}
 
 	h3 {
@@ -38,7 +38,7 @@ const TitleCard = styled.div`
 
 		transition: opacity 0.2s ease-in-out;
 
-		@media (max-width: 400px) {
+		@media (max-width: 600px) {
 			display: none;
 		}
 	}

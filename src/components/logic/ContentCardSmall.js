@@ -62,7 +62,8 @@ export default createClass({
 
 	render() {
 		return (
-			<ATVImg parentEnter={this.handleEnter}
+			<ATVImg className="ContentCardSmall"
+					parentEnter={this.handleEnter}
 					parentLeave={this.handleLeave}
 					style={{width: '39.5rem', height: '22rem', margin: '0 0 5rem'}}
 					small

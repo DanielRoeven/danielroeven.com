@@ -33,15 +33,21 @@ html {
   font-size: 14px;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 1200px) {
   html {
     font-size: 8px;
   }
 
   .PortfolioCardLarge {
-    width: 36rem !important;
-    height: 22rem !important;
+    width: calc(100vw - 4rem) !important;
+    height: calc(60vw - 2.4rem) !important;
     margin: 0 0 5rem 0 !important;
+  }
+
+  .ContentCardSmall {
+    width: calc(100vw - 4rem) !important;
+    height: calc(60vw - 2.4rem) !important;
+    margin: 3rem 0 2rem 0 !important;
   }
 }
 

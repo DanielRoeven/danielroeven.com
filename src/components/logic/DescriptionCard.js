@@ -16,6 +16,21 @@ const TitleCard = styled.div`
 
 	transition: max-height 0.2s ease-out;
 
+	@media (max-width: 1200px) {
+		top: -1rem;
+		left: -1rem;
+		width: auto;
+		bottom: auto;
+
+		p {
+			display: none;
+		}
+
+		span {
+			display: none !important;
+		}
+	};
+
 	h3 {
 		margin: .5rem 0 0;
 

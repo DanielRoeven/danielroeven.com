@@ -10,9 +10,9 @@ const ImageCard = styled.img`
 	box-shadow: ${prims.glow.s} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.s} ${prims.colors.blue.dark.transparent_l};
 	object-fit: cover;
 
-	@media (max-width: 400px) {
-		width: 36rem !important;
-    	height: 22rem !important;
+	@media (max-width: 1200px) {
+	    width: calc(100vw - 4rem) !important;
+	    height: calc(60vw - 2.4rem) !important;
 	}
 `
 

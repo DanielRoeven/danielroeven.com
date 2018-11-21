@@ -14,8 +14,8 @@ const LayoutOverlay = styled.div`
 	background-repeat: repeat-y;
 	background-size: 80rem;
 
-	@media (max-width: 400px) {
-		width: 36rem;
+	@media (max-width: 1200px) {
+		width: calc(100vw - 4rem);
   	}
 `
 

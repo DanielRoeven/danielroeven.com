@@ -24,7 +24,7 @@ const LinkSentence = styled.p`
 	font-size: ${prims.fontsize.xl};
 	line-height: 6rem;
 
-	@media (max-width: 400px) {
+	@media (max-width: 600px) {
 		font-size: ${prims.fontsize.l};
 		a {
 			background-image: linear-gradient(transparent 3.7rem, ${prims.colors.orange.medium.opaque} 3.7rem, ${prims.colors.orange.medium.opaque} 4.3rem, transparent 4.3rem),
