@@ -33,9 +33,9 @@ html {
   font-size: 14px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
   html {
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .PortfolioCardLarge {
@@ -48,6 +48,12 @@ html {
     width: calc(100vw - 4rem) !important;
     height: calc(60vw - 2.4rem) !important;
     margin: 3rem 0 2rem 0 !important;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 8px;
   }
 }
 

@@ -5,6 +5,10 @@ import H5 from '../style/H5.js'
 
 const SkillsSuperlistItem = styled.li`
 	width: 19.25rem;
+
+	@media (max-width: 800px) {
+		width: 50%;
+	}
 `
 const Skill = styled.li`
 	padding: .6rem 0 0 0;
@@ -15,6 +19,11 @@ const Skill = styled.li`
 
 	font-size: ${prims.fontsize.s};
 	line-height: 2rem;
+
+	@media (max-width: 1200px) {
+		font-size: ${prims.fontsize.m};
+		line-height: 3rem;
+	}
 
 	&:last-child {
 		padding: .6rem 0 1rem 0;

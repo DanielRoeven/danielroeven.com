@@ -11,6 +11,12 @@ const H5 = styled.h5`
 	font-size: ${prims.fontsize.s};
 	font-family: 'RucksackBold';
 	line-height: 2rem;
+
+	@media (max-width: 1200px) {
+		font-size: ${prims.fontsize.m};
+		line-height: 3rem;
+		width: 55%;
+	}
 `
 
 export default H5

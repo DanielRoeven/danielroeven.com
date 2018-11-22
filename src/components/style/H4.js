@@ -9,6 +9,11 @@ const H4 = styled.h4`
 	font-size: ${prims.fontsize.m};
 	font-family: 'RucksackBold';
 	line-height: 2rem;
+
+	@media (max-width: 1200px) {
+		font-size: ${prims.fontsize.l};
+		line-height: 3rem
+	}
 `
 
 export default H4

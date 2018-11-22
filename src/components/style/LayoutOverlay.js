@@ -16,6 +16,7 @@ const LayoutOverlay = styled.div`
 
 	@media (max-width: 1200px) {
 		width: calc(100vw - 4rem);
+		max-width: 80rem;
   	}
 `
 

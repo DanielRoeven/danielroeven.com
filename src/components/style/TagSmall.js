@@ -14,6 +14,12 @@ const TagSmall = styled.span`
 	line-height: 2rem;
 	text-transform: uppercase;
 	text-align: right;
+
+	@media (max-width: 1200px) {
+		font-size: ${prims.fontsize.m_uppercase};
+		line-height: 3rem;
+		width: 14rem;
+	}
 `
 
 export default TagSmall

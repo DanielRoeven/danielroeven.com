@@ -14,6 +14,11 @@ const PSmall = styled.p`
 	&:last-child {
 		padding: .6rem 0 1rem 0;
 	}
+
+	@media (max-width: 1200px) {
+		font-size: ${prims.fontsize.m};
+		line-height: 3rem
+	}
 `
 
 export default PSmall

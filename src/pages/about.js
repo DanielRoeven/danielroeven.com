@@ -18,9 +18,21 @@ const Bio = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 3rem;
+
+  @media (max-width: 450px) {
+    display: block;
+  }
 `
 const HalfColumn = styled.div`
   width: 39.5rem;
+
+  &:first-child {
+    margin-right: 1rem;
+  }
+
+  @media (max-width: 600px) {
+    width: calc(100vw - 4rem);
+  }
 `
 const Avatar = styled.img`
   align-self: center;
@@ -42,6 +54,12 @@ const ResumeBackground = styled.div`
   //z-index: -1;
 
   background: radial-gradient(circle at top, ${prims.colors.blue.lightest}, ${prims.colors.blue.lighter});
+
+  @media (max-width: 1200px) {
+    height: auto;
+    padding-bottom: 1rem;
+    margin-bottom: -14rem;
+  }
 `
 const Resume = styled.div`
   align-content: flex-start;
@@ -49,6 +67,11 @@ const Resume = styled.div`
   display: flex;
   flex-flow: row wrap;
   width: 80rem;
+
+  @media (max-width: 1200px) {
+    width: calc(100vw - 4rem);
+    max-width: 80rem;
+  }
 `
 const EducationCard = styled.div`
   margin: 0 1rem 0 -1rem;
@@ -59,6 +82,11 @@ const EducationCard = styled.div`
   
   border-radius: 2px;
   box-shadow: ${prims.glow.m} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.l} ${prims.colors.blue.dark.transparent_l};
+
+  @media (max-width: 1200px) {
+    margin: 0 -1rem 2rem -1rem;
+    width: auto;
+  }
 `
 const WorkCard = styled.div`
   margin: 0 -1rem 1rem 0;
@@ -69,6 +97,11 @@ const WorkCard = styled.div`
 
   border-radius: 2px;
   box-shadow: ${prims.glow.m} ${prims.colors.blue.dark.transparent_l}, ${prims.shadows.l} ${prims.colors.blue.dark.transparent_l};
+  
+  @media (max-width: 1200px) {
+    margin: 0 -1rem 2rem -1rem;
+    width: auto;
+  }
 `
 const SkillsCard = styled.div`
   margin: 0 -1rem 0 -1rem;
@@ -82,6 +115,7 @@ const SkillsCard = styled.div`
 `
 const SkillsSuperlist = styled.ol`
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   
   list-style-type: none;
@@ -110,6 +144,7 @@ const TriviaTitle = styled.h5`
   font-size: ${prims.fontsize.l};
   line-height: 3rem;
 `
+
 // Background for trivia title
 // background-image: linear-gradient(transparent 61%, ${prims.colors.blue.gray} 61%, ${prims.colors.blue.gray} 74%, transparent 74%);
 
@@ -119,6 +154,10 @@ const Trivia = styled.div`
   flex-direction: column;
   padding-top: 25rem;
   width: 80rem;
+
+  @media (max-width: 1200px) {
+    width: 20%;
+  }
 `
 const TriviaItem = styled.div`
   display: flex;

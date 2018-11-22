@@ -7,6 +7,10 @@ import PSMall from '../style/PSmall'
 const HistoryItem = styled.div`
 	display: flex;
 	flex-flow: row wrap;
+
+  @media (max-width: 1200px) {
+    justify-content: space-between;
+  }
 `
 
 export default (props) => (
