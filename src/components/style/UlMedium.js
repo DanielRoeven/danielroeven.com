@@ -7,6 +7,10 @@ const UlMedium = styled.ul`
 	
 	font-size: ${prims.fontsize.m};
 	line-height: 3rem;
+
+	@media (max-width: 1200px) {
+		list-style: none;
+	}
 `
 
 export default UlMedium
