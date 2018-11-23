@@ -51,6 +51,7 @@ const PMedium = styled.p`
 
 		@media (max-width: 1200px) {
 			width: 100vw;
+			max-width: 84rem !important;
 			margin: 0 -2rem !important;
 		}
 	}

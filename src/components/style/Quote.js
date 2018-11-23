@@ -14,7 +14,7 @@ const Quote = styled.blockquote`
 
 	text-align: center;
 	
-	@media (max-width: 600px) {
+	@media (max-width: 1200px) {
 		width: 100%;
 		margin: -.3rem 0 .3rem;
 	}

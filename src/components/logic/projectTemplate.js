@@ -18,6 +18,7 @@ const ProjectWrapper = styled(PageWrapper)`
 
   @media (max-width: 1200px) {
     width: calc(100vw - 4rem);
+    max-width: 80rem;
     margin: 0 0 6rem;
   }
 `
@@ -48,6 +49,7 @@ const ProjectVideo = styled.iframe`
   @media (max-width: 1200px) {
     height: 60vw;
     width: 100vw;
+    max-width: 84rem;
     margin: 3rem -2rem !important;
   }
 `
