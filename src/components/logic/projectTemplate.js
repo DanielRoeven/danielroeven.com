@@ -15,6 +15,12 @@ import LogoLink from '../logic/LogoLink'
 const ProjectWrapper = styled(PageWrapper)`
   width: 53rem;
   margin: 0 13.5rem 6rem;
+
+  @media (max-width: 1200px) {
+    width: calc(100vw - 4rem);
+    max-width: 80rem;
+    margin: 0 0 6rem;
+  }
 `
 const ColumnWrapper = styled.div`
   display: flex;
@@ -25,12 +31,27 @@ const ColumnWrapper = styled.div`
 `
 const HalfColumn = styled.div`
   width: 26rem;
+
+  @media (max-width: 1200px) {
+    width: calc((100vw - 2rem)/2 -2rem);
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 `
 const ProjectVideo = styled.iframe`
   height: 48rem;
   width: 80rem;
   margin: 3rem -13.5rem;
   overflow: hidden;
+
+  @media (max-width: 1200px) {
+    height: 60vw;
+    width: 100vw;
+    max-width: 84rem;
+    margin: 3rem -2rem !important;
+  }
 `
 
 const renderAst = new rehypeReact({
