@@ -132,18 +132,6 @@ const TriviaBackground = styled.div`
 
   background: radial-gradient(circle at bottom, ${prims.colors.blue.dark.opaque}, ${prims.colors.blue.black.opaque});
 `
-const TriviaTitle = styled.h5`
-  height: 6rem;
-  padding: 1.6rem 1rem 0;
-  width: 41.5rem;
-
-  color: ${prims.colors.blue.white.opaque};
-  
-
-  font-family: 'RucksackBold';
-  font-size: ${prims.fontsize.l};
-  line-height: 3rem;
-`
 
 // Background for trivia title
 // background-image: linear-gradient(transparent 61%, ${prims.colors.blue.gray} 61%, ${prims.colors.blue.gray} 74%, transparent 74%);
@@ -156,13 +144,35 @@ const Trivia = styled.div`
   width: 80rem;
 
   @media (max-width: 1200px) {
-    width: 20%;
+    width: 100vw;
   }
 `
+
+const TriviaTitle = styled.h5`
+  height: 6rem;
+  padding: 1.6rem 1rem 0;
+  width: 41.5rem;
+
+  color: ${prims.colors.blue.white.opaque};
+  
+  font-family: 'RucksackBold';
+  font-size: ${prims.fontsize.l};
+  line-height: 3rem;
+
+  @media (max-width: 1200px) {
+    width: 60vw;
+    padding: 1.6rem 0 0;
+  }
+`
+
 const TriviaItem = styled.div`
   display: flex;
   padding-top: 1rem;
   width: 53.5rem;
+
+  @media (max-width: 1200px) {
+    width: 100vw;
+  }
 `
 const TriviaButton = styled.button`
   height: 4rem;
@@ -174,6 +184,11 @@ const TriviaButton = styled.button`
 
   border: none;
   transform: ${props => props.next ? null : 'scaleX(-1);'};
+
+  @media (max-width: 1200px) {
+    margin: 3rem 0 0 0;
+    width: 20vw;
+  }
 `
 // TriviaButton background
 // background-image: url(${CaretIcon});
@@ -185,6 +200,10 @@ const TriviaText = styled.p`
   
   font-size: ${prims.fontsize.m};
   line-height: 3rem;
+
+  @media (max-width: 1200px) {
+    width: 60vw;
+  }
 `
 
 export default () => (
