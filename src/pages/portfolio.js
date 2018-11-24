@@ -7,7 +7,8 @@ import ContentCardSmall from '../components/logic/ContentCardSmall.js'
 import RcswImage from '../markdown/img/rcsw/mobile.jpg'
 import TangibleImage from '../markdown/img/tangible-office-planner/video-still.jpg'
 import SmarthomeImage from '../markdown/img/smarthome/smarthome-1-3x.png'
-import ARShowDesignImage from '../markdown/img/ar-show-design-app/ipad.png'
+//import ARShowDesignImage from '../markdown/img/ar-show-design-app/ipad.png'
+import CyberSketchImage from '../markdown/img/cybersketch/headsets.jpg'
 
 const ContentCardsWrapper = styled.div`
 display: flex;
@@ -37,21 +38,27 @@ export default () => (
                           primaryColor="blue"
                           estimatedHeight="15rem"
                           href="portfolio/smart-home-redesign"/>
-        <ContentCardSmall title="AR Show Design GUI"
+{/*        <ContentCardSmall title="AR Show Design GUI"
                           description="Designing the user interface for a complex authoring tool in a limited timeframe."
                           image={ARShowDesignImage}
                           primaryColor="orange"
                           estimatedHeight="15rem"
                           href="portfolio/ar-show-design-app"/>
-      </ContentCardsWrapper>
+*/}      </ContentCardsWrapper>
       <H2>Other</H2>
       <ContentCardsWrapper>
         <ContentCardSmall title="Tangible Office Planner"
                           description="An exploration in tangible interaction: a tabletop interface to share and view office calendars, while giving the users an embodied sense of privacy."
                           image={TangibleImage}
-                          primaryColor="yellow"
+                          primaryColor="orange"
                           estimatedHeight="21rem"
                           href="portfolio/tangible-office-planner"/>
+        <ContentCardSmall title="CyberSketch"
+                          description="Creating a 3D sketching tool in VR to test the interaction design possibilities of multitouch tablets as input for VR."
+                          image={CyberSketchImage}
+                          primaryColor="dark-blue"
+                          estimatedHeight="18rem"
+                          href="portfolio/cybersketch"/>
       </ContentCardsWrapper>
     </PageWrapper>
   </PageLayout>

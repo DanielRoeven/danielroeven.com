@@ -8,7 +8,7 @@ title: "CyberSketch: multitouch tablet input for VR"
 
 ### *01* About
 
-Handheld controllers, as common with VR currently, have some limitations: they are prone to reliability and precision issues, require an specialised hardware setup (tracking camera's). Furthermore, they are fatiguing to use for extended periods of time—an effect known as the "[gorilla arm](https://en.wikipedia.org/wiki/Touchscreen#"Gorilla_arm")".
+Current handheld VR controllers are prone to reliability and precision issues and require specialised hardware setups like tracking cameras. Furthermore, they are fatiguing to use for extended periods of time—an effect known as the "[gorilla arm](https://en.wikipedia.org/wiki/Touchscreen#"Gorilla_arm")".
 
 In this project, we created a new input mechanism for VR to solve these problems. As a demonstration of this new input mechanism, we designed and developed a gestural 3D sketching and modelling tool, to quickly visualise concepts in true 3D.
 
@@ -19,9 +19,9 @@ In this project, we created a new input mechanism for VR to solve these problems
 
 ### *02* Responsibilities
 
-- Research (academic and industrial)
-- Interaction design
-- Prototyping in iOS (Swift) and Unreal Engine
+- VR Research
+- Interaction design for VR
+- Prototyping in iOS with Swift and Unreal Engine
 - UX evaluations
 
 </half-column>
@@ -54,7 +54,7 @@ In a UX evaluation, we asked users to "sketch" cars, in order to see whether use
 
 ![Cars created in CyberSketch](./img/cybersketch/cars.jpg)
 
-Furthermore, the participants evaluated our system with the [Microsoft product reaction cards](https://en.wikipedia.org/wiki/Microsoft_Reaction_Card_Method_(Desirability_Testing)), to determine the UX and desirability. Positive adjectives they used to describe our system were: 
+Furthermore, the participants evaluated our system with the [Microsoft reaction cards](https://en.wikipedia.org/wiki/Microsoft_Reaction_Card_Method_(Desirability_Testing)), to determine the UX and desirability. Positive adjectives they used to describe our system were: 
 
 <blockquote>
 "Straightforward, Clean, Engaging, Entertaining, Approachable, Creative"
@@ -64,4 +64,4 @@ Negative adjectives were: unrefined, difficult, and inconsistent. In the followi
 
 ### *07* More information
 
-Read the full research paper, or clone the project from GitHub.
+[Read our full research paper](/CyberSketch.pdf), or [clone the project from GitHub](https://github.com/DanielRoeven/vr-3d-sketching).

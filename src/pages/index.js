@@ -8,6 +8,7 @@ import LinkSentence from '../components/logic/LinkSentence'
 import RcswImage from '../markdown/img/rcsw/mobile.jpg'
 import TangibleImage from '../markdown/img/tangible-office-planner/video-still.jpg'
 import SmarthomeImage from '../markdown/img/smarthome/smarthome-1-3x.png'
+import CyberSketchImage from '../markdown/img/cybersketch/headsets.jpg'
 
 const HeroWrapper = styled.div`
   margin: 6rem 0 13rem;
@@ -47,6 +48,13 @@ export default () => (
                             primaryColor="blue"
                             secondaryColor="blue"
                             href="portfolio/smart-home-redesign"/>
+        <PortfolioCardLarge title="CyberSketch"
+                            description="Creating a 3D sketching tool in VR to test the interaction design possibilities of multitouch tablets as input for VR."
+                            image={CyberSketchImage}
+                            skills={['VR Design', 'Research and Development', 'UX Evaluation']}
+                            primaryColor="blue"
+                            secondaryColor="dark-blue"
+                            href="portfolio/cybersketch"/>
         <CTAWrapper>
           <LinkSentence type="internal"
                         text="See my full"

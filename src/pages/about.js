@@ -8,7 +8,6 @@ import PMedium from '../components/style/PMedium'
 import Headshot from '../components/img/headshot.jpg'
 import H3 from '../components/style/H3'
 import pdfIcon from '../components/img/icons/pdf.svg'
-import ResumeFile from '../ResumeDanielRoeven.pdf'
 import H4 from '../components/style/H4'
 import HistoryItem from '../components/logic/HistoryItem'
 import SkillsSuperlistItem from '../components/logic/SkillsSuperlistItem'
@@ -223,7 +222,7 @@ export default () => (
       <Avatar src={Headshot}/>
       <ResumeBackground>
         <Resume>
-          <H3>Résumé <a href={ResumeFile} target="_blank" rel="noopener noreferrer">as PDF<img src={pdfIcon} alt=""/></a></H3>
+          <H3>Résumé <a href="/DanielRoevenResume.pdf" target="_blank" rel="noopener noreferrer">as PDF<img src={pdfIcon} alt=""/></a></H3>
           <EducationCard>
             <H4>Education</H4>
             <HistoryItem
