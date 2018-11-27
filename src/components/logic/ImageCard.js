@@ -12,7 +12,9 @@ const ImageCard = styled.img`
 
 	@media (max-width: 1200px) {
 	    width: calc(100vw - 4rem) !important;
-	    height: calc(60vw - 2.4rem) !important;
+	    max-width: 80rem !important;
+	    height: calc(50vw - 2rem) !important;
+	    max-height: 40rem !important;
 	}
 `
 
