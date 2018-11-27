@@ -1,0 +1,13 @@
+#!/bin/bash
+# Build danielroeven.com with Gatsby
+# Clean up previous site files
+# Deploy to danielroeven.com
+
+gatsby build
+ssh root@danielroeven.com <<'ENDSSH'
+cd /var/www/html
+shopt -s extglob
+rm -rf !(other)
+exit
+ENDSSH
+scp -r public/* root@danielroeven.com:/var/www/html

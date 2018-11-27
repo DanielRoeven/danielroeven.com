@@ -60,12 +60,12 @@ export default () => (
       </ContentCardsWrapper>
       <H2>User Research / Design Process</H2>
       <ContentCardsWrapper>
-        <ContentCardSmall title="AR Show Design GUI"
+        <ContentCardSmall title="Show Design App"
                           description="Designing the user interface for a complex authoring tool in a limited timeframe."
                           image={ARShowDesignImage}
                           primaryColor="orange"
                           estimatedHeight="15rem"
-                          href="portfolio/ar-show-design-app"/>
+                          href="portfolio/show-design-app"/>
       </ContentCardsWrapper>
     </PageWrapper>
   </PageLayout>
