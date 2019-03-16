@@ -29,7 +29,7 @@ In this project, we created a new input mechanism for VR to solve these problems
 
 ### *03* Team
 
-I teamed up with [Ajla Cano](www.ajlacano.com) to carry out this design and research project.
+I teamed up with [Ajla Cano](https://www.ajlacano.com) to carry out this design and research project.
 
 ### *04* Timeframe
 

@@ -6,8 +6,8 @@ import H2 from '../components/style/H2'
 import PortfolioCardLarge from '../components/logic/PortfolioCardLarge.js'
 import LinkSentence from '../components/logic/LinkSentence'
 import RcswImage from '../markdown/img/rcsw/mobile.jpg'
+import MuffinOrChihuahuaImage from '../markdown/img/muffin-or-chihuahua/muffin-or-chihuahua-1.jpg'
 import TangibleImage from '../markdown/img/tangible-office-planner/video-still.jpg'
-import SmarthomeImage from '../markdown/img/smarthome/smarthome-1-3x.png'
 import CyberSketchImage from '../markdown/img/cybersketch/headsets.jpg'
 
 const HeroWrapper = styled.div`
@@ -34,6 +34,13 @@ export default () => (
                             primaryColor="light-blue"
                             secondaryColor="dark-blue"
                             href="portfolio/portal-for-rcsw"/>
+        <PortfolioCardLarge title="Muffin or Chihuahua?"
+                            description="Muffin or Chihuahua? is an interactive museum experience, introducing machine learning to 12 to 16 year-olds."
+                            image={MuffinOrChihuahuaImage}
+                            skills={['Project Management', 'Prototyping']}
+                            primaryColor="blue"
+                            secondaryColor="light-blue"
+                            href="portfolio/muffin-or-chihuahua"/>
         <PortfolioCardLarge title="Tangible Office Planner"
                             description="An exploration in tangible interaction: a tabletop interface to share and view office calendars, while giving the users an embodied sense of privacy."
                             image={TangibleImage}
@@ -41,13 +48,6 @@ export default () => (
                             primaryColor="orange"
                             secondaryColor="yellow"
                             href="portfolio/tangible-office-planner"/>
-        <PortfolioCardLarge title="Smart Home Redesign"
-                            description="Reimagining the smart home: stimulating the user to reflect through beautiful interactions."
-                            image={SmarthomeImage}
-                            skills={['UX Design', 'Interaction Design', 'Visual Design']}
-                            primaryColor="blue"
-                            secondaryColor="blue"
-                            href="portfolio/smart-home-redesign"/>
         <PortfolioCardLarge title="CyberSketch"
                             description="Creating a 3D sketching tool in VR to test the interaction design possibilities of multitouch tablets as input for VR."
                             image={CyberSketchImage}

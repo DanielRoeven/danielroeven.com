@@ -39,6 +39,10 @@ const HalfColumn = styled.div`
   @media (max-width: 600px) {
     width: 100%;
   }
+
+  ul {
+    margin-top: -3rem;
+  }
 `
 const ProjectVideo = styled.iframe`
   height: 48rem;
