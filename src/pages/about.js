@@ -222,7 +222,7 @@ export default () => (
       <Avatar src={Headshot}/>
       <ResumeBackground>
         <Resume>
-          <H3>Résumé <a href="/DanielRoevenResume.pdf" target="_blank" rel="noopener noreferrer">as PDF<img src={pdfIcon} alt=""/></a></H3>
+          <H3>Résumé <a href="/DanielRoeven_Resume.pdf" target="_blank" rel="noopener noreferrer">as PDF<img src={pdfIcon} alt=""/></a></H3>
           <EducationCard>
             <H4>Education</H4>
             <HistoryItem
