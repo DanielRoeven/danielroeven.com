@@ -1,10 +1,10 @@
 ---
-path: "/portfolio/ar-show-design-app"
+path: "/portfolio/show-design-app"
 date: "2018-03-05"
-title: "AR Show Design App"
+title: "Show Design App"
 ---
 
-## AR Show Design App
+## Show Design App
 
 ### *01* About
 
@@ -12,6 +12,8 @@ In this case study, I describe the design process of my final project for a cour
 
 
 ![AR Show Design App GUI Shown on iPad](./img/ar-show-design-app/ipad.png)
+
+If you want to skip ahead and see the result: check out the [interface overview](/extras/ar-gui-interface.pdf) and [use case scenarios](/extras/ar-gui-scenarios.pdf).
 
 ### *02* Process Overview
 
@@ -61,6 +63,6 @@ After lots of sketches on paper, I started wireframing in Sketch.app. During wir
 
 ### *10* Validation
 
-Because the high-fidelity prototype was built entirely with Sketch symbols, I could easily construct the interface for every step in the inital scenario’s. This allowed me validate the requirements and scenario’s, and get an overview of the whole interaction flow. I also made an annotated overview of the interface. The hi-fidelity scenario’s can be seen <a href="#">here</a> and the annotated interface overview is available <a href="#">here</a>.
+Because the high-fidelity prototype was built entirely with Sketch symbols, I could easily construct the interface for every step in the inital scenario’s. This allowed me validate the requirements and scenario’s, and get an overview of the whole interaction flow. I also made an annotated overview of the interface. The the annotated interface overview is available [here](/extras/ar-gui-interface.pdf) and the hi-fidelity scenarios can be seen [here](/extras/ar-gui-scenarios.pdf).
 
 ![Interface sketches inside cardboard cutout of iPad.](./img/ar-show-design-app/sketch.jpg)
