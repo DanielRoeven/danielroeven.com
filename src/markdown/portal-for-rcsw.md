@@ -10,7 +10,7 @@ title: "Portal for RCSW"
 
 I designed and developed an online portal for the Radboud Centre for Social Sciences. The portal unifies information from varying services and provides clear overview and access.
 
-![Screenshot Portal for RCSW in a desktop webbrowser](./img/rcsw/browser.png)
+![Portal for RCSW on a handheld smartphone](./img/rcsw/mobile.jpg)
 
 <column-wrapper>
 <half-column>
@@ -40,8 +40,6 @@ Four months part-time.
 ### *05* Role
 
 I designed the interface and user experience and developed the front-end in React. I worked as the interaction designer alongside two developers in a team of three.
-
-![Portal for RCSW on a handheld smartphone](./img/rcsw/mobile.jpg)
 
 ### *06* Process
 
