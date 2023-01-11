@@ -12,7 +12,7 @@
     "gatsby-plugin-styled-components": "^3.0.3",
     "gatsby-remark-images": "^3.0.0",
     "gatsby-source-filesystem": "^2.1.6",
-    "gatsby-transformer-remark": "^2.1.12",
+    "gatsby-transformer-remark": "^5.25.1",
     "prettier": "^1.15.2",
     "react": "^16.6.3",
     "react-atv-parallax": "^1.0.2",
